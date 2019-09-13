@@ -1,0 +1,37 @@
+import { Entity } from '@loopback/repository';
+export declare class Animal extends Entity {
+    ANIMAL_ID: string;
+    id: string;
+    ANIMAL_NAME: string;
+    ANIMAL_TYPE: string;
+    SEX: string;
+    YEARS_OLD?: number;
+    MONTHS_OLD?: number;
+    DOB: string;
+    COLOR_GROUP: string;
+    PRIMARY_COLOR: string;
+    SECONDARY_COLOR?: string;
+    BREED_GROUP: string;
+    PRIMARY_BREED: string;
+    SECONDARY_BREED?: string;
+    MARKINGS?: string;
+    ANIMAL_COND: string;
+    ANIMAL_STAT: string;
+    STATUS_DATE: string;
+    BITES?: string;
+    ANIMAL_SIZE: string;
+    COAT?: string;
+    EARS?: string;
+    TAIL?: string;
+    LEGS?: string;
+    COLLAR_TYPE?: string;
+    VET_ID?: string;
+    S_N_DUE_DATE?: string;
+    S_N_COMP_DATE?: string;
+    VOUCHER_NO?: string;
+    CNTRACT_EXP_DATE?: string;
+    LOCATION: string;
+    USERID: string;
+    STAMP: string;
+    constructor(data?: Partial<Animal>);
+}
