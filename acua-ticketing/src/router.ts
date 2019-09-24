@@ -5,6 +5,7 @@ import UserModule from '@/store/modules/users'
 
 Vue.use(Router)
 
+// may not need to add  || 'http://localhost:8080/' to base?
 const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,

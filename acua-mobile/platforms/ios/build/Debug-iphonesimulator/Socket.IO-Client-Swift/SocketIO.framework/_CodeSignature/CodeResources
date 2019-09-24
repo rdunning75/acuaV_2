@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/SocketIO.swiftmodule/i386.swiftmodule</key>
 		<data>
-		sxPV3AFZsssF8KyOQEay4mlv0rY=
+		PtqqyXDjTD6VYKmljIg7fVSx9uw=
 		</data>
 		<key>Modules/SocketIO.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/SocketIO.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		wYFmPK5/ZdgimR+FN8IwCVNXsVY=
+		BSl5LflZ4V7Gjda1D36ik7axqg0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -76,11 +76,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sxPV3AFZsssF8KyOQEay4mlv0rY=
+			PtqqyXDjTD6VYKmljIg7fVSx9uw=
 			</data>
 			<key>hash2</key>
 			<data>
-			bcQFs/3i2enOGbj54+WRftEg+QfGFddqWwuzBMOL6oQ=
+			6QqMCY8Z7iI7DCPGEOFDQRTYl1y8YB//Y3WF96rFm5U=
 			</data>
 		</dict>
 		<key>Modules/SocketIO.swiftmodule/x86_64.swiftdoc</key>
@@ -98,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wYFmPK5/ZdgimR+FN8IwCVNXsVY=
+			BSl5LflZ4V7Gjda1D36ik7axqg0=
 			</data>
 			<key>hash2</key>
 			<data>
-			RoC0IAudOeq0D58gAPsE3b0WEDLmrfiS+O9Uoy3P+cM=
+			ocQBZsGoIjXuxWKKjRGZEKEGc7ePLd+zgn45s6tjf7g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

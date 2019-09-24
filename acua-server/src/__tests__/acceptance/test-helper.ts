@@ -12,6 +12,7 @@ export async function setupApplication(): Promise<AppWithClient> {
     //
     // host: process.env.HOST,
     // port: +process.env.PORT,
+
   });
 
   const app = new AcuaApplication({

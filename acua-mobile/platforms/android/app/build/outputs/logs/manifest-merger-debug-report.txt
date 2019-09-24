@@ -1,0 +1,332 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:2:1-46:12
+MERGED from [com.google.android.gms:play-services-location:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/e07c3794dcc7c0d102d41c61c88b3b05/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.material:material:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/0f468cc8c84bff706cb8515af389b9be/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/2444d92d6ea04042ff82733cc7d862aa/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/0996ba6786aa1436caa6b862fe3c1606/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a583e3f31fe7ed75833fc5c7caea423c/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/993ae94696b8decf0b7016b1b0e6e430/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/530b5c08ce9be172d08a692c7bf8cbb7/AndroidManifest.xml:16:1-23:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/ed040d46ac20e513f397dbac3402954f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/matthew/.gradle/caches/transforms-2/files-2.1/e103abae1f895f2160a3fc5b4a5b0602/AndroidManifest.xml:17:1-22:12
+MERGED from [:nativescript-optimized-with-inspector:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/cbdc9db95c0af301fe7bc07ec35551fa/AndroidManifest.xml:2:1-11:12
+MERGED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:2:1-32:12
+MERGED from [:barcodescanner-release-2.1.6:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/19a11754f7d3eb394638f80a3106c2be/AndroidManifest.xml:2:1-14:12
+MERGED from [:nativescript_geolocation:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/45b09187d1c870f3d1ac6809daca6f0d/AndroidManifest.xml:2:1-11:12
+MERGED from [:nativescript_phone:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/6c5c6ad7364fd17886e6e2437aaf0c1f/AndroidManifest.xml:2:1-11:12
+MERGED from [:nativescript_socket.io:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/d4911252bd1b2e3da89e4f01d7e9cd3b/AndroidManifest.xml:2:1-11:12
+MERGED from [:fancylogger-release:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/fe32e583fc214df4cfaf5847c72bd9a8/AndroidManifest.xml:2:1-11:12
+MERGED from [:TNSListView-release:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/50e24c927b73d602667fe4adc714c69e/AndroidManifest.xml:2:1-11:12
+MERGED from [:TNSCore-release:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/17559aae7f71ec7b588e0b132c8a41bd/AndroidManifest.xml:2:1-11:12
+MERGED from [:widgets-release:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a37ba846d96cc845c94bdafcf547b842/AndroidManifest.xml:2:1-14:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/5d350f1a80291d22bee4f1859bf2c0c4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/1e7fe461f6efebfa902618b0d7bc8ebc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/021b404c98c91b59e23948f30e25e36d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/5f748f5ad69a7f5104d7ad4740048bec/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/11fd7e0fb8d06fd9bfb8ac84ba8088bd/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a04d1c1166d5595f325762215fea8666/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/43793a18ed046ef13340e21587530c75/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/890b4acaaf9163a7d5389028f9fc560d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/f3d2d8c338781a7dd68a40c9e93691fc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/61e088964d20185f0c514a3ac8558fea/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/86a4e998e462f8b52631c81077f8f4ec/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/7e8ffb28e448ab6c4f11223d6fafe34a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/b5ded1223e09f120c93d6ff1584fabc5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/ebe09c06ed8129d5098e2442a5dfc296/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/f9178809e87bd65a1e583122b0b521cc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] /Users/matthew/.gradle/caches/transforms-2/files-2.1/e1113729d494c5a6b82b5db334caf442/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/ab5da74f2e3dd0790dc84d8a45be63a8/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/d3333515709f9634f94c4f8cce9f4ac0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/0d3c8b5fab8064400639629bc983ffd6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/42adc0530aa07309a121153dfe220bed/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/c101c8234689a523d271587e534b40df/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/03086ccd1886e59e4afde47e0e9bb839/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/8309f882614c95049f291e18e3f1ac96/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/22186686799d87dd583dafb660503a74/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/7d255c6968dbdca9a449f402b63f48d0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/15972e26e5a079e0b8681542c5543aad/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/b5291e374fab89ee44fcf1fad15d6a9f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/4c2e436a42b342b236561733efb0dfa3/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:2:1-46:12
+	package
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:4:5-32
+		INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:6:5-32
+		INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:3:5-63
+	android:versionCode
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:5:5-32
+		INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml
+supports-screens
+ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:8:5-12:40
+	android:largeScreens
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:11:9-36
+	android:smallScreens
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:9:9-36
+	android:normalScreens
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:10:9-37
+	android:xlargeScreens
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:12:9-37
+uses-sdk
+ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:14:5-16:51
+INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:14:5-16:51
+INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:14:5-16:51
+MERGED from [com.google.android.gms:play-services-location:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/e07c3794dcc7c0d102d41c61c88b3b05/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/e07c3794dcc7c0d102d41c61c88b3b05/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.material:material:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/0f468cc8c84bff706cb8515af389b9be/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/0f468cc8c84bff706cb8515af389b9be/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/2444d92d6ea04042ff82733cc7d862aa/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/2444d92d6ea04042ff82733cc7d862aa/AndroidManifest.xml:20:5-44
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/0996ba6786aa1436caa6b862fe3c1606/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/0996ba6786aa1436caa6b862fe3c1606/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-base:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a583e3f31fe7ed75833fc5c7caea423c/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a583e3f31fe7ed75833fc5c7caea423c/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/993ae94696b8decf0b7016b1b0e6e430/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/993ae94696b8decf0b7016b1b0e6e430/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/530b5c08ce9be172d08a692c7bf8cbb7/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/530b5c08ce9be172d08a692c7bf8cbb7/AndroidManifest.xml:17:5-43
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/ed040d46ac20e513f397dbac3402954f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/ed040d46ac20e513f397dbac3402954f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/matthew/.gradle/caches/transforms-2/files-2.1/e103abae1f895f2160a3fc5b4a5b0602/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/matthew/.gradle/caches/transforms-2/files-2.1/e103abae1f895f2160a3fc5b4a5b0602/AndroidManifest.xml:20:5-44
+MERGED from [:nativescript-optimized-with-inspector:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/cbdc9db95c0af301fe7bc07ec35551fa/AndroidManifest.xml:7:5-9:41
+MERGED from [:nativescript-optimized-with-inspector:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/cbdc9db95c0af301fe7bc07ec35551fa/AndroidManifest.xml:7:5-9:41
+MERGED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:7:5-47
+MERGED from [:barcodescanner-release-2.1.6:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/19a11754f7d3eb394638f80a3106c2be/AndroidManifest.xml:7:5-9:41
+MERGED from [:barcodescanner-release-2.1.6:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/19a11754f7d3eb394638f80a3106c2be/AndroidManifest.xml:7:5-9:41
+MERGED from [:nativescript_geolocation:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/45b09187d1c870f3d1ac6809daca6f0d/AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_geolocation:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/45b09187d1c870f3d1ac6809daca6f0d/AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_phone:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/6c5c6ad7364fd17886e6e2437aaf0c1f/AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_phone:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/6c5c6ad7364fd17886e6e2437aaf0c1f/AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_socket.io:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/d4911252bd1b2e3da89e4f01d7e9cd3b/AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_socket.io:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/d4911252bd1b2e3da89e4f01d7e9cd3b/AndroidManifest.xml:7:5-47
+MERGED from [:fancylogger-release:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/fe32e583fc214df4cfaf5847c72bd9a8/AndroidManifest.xml:7:5-9:41
+MERGED from [:fancylogger-release:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/fe32e583fc214df4cfaf5847c72bd9a8/AndroidManifest.xml:7:5-9:41
+MERGED from [:TNSListView-release:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/50e24c927b73d602667fe4adc714c69e/AndroidManifest.xml:7:5-9:41
+MERGED from [:TNSListView-release:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/50e24c927b73d602667fe4adc714c69e/AndroidManifest.xml:7:5-9:41
+MERGED from [:TNSCore-release:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/17559aae7f71ec7b588e0b132c8a41bd/AndroidManifest.xml:7:5-9:41
+MERGED from [:TNSCore-release:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/17559aae7f71ec7b588e0b132c8a41bd/AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a37ba846d96cc845c94bdafcf547b842/AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a37ba846d96cc845c94bdafcf547b842/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/5d350f1a80291d22bee4f1859bf2c0c4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/5d350f1a80291d22bee4f1859bf2c0c4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/1e7fe461f6efebfa902618b0d7bc8ebc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/1e7fe461f6efebfa902618b0d7bc8ebc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/021b404c98c91b59e23948f30e25e36d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/021b404c98c91b59e23948f30e25e36d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/5f748f5ad69a7f5104d7ad4740048bec/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/5f748f5ad69a7f5104d7ad4740048bec/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/11fd7e0fb8d06fd9bfb8ac84ba8088bd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/11fd7e0fb8d06fd9bfb8ac84ba8088bd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a04d1c1166d5595f325762215fea8666/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a04d1c1166d5595f325762215fea8666/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/43793a18ed046ef13340e21587530c75/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/43793a18ed046ef13340e21587530c75/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/890b4acaaf9163a7d5389028f9fc560d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/890b4acaaf9163a7d5389028f9fc560d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/f3d2d8c338781a7dd68a40c9e93691fc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/f3d2d8c338781a7dd68a40c9e93691fc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/61e088964d20185f0c514a3ac8558fea/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/61e088964d20185f0c514a3ac8558fea/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/86a4e998e462f8b52631c81077f8f4ec/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/86a4e998e462f8b52631c81077f8f4ec/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/7e8ffb28e448ab6c4f11223d6fafe34a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/7e8ffb28e448ab6c4f11223d6fafe34a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/b5ded1223e09f120c93d6ff1584fabc5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/b5ded1223e09f120c93d6ff1584fabc5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/ebe09c06ed8129d5098e2442a5dfc296/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/ebe09c06ed8129d5098e2442a5dfc296/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/f9178809e87bd65a1e583122b0b521cc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/f9178809e87bd65a1e583122b0b521cc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/matthew/.gradle/caches/transforms-2/files-2.1/e1113729d494c5a6b82b5db334caf442/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/matthew/.gradle/caches/transforms-2/files-2.1/e1113729d494c5a6b82b5db334caf442/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/ab5da74f2e3dd0790dc84d8a45be63a8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/ab5da74f2e3dd0790dc84d8a45be63a8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/d3333515709f9634f94c4f8cce9f4ac0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/d3333515709f9634f94c4f8cce9f4ac0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/0d3c8b5fab8064400639629bc983ffd6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/0d3c8b5fab8064400639629bc983ffd6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/42adc0530aa07309a121153dfe220bed/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/42adc0530aa07309a121153dfe220bed/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/c101c8234689a523d271587e534b40df/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/c101c8234689a523d271587e534b40df/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/03086ccd1886e59e4afde47e0e9bb839/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/03086ccd1886e59e4afde47e0e9bb839/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/8309f882614c95049f291e18e3f1ac96/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/8309f882614c95049f291e18e3f1ac96/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/22186686799d87dd583dafb660503a74/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/22186686799d87dd583dafb660503a74/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/7d255c6968dbdca9a449f402b63f48d0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/7d255c6968dbdca9a449f402b63f48d0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/15972e26e5a079e0b8681542c5543aad/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/15972e26e5a079e0b8681542c5543aad/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/b5291e374fab89ee44fcf1fad15d6a9f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/b5291e374fab89ee44fcf1fad15d6a9f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/4c2e436a42b342b236561733efb0dfa3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/4c2e436a42b342b236561733efb0dfa3/AndroidManifest.xml:20:5-44
+INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:14:5-16:51
+INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:14:5-16:51
+	android:targetSdkVersion
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:16:9-48
+		INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:15:9-35
+		INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml
+		MERGED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:15:9-35
+		MERGED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:15:9-35
+		MERGED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:15:9-35
+		MERGED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:15:9-35
+		INJECTED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:18:5-67
+MERGED from [:nativescript_socket.io:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/d4911252bd1b2e3da89e4f01d7e9cd3b/AndroidManifest.xml:9:5-67
+MERGED from [:nativescript_socket.io:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/d4911252bd1b2e3da89e4f01d7e9cd3b/AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:18:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:19:5-80
+	android:name
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:19:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:20:22-78
+application
+ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:22:5-45:19
+MERGED from [com.google.android.gms:play-services-location:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/e07c3794dcc7c0d102d41c61c88b3b05/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-location:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/e07c3794dcc7c0d102d41c61c88b3b05/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.material:material:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/0f468cc8c84bff706cb8515af389b9be/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/0f468cc8c84bff706cb8515af389b9be/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a583e3f31fe7ed75833fc5c7caea423c/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a583e3f31fe7ed75833fc5c7caea423c/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/993ae94696b8decf0b7016b1b0e6e430/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/993ae94696b8decf0b7016b1b0e6e430/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/530b5c08ce9be172d08a692c7bf8cbb7/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/530b5c08ce9be172d08a692c7bf8cbb7/AndroidManifest.xml:19:5-21:19
+MERGED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:16:5-30:19
+MERGED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:16:5-30:19
+MERGED from [:barcodescanner-release-2.1.6:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/19a11754f7d3eb394638f80a3106c2be/AndroidManifest.xml:11:5-12:19
+MERGED from [:barcodescanner-release-2.1.6:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/19a11754f7d3eb394638f80a3106c2be/AndroidManifest.xml:11:5-12:19
+MERGED from [:widgets-release:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a37ba846d96cc845c94bdafcf547b842/AndroidManifest.xml:11:5-12:19
+MERGED from [:widgets-release:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a37ba846d96cc845c94bdafcf547b842/AndroidManifest.xml:11:5-12:19
+MERGED from [androidx.core:core:1.0.1] /Users/matthew/.gradle/caches/transforms-2/files-2.1/e1113729d494c5a6b82b5db334caf442/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] /Users/matthew/.gradle/caches/transforms-2/files-2.1/e1113729d494c5a6b82b5db334caf442/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/ab5da74f2e3dd0790dc84d8a45be63a8/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/ab5da74f2e3dd0790dc84d8a45be63a8/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] /Users/matthew/.gradle/caches/transforms-2/files-2.1/e1113729d494c5a6b82b5db334caf442/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:27:9-41
+	android:icon
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:26:9-38
+	android:allowBackup
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:25:9-35
+	android:theme
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:28:9-40
+	android:usesCleartextTraffic
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:23:9-55
+activity#com.tns.NativeScriptActivity
+ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:33:9-43:20
+	android:label
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:35:13-58
+	android:configChanges
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:36:13-74
+	android:theme
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:37:13-53
+	android:name
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:34:13-56
+meta-data#SET_THEME_ON_LAUNCH
+ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:38:13-96
+	android:resource
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:38:59-93
+	android:name
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:38:24-58
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:39:13-42:29
+action#android.intent.action.MAIN
+ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:40:17-69
+	android:name
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:40:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:41:17-77
+	android:name
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:41:27-74
+activity#com.tns.ErrorReportActivity
+ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:44:9-64
+	android:name
+		ADDED from /Users/matthew/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/AndroidManifest.xml:44:19-61
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a583e3f31fe7ed75833fc5c7caea423c/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a583e3f31fe7ed75833fc5c7caea423c/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a583e3f31fe7ed75833fc5c7caea423c/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/a583e3f31fe7ed75833fc5c7caea423c/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/530b5c08ce9be172d08a692c7bf8cbb7/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/530b5c08ce9be172d08a692c7bf8cbb7/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.4.0] /Users/matthew/.gradle/caches/transforms-2/files-2.1/530b5c08ce9be172d08a692c7bf8cbb7/AndroidManifest.xml:20:20-65
+uses-permission#android.permission.CAMERA
+ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:9:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:10:5-69
+	android:name
+		ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:10:22-66
+uses-feature#android.hardware.camera
+ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:12:5-14:36
+	android:required
+		ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:14:9-33
+	android:name
+		ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:13:9-47
+activity#com.google.zxing.client.android.CaptureActivity
+ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:17:9-29:20
+	android:clearTaskOnLaunch
+		ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:19:13-45
+	android:windowSoftInputMode
+		ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:23:13-60
+	android:exported
+		ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:21:13-37
+	android:configChanges
+		ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:20:13-74
+	android:theme
+		ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:22:13-71
+	android:name
+		ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:18:13-75
+intent-filter#action:name:com.google.zxing.client.android.SCAN+category:name:android.intent.category.DEFAULT
+ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:24:13-28:29
+action#com.google.zxing.client.android.SCAN
+ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:25:17-79
+	android:name
+		ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:25:25-76
+category#android.intent.category.DEFAULT
+ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:27:17-76
+	android:name
+		ADDED from [:nativescript_barcodescanner:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/944f9aa6aea9c16073fc6d4151bd681c/AndroidManifest.xml:27:27-73
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from [:nativescript_geolocation:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/45b09187d1c870f3d1ac6809daca6f0d/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from [:nativescript_geolocation:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/45b09187d1c870f3d1ac6809daca6f0d/AndroidManifest.xml:9:22-76
+uses-permission#android.permission.CALL_PHONE
+ADDED from [:nativescript_phone:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/6c5c6ad7364fd17886e6e2437aaf0c1f/AndroidManifest.xml:9:5-69
+	android:name
+		ADDED from [:nativescript_phone:] /Users/matthew/.gradle/caches/transforms-2/files-2.1/6c5c6ad7364fd17886e6e2437aaf0c1f/AndroidManifest.xml:9:22-66

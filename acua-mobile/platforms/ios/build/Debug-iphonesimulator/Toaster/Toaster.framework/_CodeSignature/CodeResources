@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Toaster.swiftmodule/i386.swiftmodule</key>
 		<data>
-		ddd3Ub08vM4QScu2O9HaMIpUHQ0=
+		RdiXRBDij+xSp1qxd5JXOScXVj4=
 		</data>
 		<key>Modules/Toaster.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Toaster.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		IkKOf6gOFMp0xQw8xh19xegAZjo=
+		SOKzRWP/KuNYoqPozPHJ94meFzM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -91,11 +91,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ddd3Ub08vM4QScu2O9HaMIpUHQ0=
+			RdiXRBDij+xSp1qxd5JXOScXVj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			9ECAZ42SnVKaSG15CWP59VBVKVQcuLwB5pmUIQrfmic=
+			Wyj4/n0coZ90+K9W8WGh3avEo0jhVl+jU2uyv9v8ByI=
 			</data>
 		</dict>
 		<key>Modules/Toaster.swiftmodule/x86_64.swiftdoc</key>
@@ -113,11 +113,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IkKOf6gOFMp0xQw8xh19xegAZjo=
+			SOKzRWP/KuNYoqPozPHJ94meFzM=
 			</data>
 			<key>hash2</key>
 			<data>
-			owZQey8flqWUdW7nuJZvINgKwA3N5xPRkXNW8XOE+KU=
+			I2QSbK1Vh+lusaYySGMLVMJCPrRgn827HEuO7LTtwko=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

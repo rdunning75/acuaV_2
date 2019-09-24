@@ -100,13 +100,6 @@
 			name = "tns-core-modules";
 			sourceTree = "<group>";
 		};
-		7E176746F1554F138E3F11EB /* TNSNativeSource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = TNSNativeSource;
-			sourceTree = "<group>";
-		};
 		858B832518CA111C00AB12DE = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +108,8 @@
 				858B833018CA111C00AB12DE /* Frameworks */,
 				858B832F18CA111C00AB12DE /* Products */,
 				6FDF56416611469EA2CBBA1C /* tns-core-modules */,
-				7E176746F1554F138E3F11EB /* TNSNativeSource */,
 				A899148CC513C3E82ECA1869 /* Pods */,
+				381AAF61A2E14AF297DD006F /* TNSNativeSource */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +181,13 @@
 				B9BC7ACAD9C04DB4AB606F57 /* build.xcconfig */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		381AAF61A2E14AF297DD006F /* TNSNativeSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TNSNativeSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,6 +482,7 @@
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 					"\"$(SRCROOT)/../../node_modules/tns-core-modules/platforms/ios/src\"",
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
+					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/acuamobile/acuamobile-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -511,6 +512,7 @@
 					"$(SRCROOT)/internal",
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 					"\"$(SRCROOT)/../../node_modules/tns-core-modules/platforms/ios/src\"",
+					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/acuamobile/acuamobile-Info.plist";
