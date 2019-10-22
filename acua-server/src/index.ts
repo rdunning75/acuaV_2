@@ -12,5 +12,13 @@ export async function main(options: ApplicationConfig = {}) {
   console.log(`Server is running at ${url}`);
   console.log(`Try ${url}/ping`);
 
+
+//   console.log({
+//     host            : process.env.MYSQL_HOST,
+//     user            : process.env.MYSQL_USER,
+//     password        : process.env.MYSQL_SECRET,
+//     database        : process.env.MYSQL_DB
+//  })
+
   return app;
 }

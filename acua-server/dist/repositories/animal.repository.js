@@ -14,6 +14,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const repository_1 = require("@loopback/repository");
 const models_1 = require("../models");
+//import { MongoDataSource } from '../datasources';
 const datasources_1 = require("../datasources");
 const core_1 = require("@loopback/core");
 let AnimalRepository = class AnimalRepository extends repository_1.DefaultCrudRepository {
@@ -22,8 +23,8 @@ let AnimalRepository = class AnimalRepository extends repository_1.DefaultCrudRe
     }
 };
 AnimalRepository = __decorate([
-    __param(0, core_1.inject('datasources.mongo')),
-    __metadata("design:paramtypes", [datasources_1.MongoDataSource])
+    __param(0, core_1.inject('datasources.mysql')),
+    __metadata("design:paramtypes", [datasources_1.MysqlDataSource])
 ], AnimalRepository);
 exports.AnimalRepository = AnimalRepository;
 //# sourceMappingURL=animal.repository.js.map

@@ -1,6 +1,6 @@
 import {DefaultCrudRepository} from '@loopback/repository';
 import {Ticket} from '../models';
-import {MongoDataSource} from '../datasources';
+import {MysqlDataSource} from '../datasources';
 import {inject} from '@loopback/core';
 
 export class TicketRepository extends DefaultCrudRepository<
@@ -8,7 +8,7 @@ export class TicketRepository extends DefaultCrudRepository<
   typeof Ticket.prototype.id
 > {
   constructor(
-    @inject('datasources.mongo') dataSource: MongoDataSource,
+    @inject('datasources.mysql') dataSource: MysqlDataSource,
   ) {
     super(Ticket, dataSource);
   }

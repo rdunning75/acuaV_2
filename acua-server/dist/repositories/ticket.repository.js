@@ -22,8 +22,8 @@ let TicketRepository = class TicketRepository extends repository_1.DefaultCrudRe
     }
 };
 TicketRepository = __decorate([
-    __param(0, core_1.inject('datasources.mongo')),
-    __metadata("design:paramtypes", [datasources_1.MongoDataSource])
+    __param(0, core_1.inject('datasources.mysql')),
+    __metadata("design:paramtypes", [datasources_1.MysqlDataSource])
 ], TicketRepository);
 exports.TicketRepository = TicketRepository;
 //# sourceMappingURL=ticket.repository.js.map

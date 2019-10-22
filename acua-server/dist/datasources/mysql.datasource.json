@@ -1,0 +1,10 @@
+{
+    "name": "mysql",
+    "connector": "mysql",
+    "url": "acua-server.database.windows.net",
+    "host": "127.0.0.1",
+    "port": 1433,
+    "user": "acua-admin",
+    "password": "Csula2020",
+    "database": "acua-azure"
+}
