@@ -1,25 +1,6 @@
-/*
- * ToastCenter.swift
- *
- *            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
- *                    Version 2, December 2004
- *
- * Copyright (C) 2013-2015 Su Yeol Jeon
- *
- * Everyone is permitted to copy and distribute verbatim or modified
- * copies of this license document, and changing it is allowed as long
- * as the name is changed.
- *
- *            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
- *   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
- *
- *  0. You just DO WHAT THE FUCK YOU WANT TO.
- *
- */
-
 import UIKit
 
-open class ToastCenter {
+open class ToastCenter: NSObject {
 
   // MARK: Properties
 
@@ -30,19 +11,33 @@ open class ToastCenter {
   }()
 
   open var currentToast: Toast? {
-    return self.queue.operations.first as? Toast
+    return self.queue.operations.first { !$0.isCancelled && !$0.isFinished } as? Toast
   }
-
-  open static let `default` = ToastCenter()
+  
+  /// If this value is `true` and the user is using VoiceOver,
+  /// VoiceOver will announce the text in the toast when `ToastView` is displayed.
+  @objc public var isSupportAccessibility: Bool = true
+  
+  /// By default, queueing for toast is enabled.
+  /// If this value is `false`, only the last requested toast will be shown.
+  @objc public var isQueueEnabled: Bool = true
+  
+  @objc public static let `default` = ToastCenter()
 
 
   // MARK: Initializing
 
-  init() {
+  override init() {
+    super.init()
+    #if swift(>=4.2)
+    let name = UIDevice.orientationDidChangeNotification
+    #else
+    let name = NSNotification.Name.UIDeviceOrientationDidChange
+    #endif
     NotificationCenter.default.addObserver(
       self,
       selector: #selector(self.deviceOrientationDidChange),
-      name: .UIDeviceOrientationDidChange,
+      name: name,
       object: nil
     )
   }
@@ -51,22 +46,23 @@ open class ToastCenter {
   // MARK: Adding Toasts
 
   open func add(_ toast: Toast) {
+    if !isQueueEnabled {
+      cancelAll()
+    }
     self.queue.addOperation(toast)
   }
 
 
   // MARK: Cancelling Toasts
 
-  open func cancelAll() {
-    for toast in self.queue.operations {
-      toast.cancel()
-    }
+  @objc open func cancelAll() {
+    queue.cancelAllOperations()
   }
 
 
   // MARK: Notifications
 
-  dynamic func deviceOrientationDidChange() {
+  @objc dynamic func deviceOrientationDidChange() {
     if let lastToast = self.queue.operations.first as? Toast {
       lastToast.view.setNeedsLayout()
     }

@@ -7,9 +7,9 @@ pod 'Socket.IO-Client-Swift', :git => 'https://github.com/triniwiz/socket.io-cli
 
 # End Podfile
 
-# Begin Podfile - /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/node_modules/nativescript-toast/platforms/ios/Podfile
-pod 'Toaster', :git => 'https://github.com/devxoul/Toaster.git'
-# End Podfile
+## Begin Podfile - /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/node_modules/nativescript-toast/platforms/ios/Podfile
+#pod 'Toaster', :git => 'https://github.com/devxoul/Toaster.git'
+## End Podfile
 
 # NativeScriptPlatformSection /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/node_modules/tns-core-modules/platforms/ios/Podfile with 9.0
 platform :ios, '9.0'

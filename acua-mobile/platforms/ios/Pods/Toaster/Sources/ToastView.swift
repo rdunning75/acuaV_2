@@ -1,22 +1,3 @@
-/*
- * ToastView.swift
- *
- *            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
- *                    Version 2, December 2004
- *
- * Copyright (C) 2013-2015 Su Yeol Jeon
- *
- * Everyone is permitted to copy and distribute verbatim or modified
- * copies of this license document, and changing it is allowed as long
- * as the name is changed.
- *
- *            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
- *   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
- *
- *  0. You just DO WHAT THE FUCK YOU WANT TO.
- *
- */
-
 import UIKit
 
 open class ToastView: UIView {
@@ -28,6 +9,11 @@ open class ToastView: UIView {
     set { self.textLabel.text = newValue }
   }
 
+  open var attributedText: NSAttributedString? {
+    get { return self.textLabel.attributedText }
+    set { self.textLabel.attributedText = newValue }
+  }
+  
 
   // MARK: Appearance
 
@@ -38,48 +24,92 @@ open class ToastView: UIView {
   }
 
   /// The background view's corner radius.
-  open dynamic var cornerRadius: CGFloat {
+  @objc open dynamic var cornerRadius: CGFloat {
     get { return self.backgroundView.layer.cornerRadius }
     set { self.backgroundView.layer.cornerRadius = newValue }
   }
 
   /// The inset of the text label.
-  open dynamic var textInsets = UIEdgeInsets(top: 6, left: 10, bottom: 6, right: 10)
+  @objc open dynamic var textInsets = UIEdgeInsets(top: 6, left: 10, bottom: 6, right: 10)
 
   /// The color of the text label's text.
-  open dynamic var textColor: UIColor? {
+  @objc open dynamic var textColor: UIColor? {
     get { return self.textLabel.textColor }
     set { self.textLabel.textColor = newValue }
   }
 
   /// The font of the text label.
-  open dynamic var font: UIFont? {
+  @objc open dynamic var font: UIFont? {
     get { return self.textLabel.font }
     set { self.textLabel.font = newValue }
   }
 
   /// The bottom offset from the screen's bottom in portrait mode.
-  open dynamic var bottomOffsetPortrait: CGFloat = {
+  @objc open dynamic var bottomOffsetPortrait: CGFloat = {
     switch UIDevice.current.userInterfaceIdiom {
-    case .unspecified: return 30
+    // specific values
     case .phone: return 30
     case .pad: return 60
     case .tv: return 90
     case .carPlay: return 30
+    // default values
+    case .unspecified: fallthrough
+    @unknown default: return 30
     }
   }()
 
   /// The bottom offset from the screen's bottom in landscape mode.
-  open dynamic var bottomOffsetLandscape: CGFloat = {
+  @objc open dynamic var bottomOffsetLandscape: CGFloat = {
     switch UIDevice.current.userInterfaceIdiom {
-    case .unspecified: return 20
+    // specific values
     case .phone: return 20
     case .pad: return 40
     case .tv: return 60
     case .carPlay: return 20
+    // default values
+    case .unspecified: fallthrough
+    @unknown default: return 20
     }
   }()
+  
+  /// If this value is `true` and SafeArea is available,
+  /// `safeAreaInsets.bottom` will be added to the `bottomOffsetPortrait` and `bottomOffsetLandscape`.
+  /// Default value: false
+  @objc open dynamic var useSafeAreaForBottomOffset: Bool = false
 
+  /// The width ratio of toast view in window, specified as a value from 0.0 to 1.0.
+  /// Default value: 0.875
+  @objc open dynamic var maxWidthRatio: CGFloat = (280.0 / 320.0)
+  
+  /// The shape of the layer’s shadow.
+  @objc open dynamic var shadowPath: CGPath? {
+    get { return self.layer.shadowPath }
+    set { self.layer.shadowPath = newValue }
+  }
+  
+  /// The color of the layer’s shadow.
+  @objc open dynamic var shadowColor: UIColor? {
+    get { return self.layer.shadowColor.flatMap { UIColor(cgColor: $0) } }
+    set { self.layer.shadowColor = newValue?.cgColor }
+  }
+  
+  /// The opacity of the layer’s shadow.
+  @objc open dynamic var shadowOpacity: Float {
+    get { return self.layer.shadowOpacity }
+    set { self.layer.shadowOpacity = newValue }
+  }
+  
+  /// The offset (in points) of the layer’s shadow.
+  @objc open dynamic var shadowOffset: CGSize {
+    get { return self.layer.shadowOffset }
+    set { self.layer.shadowOffset = newValue }
+  }
+  
+  /// The blur radius (in points) used to render the layer’s shadow.
+  @objc open dynamic var shadowRadius: CGFloat {
+    get { return self.layer.shadowRadius }
+    set { self.layer.shadowRadius = newValue }
+  }
 
   // MARK: UI
 
@@ -90,17 +120,21 @@ open class ToastView: UIView {
     self.clipsToBounds = true
     return self
   }()
+  
   private let textLabel: UILabel = {
     let `self` = UILabel()
     self.textColor = .white
     self.backgroundColor = .clear
     self.font = {
       switch UIDevice.current.userInterfaceIdiom {
-      case .unspecified: return .systemFont(ofSize: 12)
+      // specific values
       case .phone: return .systemFont(ofSize: 12)
       case .pad: return .systemFont(ofSize: 16)
       case .tv: return .systemFont(ofSize: 20)
       case .carPlay: return .systemFont(ofSize: 12)
+      // default values
+      case .unspecified: fallthrough
+      @unknown default: return .systemFont(ofSize: 12)
       }
     }()
     self.numberOfLines = 0
@@ -129,7 +163,7 @@ open class ToastView: UIView {
     super.layoutSubviews()
     let containerSize = ToastWindow.shared.frame.size
     let constraintSize = CGSize(
-      width: containerSize.width * (280.0 / 320.0),
+      width: containerSize.width * maxWidthRatio - self.textInsets.left - self.textInsets.right,
       height: CGFloat.greatestFiniteMagnitude
     )
     let textLabelSize = self.textLabel.sizeThatFits(constraintSize)
@@ -160,6 +194,9 @@ open class ToastView: UIView {
       width = containerSize.height
       height = containerSize.width
       y = self.bottomOffsetLandscape
+    }
+    if #available(iOS 11.0, *), useSafeAreaForBottomOffset {
+      y += ToastWindow.shared.safeAreaInsets.bottom
     }
 
     let backgroundViewSize = self.backgroundView.frame.size
