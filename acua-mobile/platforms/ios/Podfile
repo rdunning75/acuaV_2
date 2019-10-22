@@ -1,10 +1,6 @@
 use_frameworks!
 
 target "acuamobile" do
-# Begin Podfile - /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/node_modules/nativescript-socket.io/platforms/ios/Podfile
-#### pod 'Socket.IO-Client-Swift', '~> 11.0'
-
-# End Podfile
 
 # Begin Podfile - /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/node_modules/nativescript-socketio/platforms/ios/Podfile
 pod 'Socket.IO-Client-Swift', :git => 'https://github.com/triniwiz/socket.io-client-swift.git'
@@ -30,6 +26,32 @@ pod 'Toast', '~> 3.0'
 # End Podfile
 
 # Begin Podfile - /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/node_modules/tns-core-modules/platforms/ios/Podfile
+# platform :ios, '9.0'
+use_frameworks!
+
+pod 'MaterialComponents/Tabs', '~> 84.4'
+# End Podfile
+
+# Begin Podfile - /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/node_modules/nativescript-socketio/platforms/ios/Podfile
+pod 'Socket.IO-Client-Swift', :git => 'https://github.com/triniwiz/socket.io-client-swift.git'
+
+# End Podfile
+
+# Begin Podfile - /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/node_modules/nativescript-toast/platforms/ios/Podfile
+pod 'Toaster', '~> 2.0.1'
+# End Podfile
+
+# Begin Podfile - /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/node_modules/nativescript-toasts/platforms/ios/Podfile
+# platform :ios, '8.0'
+pod 'Toast', '~> 3.0'
+
+# End Podfile
+
+# Begin Podfile - /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/node_modules/nativescript-toasty/platforms/ios/Podfile
+pod 'Toast', '~> 3.0'
+# End Podfile
+
+# Begin Podfile - /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/node_modules/tns-core-modules/platforms/ios/Podfile
 # platform :ios, '9.0'
 use_frameworks!
 

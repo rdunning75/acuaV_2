@@ -1,0 +1,10 @@
+{
+  "name": "microsql",
+  "connector": "mssql",
+  "url": "",
+  "host": "",
+  "port": 0,
+  "user": "",
+  "password": "",
+  "database": ""
+}

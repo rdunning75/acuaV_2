@@ -8,16 +8,16 @@
       <Label text="First and last name:" />
       <TextView v-model="name" />
 
-      <Label v-if="query" text="query:" />
-      <Label textWrap="true">{{query}}</Label>
-      
+      <Label text="What are you here for?"/>
+      <TextView v-model="query"/>
+
       <Button @tap="submitTicket" text="Submit Ticket"/>
     </StackLayout>
   </Page>
 </template>
 
 <script>
-import { mapState, mapActions, mapMutations } from 'vuex'
+import  { mapState, mapActions, mapMutations } from 'vuex'
 import Home from './Home.vue'
 
 export default {
@@ -25,6 +25,7 @@ export default {
     return {
       phone: '',
       name: '',
+      query:'',
       home: Home,
       limit: 0
     }
@@ -33,9 +34,7 @@ export default {
     ...mapActions(['addTicket']),
     // this.setTicketInfo(object), where object contains phone, name, query, comment properties,
     submitTicket () {
-
       this.$navigateTo(this.home)
-
       this.addTicket({
         name: this.name,
         phone: this.phone,
@@ -50,7 +49,7 @@ export default {
   watch: {
     approvedTicket(newVal, oldVal) {
       if (this.limit < 1) {
-        if (newVal !== null) {
+        if (newVal != null) {
           alert({
             title: "Ticket Submitted",
             message: "Hello " + newVal.name + ", you're ticket # is " + newVal.number
@@ -67,9 +66,6 @@ export default {
       }
       this.limit++
     }
-  },
-  props: {
-    query: String
   }
 }
 </script>

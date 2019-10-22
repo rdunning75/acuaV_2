@@ -10,27 +10,27 @@
 		</data>
 		<key>Headers/SocketIO-Swift.h</key>
 		<data>
-		Bl9iwgM8faPhBm3/bMG2/vKZjw0=
+		LQIOWQx7xxaK+9WNou6hq0Fwtmw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SPadVKmr8sFHT5VNpKGNHHkRRn0=
+		doWwKkqEfdo791v1hBclFbwXPgc=
 		</data>
 		<key>Modules/SocketIO.swiftmodule/i386.swiftdoc</key>
 		<data>
-		6F8Exo8XOvluwJDSpk2W4bxxtu0=
+		Cgf6B0Hy1Hk1OA/oHNeIMlQvRc0=
 		</data>
 		<key>Modules/SocketIO.swiftmodule/i386.swiftmodule</key>
 		<data>
-		sxPV3AFZsssF8KyOQEay4mlv0rY=
+		R3Q2SWHZPnDJvWbDDgdsPVJqdxk=
 		</data>
 		<key>Modules/SocketIO.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		A7lN8yFnfM8lA/7a7oKuz7WAju4=
+		ZKaSrOgpAMCvKJ4tQHKTep7yErY=
 		</data>
 		<key>Modules/SocketIO.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		wYFmPK5/ZdgimR+FN8IwCVNXsVY=
+		BYYomsVCiOT92xSHiCmdxmU2J4w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,55 +54,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Bl9iwgM8faPhBm3/bMG2/vKZjw0=
+			LQIOWQx7xxaK+9WNou6hq0Fwtmw=
 			</data>
 			<key>hash2</key>
 			<data>
-			CRriai90mAez2SUnYJ14h4EOQn0AWw8w7XeUWUcFSz8=
+			IS13BPxsr/sw0yATdAt9dsS35tVKT5sfGNFvCyY8C0Q=
 			</data>
 		</dict>
 		<key>Modules/SocketIO.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6F8Exo8XOvluwJDSpk2W4bxxtu0=
+			Cgf6B0Hy1Hk1OA/oHNeIMlQvRc0=
 			</data>
 			<key>hash2</key>
 			<data>
-			bL9QrIc4Bf0pfWYgkPy8XUepzQAV7lgCsa+4chi4qkQ=
+			5tTKgCbHpBLH6DSFkuiQN5CNR38EodtfvL4KbgHpGMc=
 			</data>
 		</dict>
 		<key>Modules/SocketIO.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sxPV3AFZsssF8KyOQEay4mlv0rY=
+			R3Q2SWHZPnDJvWbDDgdsPVJqdxk=
 			</data>
 			<key>hash2</key>
 			<data>
-			bcQFs/3i2enOGbj54+WRftEg+QfGFddqWwuzBMOL6oQ=
+			gdU3m0DjiDdrGeVigChywAJIA78jlRvENGwGgi/0SUw=
 			</data>
 		</dict>
 		<key>Modules/SocketIO.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			A7lN8yFnfM8lA/7a7oKuz7WAju4=
+			ZKaSrOgpAMCvKJ4tQHKTep7yErY=
 			</data>
 			<key>hash2</key>
 			<data>
-			KUA+jdtfJA0eSjhgh+uN3pAPzjRcpr+rjPRnozbvE2s=
+			6w0n3WfYUm2uDAfgJeylg6afKhaELTFzTA7fGetH53c=
 			</data>
 		</dict>
 		<key>Modules/SocketIO.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wYFmPK5/ZdgimR+FN8IwCVNXsVY=
+			BYYomsVCiOT92xSHiCmdxmU2J4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			RoC0IAudOeq0D58gAPsE3b0WEDLmrfiS+O9Uoy3P+cM=
+			1GmJ+g7XUOXnyk2Z8Lq32KbK/V2YsETcpdkKHsL6nDI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
