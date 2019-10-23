@@ -28,7 +28,7 @@ let FaqController = class FaqController {
             return null;
         }
         const window = windows[FaqController.windowGen++ % windows.length].window;
-        faq.index = FaqController.numberGen++;
+        faq.index_ = FaqController.numberGen++;
         faq.window = window;
         return await this.faqRepository.create(faq);
     }
