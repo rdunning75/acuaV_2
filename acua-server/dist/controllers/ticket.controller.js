@@ -47,7 +47,7 @@ let TicketController = class TicketController {
         }
         const window = windows[TicketController.windowGen++ % windows.length].window;
         ticket.number = TicketController.numberGen[ticket.location];
-        ticket.index = TicketController.numberGen[ticket.location]++;
+        ticket.index_ = TicketController.numberGen[ticket.location]++;
         ticket.window = window;
         return await this.ticketRepository.create(ticket);
     }

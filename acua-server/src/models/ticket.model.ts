@@ -16,7 +16,7 @@ export class Ticket extends Entity {
   @property({
     type: 'number'
   })
-  index: number;
+  index_: number;
 
   @property({
     type: 'string',

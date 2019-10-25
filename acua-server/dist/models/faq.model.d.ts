@@ -1,7 +1,7 @@
 import { Entity } from '@loopback/repository';
 export declare class Faq extends Entity {
     id?: string;
-    index?: number;
+    index_?: number;
     query: string;
     answer?: string;
     window?: number;

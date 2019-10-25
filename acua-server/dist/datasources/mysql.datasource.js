@@ -12,18 +12,32 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const repository_1 = require("@loopback/repository");
-const models_1 = require("../models");
-const datasources_1 = require("../datasources");
 const core_1 = require("@loopback/core");
-let TicketRepository = class TicketRepository extends repository_1.DefaultCrudRepository {
-    constructor(dataSource) {
-        super(models_1.Ticket, dataSource);
+const repository_1 = require("@loopback/repository");
+const config = require("./mysql.datasource.json");
+let MysqlDataSource = class MysqlDataSource extends repository_1.juggler.DataSource {
+    constructor(dsConfig = config) {
+        super(dsConfig);
+    }
+    /**
+     * Start the datasource when application is started
+     */
+    start() {
+        // Add your logic here to be invoked when the application is started
+    }
+    /**
+     * Disconnect the datasource when application is stopped. This allows the
+     * application to be shut down gracefully.
+     */
+    stop() {
+        return super.disconnect();
     }
 };
-TicketRepository = __decorate([
-    __param(0, core_1.inject('datasources.mysql')),
-    __metadata("design:paramtypes", [datasources_1.MysqlDataSource])
-], TicketRepository);
-exports.TicketRepository = TicketRepository;
-//# sourceMappingURL=ticket.repository.js.map
+MysqlDataSource.dataSourceName = 'mysql';
+MysqlDataSource = __decorate([
+    core_1.lifeCycleObserver('datasource'),
+    __param(0, core_1.inject('datasources.config.mysql', { optional: true })),
+    __metadata("design:paramtypes", [Object])
+], MysqlDataSource);
+exports.MysqlDataSource = MysqlDataSource;
+//# sourceMappingURL=mysql.datasource.js.map
