@@ -1,5 +1,9 @@
 {
   "name": "mongo",
   "connector": "mongodb",
-  "url": "mongodb+srv://acua-team:Bvl0bZBOi0GHXpGq@acua-s8fjv.azure.mongodb.net/acua?retryWrites=true"
+  "host" : "localhost",
+  "port" : 27017,
+  "url" : "",
+  "password" : "",
+  "database" : "test"
 }

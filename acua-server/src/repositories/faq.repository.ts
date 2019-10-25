@@ -1,6 +1,7 @@
 import {DefaultCrudRepository} from '@loopback/repository';
 import {Faq} from '../models';
-import {MongoDataSource} from '../datasources';
+// import {MongoDataSource} from '../datasources';
+import {MysqlDataSource} from '../datasources';
 import {inject} from '@loopback/core';
 
 export class FaqRepository extends DefaultCrudRepository<
@@ -8,7 +9,7 @@ export class FaqRepository extends DefaultCrudRepository<
   typeof Faq.prototype.id
 > {
   constructor(
-    @inject('datasources.mongo') dataSource: MongoDataSource,
+    @inject('datasources.mysql') dataSource: MysqlDataSource,
   ) {
     super(Faq, dataSource);
   }

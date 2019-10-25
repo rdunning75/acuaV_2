@@ -8,16 +8,16 @@
       <Label text="First and last name:" />
       <TextView v-model="name" />
 
-      <Label v-if="query" text="query:" />
-      <Label textWrap="true">{{query}}</Label>
-      
+      <Label text="What are you here for?"/>
+      <TextView v-model="query"/>
+
       <Button @tap="submitTicket" text="Submit Ticket"/>
     </StackLayout>
   </Page>
 </template>
 
 <script>
-import { mapState, mapActions, mapMutations } from 'vuex'
+import  { mapState, mapActions, mapMutations } from 'vuex'
 import Home from './Home.vue'
 
 export default {

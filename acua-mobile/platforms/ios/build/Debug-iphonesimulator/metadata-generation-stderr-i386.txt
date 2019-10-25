@@ -1,109 +1,131 @@
 clang version 7.0.0 (tags/RELEASE_700/final)
-Target: i386-apple-darwin18.7.0
+Target: i386-apple-darwin18.6.0
 Thread model: posix
 InstalledDir: 
 clang Invocation:
- "clang-tool" "-cc1" "-triple" "i386-apple-ios9.0.0-simulator" "-fsyntax-only" "-disable-free" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "umbrella.h" "-mrelocation-model" "pic" "-pic-level" "2" "-mthread-model" "posix" "-mdisable-fp-elim" "-masm-verbose" "-munwind-tables" "-faligned-alloc-unavailable" "-target-cpu" "yonah" "-dwarf-column-info" "-debugger-tuning=lldb" "-target-linker-version" "409.12" "-v" "-resource-dir" "lib/clang/7.0.0" "-isysroot" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk" "-D" "__NATIVESCRIPT_METADATA_GENERATOR=1" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/include" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization/MDFInternationalization.framework/Headers" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift/SocketIO.framework/Headers" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream/Starscream.framework/Headers" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast/Toast.framework/Headers" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster/Toaster.framework/Headers" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal/Swift-Modules" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal/" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-barcodescanner/platforms/ios" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules-widgets/platforms/ios" "-D" "COCOAPODS=1" "-D" "DEBUG=1" "-Wno-unknown-pragmas" "-Wno-ignored-attributes" "-Wno-nullability-completeness" "-Wno-expansion-to-defined" "-std=gnu99" "-fdebug-compilation-dir" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal/metadata-generator/bin" "-ferror-limit" "0" "-fmessage-length" "0" "-stack-protector" "1" "-fblocks" "-fencode-extended-block-signature" "-fimplicit-module-maps" "-fregister-global-dtors-with-atexit" "-fobjc-runtime=ios-9.0.0" "-fobjc-exceptions" "-fexceptions" "-fmax-type-align=16" "-fdiagnostics-show-option" "-x" "objective-c" "umbrella.h"
+ "clang-tool" "-cc1" "-triple" "i386-apple-ios9.0.0-simulator" "-fsyntax-only" "-disable-free" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "umbrella.h" "-mrelocation-model" "pic" "-pic-level" "2" "-mthread-model" "posix" "-mdisable-fp-elim" "-masm-verbose" "-munwind-tables" "-faligned-alloc-unavailable" "-target-cpu" "yonah" "-dwarf-column-info" "-debugger-tuning=lldb" "-target-linker-version" "409.12" "-v" "-resource-dir" "lib/clang/7.0.0" "-isysroot" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk" "-D" "__NATIVESCRIPT_METADATA_GENERATOR=1" "-I" "/Users/DrSamsonnite/Desktop/CS" "-I" "Course" "-I" "materials/Senior" "-I" "DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/include" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization/MDFInternationalization.framework/Headers" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift/SocketIO.framework/Headers" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream/Starscream.framework/Headers" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast/Toast.framework/Headers" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster/Toaster.framework/Headers" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal/Swift-Modules" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-F/Users/DrSamsonnite/Desktop/CS" "-FCourse" "-Fmaterials/Senior" "-FDEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal/" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-barcodescanner/platforms/ios" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules-widgets/platforms/ios" "-D" "COCOAPODS=1" "-D" "DEBUG=1" "-Wno-unknown-pragmas" "-Wno-ignored-attributes" "-Wno-nullability-completeness" "-Wno-expansion-to-defined" "-std=gnu99" "-fdebug-compilation-dir" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal/metadata-generator/bin" "-ferror-limit" "0" "-fmessage-length" "0" "-stack-protector" "1" "-fblocks" "-fencode-extended-block-signature" "-fimplicit-module-maps" "-fregister-global-dtors-with-atexit" "-fobjc-runtime=ios-9.0.0" "-fobjc-exceptions" "-fexceptions" "-fmax-type-align=16" "-fdiagnostics-show-option" "-x" "objective-c" "umbrella.h"
 
-ignoring nonexistent directory "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/include"
-ignoring nonexistent directory "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal/Swift-Modules"
-ignoring nonexistent directory "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
-ignoring nonexistent directory "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
-ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/local/include"
-ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/Library/Frameworks"
-ignoring duplicate directory "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS"
+ignoring nonexistent directory "Course"
+ignoring nonexistent directory "materials/Senior"
+ignoring nonexistent directory "DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/include"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal/Swift-Modules"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS"
+ignoring nonexistent directory "Course"
+ignoring nonexistent directory "materials/Senior"
+ignoring nonexistent directory "DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/local/include"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/Library/Frameworks"
+ignoring duplicate directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src"
 #include "..." search starts here:
 #include <...> search starts here:
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization/MDFInternationalization.framework/Headers
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift/SocketIO.framework/Headers
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream/Starscream.framework/Headers
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast/Toast.framework/Headers
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster/Toaster.framework/Headers
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-barcodescanner/platforms/ios (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules-widgets/platforms/ios (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization/MDFInternationalization.framework/Headers
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift/SocketIO.framework/Headers
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream/Starscream.framework/Headers
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast/Toast.framework/Headers
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster/Toaster.framework/Headers
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-barcodescanner/platforms/ios (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules-widgets/platforms/ios (framework directory)
  lib/clang/7.0.0/include
- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include
- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks (framework directory)
+ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks (framework directory)
 End of search list.
 clang version 7.0.0 (tags/RELEASE_700/final)
-Target: i386-apple-darwin18.7.0
+Target: i386-apple-darwin18.6.0
 Thread model: posix
 InstalledDir: 
 clang Invocation:
- "objc-metadata-generator" "-cc1" "-triple" "i386-apple-ios9.0.0-simulator" "-fsyntax-only" "-disable-free" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "umbrella.h" "-mrelocation-model" "pic" "-pic-level" "2" "-mthread-model" "posix" "-mdisable-fp-elim" "-masm-verbose" "-munwind-tables" "-faligned-alloc-unavailable" "-target-cpu" "yonah" "-dwarf-column-info" "-debugger-tuning=lldb" "-target-linker-version" "409.12" "-v" "-resource-dir" "lib/clang/7.0.0" "-isysroot" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/dispatch" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/libxml2" "-idirafter" "lib/clang/7.0.0/include" "-idirafter" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/mach-o" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/unicode" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/simd" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/CommonCrypto" "-D" "__NATIVESCRIPT_METADATA_GENERATOR=1" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/include" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization/MDFInternationalization.framework/Headers" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift/SocketIO.framework/Headers" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream/Starscream.framework/Headers" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast/Toast.framework/Headers" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster/Toaster.framework/Headers" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal/Swift-Modules" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src" "-I" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal/" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-barcodescanner/platforms/ios" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios" "-F/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules-widgets/platforms/ios" "-D" "COCOAPODS=1" "-D" "DEBUG=1" "-Wno-unknown-pragmas" "-Wno-ignored-attributes" "-Wno-nullability-completeness" "-Wno-expansion-to-defined" "-std=gnu99" "-fdebug-compilation-dir" "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal/metadata-generator/bin" "-ferror-limit" "0" "-fmessage-length" "0" "-stack-protector" "1" "-fblocks" "-fencode-extended-block-signature" "-fimplicit-module-maps" "-fregister-global-dtors-with-atexit" "-fobjc-runtime=ios-9.0.0" "-fobjc-exceptions" "-fexceptions" "-fmax-type-align=16" "-fdiagnostics-show-option" "-x" "objective-c" "umbrella.h"
+ "objc-metadata-generator" "-cc1" "-triple" "i386-apple-ios9.0.0-simulator" "-fsyntax-only" "-disable-free" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "umbrella.h" "-mrelocation-model" "pic" "-pic-level" "2" "-mthread-model" "posix" "-mdisable-fp-elim" "-masm-verbose" "-munwind-tables" "-faligned-alloc-unavailable" "-target-cpu" "yonah" "-dwarf-column-info" "-debugger-tuning=lldb" "-target-linker-version" "409.12" "-v" "-resource-dir" "lib/clang/7.0.0" "-isysroot" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/dispatch" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/libxml2" "-idirafter" "lib/clang/7.0.0/include" "-idirafter" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/mach-o" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/unicode" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/simd" "-idirafter" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/CommonCrypto" "-D" "__NATIVESCRIPT_METADATA_GENERATOR=1" "-I" "/Users/DrSamsonnite/Desktop/CS" "-I" "Course" "-I" "materials/Senior" "-I" "DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/include" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization/MDFInternationalization.framework/Headers" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift/SocketIO.framework/Headers" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream/Starscream.framework/Headers" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast/Toast.framework/Headers" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster/Toaster.framework/Headers" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal/Swift-Modules" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-I" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src" "-F/Users/DrSamsonnite/Desktop/CS" "-FCourse" "-Fmaterials/Senior" "-FDEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal/" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-barcodescanner/platforms/ios" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios" "-F/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules-widgets/platforms/ios" "-D" "COCOAPODS=1" "-D" "DEBUG=1" "-Wno-unknown-pragmas" "-Wno-ignored-attributes" "-Wno-nullability-completeness" "-Wno-expansion-to-defined" "-std=gnu99" "-fdebug-compilation-dir" "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal/metadata-generator/bin" "-ferror-limit" "0" "-fmessage-length" "0" "-stack-protector" "1" "-fblocks" "-fencode-extended-block-signature" "-fimplicit-module-maps" "-fregister-global-dtors-with-atexit" "-fobjc-runtime=ios-9.0.0" "-fobjc-exceptions" "-fexceptions" "-fmax-type-align=16" "-fdiagnostics-show-option" "-x" "objective-c" "umbrella.h"
 
-clang -cc1 version 7.0.0 based upon LLVM 7.0.0 default target x86_64-apple-darwin18.7.0
-ignoring nonexistent directory "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/include"
-ignoring nonexistent directory "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal/Swift-Modules"
-ignoring nonexistent directory "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
-ignoring nonexistent directory "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
-ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/local/include"
-ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/Library/Frameworks"
-ignoring duplicate directory "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator"
-ignoring duplicate directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include"
+clang -cc1 version 7.0.0 based upon LLVM 7.0.0 default target x86_64-apple-darwin18.6.0
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS"
+ignoring nonexistent directory "Course"
+ignoring nonexistent directory "materials/Senior"
+ignoring nonexistent directory "DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/include"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal/Swift-Modules"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../app/App_Resources/iOS/src"
+ignoring nonexistent directory "/Users/DrSamsonnite/Desktop/CS"
+ignoring nonexistent directory "Course"
+ignoring nonexistent directory "materials/Senior"
+ignoring nonexistent directory "DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/local/include"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/Library/Frameworks"
+ignoring duplicate directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src"
+ignoring duplicate directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include"
 ignoring duplicate directory "lib/clang/7.0.0/include"
-ignoring duplicate directory "/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src"
+ignoring duplicate directory "/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src"
   as it is a non-system directory that duplicates a system directory
 #include "..." search starts here:
 #include <...> search starts here:
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization/MDFInternationalization.framework/Headers
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift/SocketIO.framework/Headers
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream/Starscream.framework/Headers
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast/Toast.framework/Headers
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster/Toaster.framework/Headers
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-barcodescanner/platforms/ios (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios (framework directory)
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules-widgets/platforms/ios (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization/MDFInternationalization.framework/Headers
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift/SocketIO.framework/Headers
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream/Starscream.framework/Headers
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast/Toast.framework/Headers
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster/Toaster.framework/Headers
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MDFInternationalization (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Socket.IO-Client-Swift (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Starscream (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toast (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/Toaster (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-barcodescanner/platforms/ios (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios (framework directory)
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules-widgets/platforms/ios (framework directory)
  lib/clang/7.0.0/include
- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include
- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks (framework directory)
- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/dispatch
- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/libxml2
- /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src
- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/mach-o
- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/unicode
- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc
- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/simd
- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/CommonCrypto
+ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks (framework directory)
+ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/dispatch
+ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/libxml2
+ /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/tns-core-modules/platforms/ios/src
+ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/mach-o
+ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/unicode
+ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc
+ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/simd
+ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/CommonCrypto
 End of search list.
 In file included from umbrella.h:519:
-In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Headers/MetalPerformanceShaders.h:12:
-In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/Headers/MPSCore.h:17:
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/Headers/MPSState.h:463:17: warning: 'MPSState' is only available on iOS 11.0 or newer [-Wunguarded-availability-new]
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Headers/MetalPerformanceShaders.h:9:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/Headers/MPSCore.h:17:
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/Headers/MPSState.h:463:17: warning: 'MPSState' is only available on iOS 11.0 or newer [-Wunguarded-availability-new]
 typedef NSArray<MPSState*>  MPSStateBatch;
                 ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/Headers/MPSState.h:141:12: note: 'MPSState' has been explicitly marked partial here
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/Headers/MPSState.h:141:12: note: 'MPSState' has been explicitly marked partial here
 @interface MPSState : NSObject
            ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/Headers/MPSState.h:463:29: note: annotate 'MPSStateBatch' with an availability attribute to silence this warning
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/Headers/MPSState.h:463:29: note: annotate 'MPSStateBatch' with an availability attribute to silence this warning
 typedef NSArray<MPSState*>  MPSStateBatch;
                             ^
 In file included from umbrella.h:519:
-In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Headers/MetalPerformanceShaders.h:13:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Headers/MetalPerformanceShaders.h:10:
 In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/Headers/MPSImage.h:25:
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/Headers/MPSImageResampling.h:123:36: warning: 'MPSImageScale' is only available on iOS 11.0 or newer [-Wunguarded-availability-new]
 @interface  MPSImageLanczosScale : MPSImageScale
@@ -115,7 +137,7 @@ In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhon
 @interface  MPSImageLanczosScale : MPSImageScale
             ^
 In file included from umbrella.h:519:
-In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Headers/MetalPerformanceShaders.h:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Headers/MetalPerformanceShaders.h:12:
 In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/Headers/MPSNeuralNetwork.h:8:
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/Headers/MPSNeuralNetworkTypes.h:327:39: warning: 'MPSNNPaddingMethodAlign_reserved' is only available on iOS 11.0 or newer [-Wunguarded-availability-new]
         MPSNNPaddingMethodAlignMask = MPSNNPaddingMethodAlign_reserved,
@@ -138,14 +160,14 @@ In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhon
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/Headers/MPSNeuralNetworkTypes.h:447:92: warning: 'MPSState' is only available on iOS 11.0 or newer [-Wunguarded-availability-new]
                                                                    sourceStates: (NSArray <MPSState *> * __nullable) sourceStates
                                                                                            ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/Headers/MPSState.h:141:12: note: 'MPSState' has been explicitly marked partial here
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/Headers/MPSState.h:141:12: note: 'MPSState' has been explicitly marked partial here
 @interface MPSState : NSObject
            ^
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/Headers/MPSNeuralNetworkTypes.h:446:5: note: annotate 'destinationImageDescriptorForSourceImages:sourceStates:forKernel:suggestedDescriptor:' with an availability attribute to silence this warning
     -(MPSImageDescriptor * __nonnull) destinationImageDescriptorForSourceImages: (NSArray <MPSImage *> *__nonnull) sourceImages
     ^
 In file included from umbrella.h:519:
-In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Headers/MetalPerformanceShaders.h:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Headers/MetalPerformanceShaders.h:12:
 In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/Headers/MPSNeuralNetwork.h:28:
 In file included from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/Headers/MPSNNGraph.h:12:
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/Headers/MPSNNGraphNodes.h:293:39: warning: 'MPSNNImageNode' is only available on iOS 11.0 or newer [-Wunguarded-availability-new]
@@ -185,127 +207,132 @@ typedef void (^MPSGradientNodeBlock)( MPSNNFilterNode * __nonnull gradientNode,
 -(nonnull instancetype) initWithSource: (MPSNNImageNode * __nonnull) source
 ^
 In file included from umbrella.h:576:
-In file included from /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework/Headers/TNSListView.h:26:
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework/Headers/TKListViewLayoutChange.h:18:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
+In file included from /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework/Headers/TNSListView.h:26:
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework/Headers/TKListViewLayoutChange.h:18:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
 @property (nonatomic) NSIndexPath *from;
 ^
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework/Headers/TKListViewLayoutChange.h:18:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework/Headers/TKListViewLayoutChange.h:20:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework/Headers/TKListViewLayoutChange.h:18:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework/Headers/TKListViewLayoutChange.h:20:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
 @property (nonatomic) NSIndexPath *to;
 ^
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework/Headers/TKListViewLayoutChange.h:20:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework/Headers/TKListViewLayoutChange.h:20:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
 In file included from umbrella.h:614:
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h:349:97: warning: availability does not match previous declaration [-Wavailability]
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h:349:97: warning: availability does not match previous declaration [-Wavailability]
 GL_API GLvoid GL_APIENTRY glGetBufferPointervOES (GLenum target, GLenum pname, GLvoid **params) OPENGLES_DEPRECATED(ios(2.0, 12.0), tvos(9.0, 12.0));
                                                                                                 ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h:10:36: note: expanded from macro 'OPENGLES_DEPRECATED'
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h:10:36: note: expanded from macro 'OPENGLES_DEPRECATED'
   #define OPENGLES_DEPRECATED(...) API_DEPRECATED("OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)", __VA_ARGS__)
                                    ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/os/availability.h:80:165: note: expanded from macro 'API_DEPRECATED'
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/os/availability.h:80:165: note: expanded from macro 'API_DEPRECATED'
     #define API_DEPRECATED(...) __API_DEPRECATED_MSG_GET_MACRO(__VA_ARGS__,__API_DEPRECATED_MSG7, __API_DEPRECATED_MSG6,__API_DEPRECATED_MSG5,__API_DEPRECATED_MSG4,__API_DEPRECATED_MSG3,__API_DEPRECATED_MSG2,__API_DEPRECATED_MSG1, 0)(__VA_ARGS__)
                                                                                                                                                                     ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/glext.h:463:97: note: previous attribute is here
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/glext.h:463:97: note: previous attribute is here
 GL_API GLvoid GL_APIENTRY glGetBufferPointervOES (GLenum target, GLenum pname, GLvoid **params) OPENGLES_DEPRECATED(ios(3.0, 12.0), tvos(9.0, 12.0));
                                                                                                 ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h:10:36: note: expanded from macro 'OPENGLES_DEPRECATED'
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h:10:36: note: expanded from macro 'OPENGLES_DEPRECATED'
   #define OPENGLES_DEPRECATED(...) API_DEPRECATED("OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)", __VA_ARGS__)
                                    ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/os/availability.h:80:165: note: expanded from macro 'API_DEPRECATED'
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/os/availability.h:80:165: note: expanded from macro 'API_DEPRECATED'
     #define API_DEPRECATED(...) __API_DEPRECATED_MSG_GET_MACRO(__VA_ARGS__,__API_DEPRECATED_MSG7, __API_DEPRECATED_MSG6,__API_DEPRECATED_MSG5,__API_DEPRECATED_MSG4,__API_DEPRECATED_MSG3,__API_DEPRECATED_MSG2,__API_DEPRECATED_MSG1, 0)(__VA_ARGS__)
                                                                                                                                                                     ^
 In file included from umbrella.h:614:
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h:350:75: warning: availability does not match previous declaration [-Wavailability]
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h:350:75: warning: availability does not match previous declaration [-Wavailability]
 GL_API GLvoid * GL_APIENTRY glMapBufferOES (GLenum target, GLenum access) OPENGLES_DEPRECATED(ios(2.0, 12.0), tvos(9.0, 12.0));
                                                                           ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h:10:36: note: expanded from macro 'OPENGLES_DEPRECATED'
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h:10:36: note: expanded from macro 'OPENGLES_DEPRECATED'
   #define OPENGLES_DEPRECATED(...) API_DEPRECATED("OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)", __VA_ARGS__)
                                    ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/os/availability.h:80:165: note: expanded from macro 'API_DEPRECATED'
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/os/availability.h:80:165: note: expanded from macro 'API_DEPRECATED'
     #define API_DEPRECATED(...) __API_DEPRECATED_MSG_GET_MACRO(__VA_ARGS__,__API_DEPRECATED_MSG7, __API_DEPRECATED_MSG6,__API_DEPRECATED_MSG5,__API_DEPRECATED_MSG4,__API_DEPRECATED_MSG3,__API_DEPRECATED_MSG2,__API_DEPRECATED_MSG1, 0)(__VA_ARGS__)
                                                                                                                                                                     ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/glext.h:464:75: note: previous attribute is here
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/glext.h:464:75: note: previous attribute is here
 GL_API GLvoid * GL_APIENTRY glMapBufferOES (GLenum target, GLenum access) OPENGLES_DEPRECATED(ios(3.0, 12.0), tvos(9.0, 12.0));
                                                                           ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h:10:36: note: expanded from macro 'OPENGLES_DEPRECATED'
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h:10:36: note: expanded from macro 'OPENGLES_DEPRECATED'
   #define OPENGLES_DEPRECATED(...) API_DEPRECATED("OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)", __VA_ARGS__)
                                    ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/os/availability.h:80:165: note: expanded from macro 'API_DEPRECATED'
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/os/availability.h:80:165: note: expanded from macro 'API_DEPRECATED'
     #define API_DEPRECATED(...) __API_DEPRECATED_MSG_GET_MACRO(__VA_ARGS__,__API_DEPRECATED_MSG7, __API_DEPRECATED_MSG6,__API_DEPRECATED_MSG5,__API_DEPRECATED_MSG4,__API_DEPRECATED_MSG3,__API_DEPRECATED_MSG2,__API_DEPRECATED_MSG1, 0)(__VA_ARGS__)
                                                                                                                                                                     ^
 In file included from umbrella.h:614:
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h:351:63: warning: availability does not match previous declaration [-Wavailability]
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h:351:63: warning: availability does not match previous declaration [-Wavailability]
 GL_API GLboolean GL_APIENTRY glUnmapBufferOES (GLenum target) OPENGLES_DEPRECATED(ios(2.0, 12.0), tvos(9.0, 12.0));
                                                               ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h:10:36: note: expanded from macro 'OPENGLES_DEPRECATED'
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h:10:36: note: expanded from macro 'OPENGLES_DEPRECATED'
   #define OPENGLES_DEPRECATED(...) API_DEPRECATED("OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)", __VA_ARGS__)
                                    ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/os/availability.h:80:165: note: expanded from macro 'API_DEPRECATED'
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/os/availability.h:80:165: note: expanded from macro 'API_DEPRECATED'
     #define API_DEPRECATED(...) __API_DEPRECATED_MSG_GET_MACRO(__VA_ARGS__,__API_DEPRECATED_MSG7, __API_DEPRECATED_MSG6,__API_DEPRECATED_MSG5,__API_DEPRECATED_MSG4,__API_DEPRECATED_MSG3,__API_DEPRECATED_MSG2,__API_DEPRECATED_MSG1, 0)(__VA_ARGS__)
                                                                                                                                                                     ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/glext.h:465:63: note: previous attribute is here
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/glext.h:465:63: note: previous attribute is here
 GL_API GLboolean GL_APIENTRY glUnmapBufferOES (GLenum target) OPENGLES_DEPRECATED(ios(3.0, 12.0), tvos(9.0, 12.0));
                                                               ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h:10:36: note: expanded from macro 'OPENGLES_DEPRECATED'
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h:10:36: note: expanded from macro 'OPENGLES_DEPRECATED'
   #define OPENGLES_DEPRECATED(...) API_DEPRECATED("OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)", __VA_ARGS__)
                                    ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/os/availability.h:80:165: note: expanded from macro 'API_DEPRECATED'
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/os/availability.h:80:165: note: expanded from macro 'API_DEPRECATED'
     #define API_DEPRECATED(...) __API_DEPRECATED_MSG_GET_MACRO(__VA_ARGS__,__API_DEPRECATED_MSG7, __API_DEPRECATED_MSG6,__API_DEPRECATED_MSG5,__API_DEPRECATED_MSG4,__API_DEPRECATED_MSG3,__API_DEPRECATED_MSG2,__API_DEPRECATED_MSG1, 0)(__VA_ARGS__)
                                                                                                                                                                     ^
 In file included from umbrella.h:639:
-In file included from /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MaterialComponents-umbrella.h:26:
-In file included from /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MaterialTabs.h:15:
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:85:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
+In file included from /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MaterialComponents-umbrella.h:26:
+In file included from /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MaterialTabs.h:15:
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:85:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
 @property(nonatomic, nullable) UIColor *selectedItemTintColor UI_APPEARANCE_SELECTOR;
 ^
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:85:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:91:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:85:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:91:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
 @property(nonatomic, nonnull) UIColor *unselectedItemTintColor UI_APPEARANCE_SELECTOR;
 ^
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:91:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:94:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:91:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:94:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
 @property(nonatomic, nonnull) UIColor *inkColor UI_APPEARANCE_SELECTOR;
 ^
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:94:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:97:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:94:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:97:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
 @property(nonatomic, nonnull) UIColor *bottomDividerColor;
 ^
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:97:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:124:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:97:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:124:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
 @property(nonatomic, nullable) UIColor *barTintColor UI_APPEARANCE_SELECTOR;
 ^
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:124:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:164:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:124:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:164:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
 @property(nonatomic, null_resettable) id<MDCTabBarIndicatorTemplate> selectionIndicatorTemplate
 ^
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:164:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h:164:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
 In file included from umbrella.h:639:
-In file included from /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MaterialComponents-umbrella.h:26:
-In file included from /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MaterialTabs.h:17:
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarIndicatorAttributes.h:21:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
+In file included from /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MaterialComponents-umbrella.h:26:
+In file included from /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MaterialTabs.h:17:
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarIndicatorAttributes.h:21:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
 @property(nonatomic, nullable) UIBezierPath *path;
 ^
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarIndicatorAttributes.h:21:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/build/Debug-iphonesimulator/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarIndicatorAttributes.h:21:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
+In file included from umbrella.h:732:
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/message.h:202:1: warning: incompatible redeclaration of library function 'objc_msgSend_fpret' [-Wincompatible-library-redeclaration]
+objc_msgSend_fpret(id _Nullable self, SEL _Nonnull op, ...)
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/message.h:202:1: note: 'objc_msgSend_fpret' is a builtin with type 'long double (id, SEL, ...)'
 In file included from umbrella.h:795:
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/IOSurface.framework/Headers/IOSurfaceRef.h:15:97: warning: unknown attribute 'swift_name' ignored [-Wunknown-attributes]
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/IOSurface.framework/Headers/IOSurfaceRef.h:15:97: warning: unknown attribute 'swift_name' ignored [-Wunknown-attributes]
 typedef struct CF_BRIDGED_TYPE(id) CF_BRIDGED_MUTABLE_TYPE(IOSurface) __IOSurface *IOSurfaceRef IOSFC_SWIFT_NAME(IOSurfaceRef);
                                                                                                 ^
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/IOSurface.framework/Headers/IOSurfaceBase.h:38:47: note: expanded from macro 'IOSFC_SWIFT_NAME'
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/IOSurface.framework/Headers/IOSurfaceBase.h:38:47: note: expanded from macro 'IOSFC_SWIFT_NAME'
 #define IOSFC_SWIFT_NAME(name) __attribute__((swift_name(#name)))
                                               ^
 In file included from umbrella.h:824:
-In file included from /Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/Headers/TNSCore.h:58:
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/Headers/TKGridLayoutCellDefinition.h:87:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
+In file included from /Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/Headers/TNSCore.h:58:
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/Headers/TKGridLayoutCellDefinition.h:87:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
 @property (nonatomic) NSNumber *row;
 ^
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/Headers/TKGridLayoutCellDefinition.h:87:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/Headers/TKGridLayoutCellDefinition.h:92:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/Headers/TKGridLayoutCellDefinition.h:87:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/Headers/TKGridLayoutCellDefinition.h:92:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
 @property (nonatomic) NSNumber *column;
 ^
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/Headers/TKGridLayoutCellDefinition.h:92:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/Headers/TKGridLayoutCellDefinition.h:97:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/Headers/TKGridLayoutCellDefinition.h:92:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/Headers/TKGridLayoutCellDefinition.h:97:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed [-Wobjc-property-no-attribute]
 @property (nonatomic) NSNumber *index;
 ^
-/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/Headers/TKGridLayoutCellDefinition.h:97:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
+/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/Headers/TKGridLayoutCellDefinition.h:97:1: warning: default property attribute 'assign' not appropriate for object [-Wobjc-property-no-attribute]
 verbose: Included __darwin_pthread_handler_rec from Darwin.sys._pthread._pthread_types
 verbose: Included _opaque_pthread_attr_t from Darwin.sys._pthread._pthread_types
 verbose: Included _opaque_pthread_cond_t from Darwin.sys._pthread._pthread_types
@@ -558,8 +585,8 @@ verbose: Included sigsetjmp from Darwin.C.setjmp
 verbose: Included siglongjmp from Darwin.C.setjmp
 verbose: Included longjmperror from Darwin.C.setjmp
 verbose: Included __darwin_sigaltstack from Darwin.POSIX.sys.types._sigaltstack
-verbose: Exception [Name: 'sigevent', JsName: 'sigevent', Module: 'Darwin.sys.signal', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/sys/signal.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
-verbose: Exception [Name: '__sigaction', JsName: '__sigaction', Module: 'Darwin.sys.signal', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/sys/signal.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'sigevent', JsName: 'sigevent', Module: 'Darwin.sys.signal', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/sys/signal.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: '__sigaction', JsName: '__sigaction', Module: 'Darwin.sys.signal', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/sys/signal.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included sigvec from Darwin.sys.signal
 verbose: Included sigstack from Darwin.sys.signal
 verbose: Included signal from Darwin.sys.signal
@@ -628,7 +655,7 @@ verbose: Included setvbuf from Darwin.C.stdio
 verbose: Included tmpfile from Darwin.C.stdio
 verbose: Included tmpnam from Darwin.C.stdio
 verbose: Included ungetc from Darwin.C.stdio
-verbose: Exception [Name: 'vfprintf', JsName: 'vfprintf', Module: 'Darwin.C.stdio', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/stdio.h'] : Can't create type dependency. --> [Type Typedef] : VaList type is not supported.
+verbose: Exception [Name: 'vfprintf', JsName: 'vfprintf', Module: 'Darwin.C.stdio', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/stdio.h'] : Can't create type dependency. --> [Type Typedef] : VaList type is not supported.
 verbose: Included ctermid from Darwin.C.stdio
 verbose: Included fdopen from Darwin.C.stdio
 verbose: Included fileno from Darwin.C.stdio
@@ -5032,7 +5059,6 @@ verbose: Included SecTrustSetExceptions from Security.SecTrust
 verbose: Included SecTrustCopyProperties from Security.SecTrust
 verbose: Included SecTrustCopyResult from Security.SecTrust
 verbose: Included SecTrustSetOCSPResponse from Security.SecTrust
-verbose: Included SecTrustSetSignedCertificateTimestamps from Security.SecTrust
 verbose: Included kSecSharedPassword from Security.SecSharedCredential
 verbose: Included SecAddSharedWebCredential from Security.SecSharedCredential
 verbose: Included SecRequestSharedWebCredential from Security.SecSharedCredential
@@ -6776,16 +6802,16 @@ verbose: Included CKFetchShareParticipantsOperation from CloudKit.CKFetchSharePa
 verbose: Included CKAcceptSharesOperation from CloudKit.CKAcceptSharesOperation
 verbose: Included CKFetchShareMetadataOperation from CloudKit.CKFetchShareMetadataOperation
 verbose: Included CKFetchDatabaseChangesOperation from CloudKit.CKFetchDatabaseChangesOperation
-verbose: Exception [Name: 'cacosf', JsName: 'cacosf', Module: 'Darwin.C.complex', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/complex.h'] : Can't create type dependency. --> [Type Complex] : Unable to create encoding for this type.
-verbose: Exception [Name: 'cacos', JsName: 'cacos', Module: 'Darwin.C.complex', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/complex.h'] : Can't create type dependency. --> [Type Complex] : Unable to create encoding for this type.
-verbose: Exception [Name: 'cacosl', JsName: 'cacosl', Module: 'Darwin.C.complex', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/complex.h'] : Can't create type dependency. --> [Type Complex] : Unable to create encoding for this type.
+verbose: Exception [Name: 'cacosf', JsName: 'cacosf', Module: 'Darwin.C.complex', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/complex.h'] : Can't create type dependency. --> [Type Complex] : Unable to create encoding for this type.
+verbose: Exception [Name: 'cacos', JsName: 'cacos', Module: 'Darwin.C.complex', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/complex.h'] : Can't create type dependency. --> [Type Complex] : Unable to create encoding for this type.
+verbose: Exception [Name: 'cacosl', JsName: 'cacosl', Module: 'Darwin.C.complex', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/complex.h'] : Can't create type dependency. --> [Type Complex] : Unable to create encoding for this type.
 verbose: Included copyfile from Darwin.C.copyfile
 verbose: Included fcopyfile from Darwin.C.copyfile
 verbose: Included copyfile_state_free from Darwin.C.copyfile
 verbose: Included copyfile_state_alloc from Darwin.C.copyfile
 verbose: Included copyfile_state_get from Darwin.C.copyfile
 verbose: Included copyfile_state_set from Darwin.C.copyfile
-verbose: Exception [Name: 'verr', JsName: 'verr', Module: 'Darwin.C.err', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/err.h'] : Can't create type dependency. --> [Type Typedef] : VaList type is not supported.
+verbose: Exception [Name: 'verr', JsName: 'verr', Module: 'Darwin.C.err', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/err.h'] : Can't create type dependency. --> [Type Typedef] : VaList type is not supported.
 verbose: Included err_set_file from Darwin.C.err
 verbose: Included err_set_exit from Darwin.C.err
 verbose: Included err_set_exit_b from Darwin.C.err
@@ -6813,7 +6839,7 @@ verbose: Included memory_order_acq_rel from Darwin.C.stdatomic
 verbose: Included memory_order_seq_cst from Darwin.C.stdatomic
 verbose: Included atomic_thread_fence from Darwin.C.stdatomic
 verbose: Included atomic_signal_fence from Darwin.C.stdatomic
-verbose: Exception [Name: 'atomic_flag', JsName: 'atomic_flag', Module: 'Darwin.C.stdatomic', File: '/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal/metadata-generator/bin/lib/clang/7.0.0/include/stdatomic.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Atomic] : Unable to create encoding for this type.
+verbose: Exception [Name: 'atomic_flag', JsName: 'atomic_flag', Module: 'Darwin.C.stdatomic', File: '/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal/metadata-generator/bin/lib/clang/7.0.0/include/stdatomic.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Atomic] : Unable to create encoding for this type.
 verbose: Included winsize from Darwin.sys.ttycom
 verbose: Included passwd from Darwin.POSIX.pwd
 verbose: Included getpwuid from Darwin.POSIX.pwd
@@ -6861,7 +6887,7 @@ verbose: Included fputws from Darwin.C.wchar
 verbose: Included fwide from Darwin.C.wchar
 verbose: Included getwc from Darwin.C.wchar
 verbose: Included getwchar from Darwin.C.wchar
-verbose: Exception [Name: 'mbrlen', JsName: 'mbrlen', Module: 'Darwin.C.wchar', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/wchar.h'] : Can't create type dependency. --> [Type Pointer] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'mbrlen', JsName: 'mbrlen', Module: 'Darwin.C.wchar', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/wchar.h'] : Can't create type dependency. --> [Type Pointer] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included putwc from Darwin.C.wchar
 verbose: Included putwchar from Darwin.C.wchar
 verbose: Included ungetwc from Darwin.C.wchar
@@ -7102,7 +7128,7 @@ verbose: Included statx_np from Darwin.POSIX.sys.stat
 verbose: Included FTW from Darwin.POSIX.ftw
 verbose: Included ftw from Darwin.POSIX.ftw
 verbose: Included nftw from Darwin.POSIX.ftw
-verbose: Exception [Name: '', JsName: 'glob_t', Module: 'Darwin.POSIX.glob', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/glob.h'] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: '', JsName: 'glob_t', Module: 'Darwin.POSIX.glob', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/glob.h'] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included group from Darwin.POSIX.grp
 verbose: Included getgrgid from Darwin.POSIX.grp
 verbose: Included getgrnam from Darwin.POSIX.grp
@@ -7223,14 +7249,14 @@ verbose: Included ifma_msghdr from Darwin.POSIX.net.if
 verbose: Included if_msghdr2 from Darwin.POSIX.net.if
 verbose: Included ifma_msghdr2 from Darwin.POSIX.net.if
 verbose: Included ifdevmtu from Darwin.POSIX.net.if
-verbose: Exception [Name: 'ifkpi', JsName: 'ifkpi', Module: 'Darwin.POSIX.net.if', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/net/if.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
-verbose: Exception [Name: 'ifreq', JsName: 'ifreq', Module: 'Darwin.POSIX.net.if', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/net/if.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'ifkpi', JsName: 'ifkpi', Module: 'Darwin.POSIX.net.if', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/net/if.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'ifreq', JsName: 'ifreq', Module: 'Darwin.POSIX.net.if', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/net/if.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included ifaliasreq from Darwin.POSIX.net.if
 verbose: Included rslvmulti_req from Darwin.POSIX.net.if
 verbose: Included ifmediareq from Darwin.POSIX.net.if
 verbose: Included ifdrv from Darwin.POSIX.net.if
 verbose: Included ifstat from Darwin.POSIX.net.if
-verbose: Exception [Name: 'ifconf', JsName: 'ifconf', Module: 'Darwin.POSIX.net.if', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/net/if.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'ifconf', JsName: 'ifconf', Module: 'Darwin.POSIX.net.if', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/net/if.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included kev_dl_proto_data from Darwin.POSIX.net.if
 verbose: Included if_nameindex from Darwin.POSIX.net.if
 verbose: Included if_nametoindex from Darwin.POSIX.net.if
@@ -8538,7 +8564,7 @@ verbose: Included fmount from Darwin.sys.mount
 verbose: Included statfs from Darwin.sys.mount
 verbose: Included unmount from Darwin.sys.mount
 verbose: Included getvfsbyname from Darwin.sys.mount
-verbose: Exception [Name: 'extern_proc', JsName: 'extern_proc', Module: 'Darwin.sys.proc', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/sys/proc.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'extern_proc', JsName: 'extern_proc', Module: 'Darwin.sys.proc', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/sys/proc.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included dqfilehdr from Darwin.sys.quota
 verbose: Included dqblk from Darwin.sys.quota
 verbose: Included dqhashshift from Darwin.sys.quota
@@ -9134,7 +9160,7 @@ verbose: Included kAudioComponentErr_InvalidFormat from AudioToolbox.AUComponent
 verbose: Included AUParameterEventType from AudioToolbox.AUComponent
 verbose: Included kParameterEvent_Immediate from AudioToolbox.AUComponent
 verbose: Included kParameterEvent_Ramped from AudioToolbox.AUComponent
-verbose: Exception [Name: 'AudioUnitParameterEvent', JsName: 'AudioUnitParameterEvent', Module: 'AudioToolbox.AUComponent', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AUComponent.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'AudioUnitParameterEvent', JsName: 'AudioUnitParameterEvent', Module: 'AudioToolbox.AUComponent', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AUComponent.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included AudioUnitParameter from AudioToolbox.AUComponent
 verbose: Included AudioUnitProperty from AudioToolbox.AUComponent
 verbose: Included kAudioComponentRegistrationsChangedNotification from AudioToolbox.AUComponent
@@ -9649,7 +9675,7 @@ verbose: Included AURenderEventParameter from AudioToolbox.AUAudioUnitImplementa
 verbose: Included AURenderEventParameterRamp from AudioToolbox.AUAudioUnitImplementation
 verbose: Included AURenderEventMIDI from AudioToolbox.AUAudioUnitImplementation
 verbose: Included AURenderEventMIDISysEx from AudioToolbox.AUAudioUnitImplementation
-verbose: Exception [Name: 'AURenderEventHeader', JsName: 'AURenderEventHeader', Module: 'AudioToolbox.AUAudioUnitImplementation', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AUAudioUnitImplementation.h'] : Can't create type dependency. --> [Type Attributed] : Can't create type dependency. --> [Type Pointer] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'AURenderEventHeader', JsName: 'AURenderEventHeader', Module: 'AudioToolbox.AUAudioUnitImplementation', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AUAudioUnitImplementation.h'] : Can't create type dependency. --> [Type Attributed] : Can't create type dependency. --> [Type Pointer] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included AUAudioUnitImplementation from AudioToolbox.AUAudioUnitImplementation
 verbose: Included AUAudioUnitImplementation from AudioToolbox.AUAudioUnitImplementation
 verbose: Included AUAudioUnitBusImplementation from AudioToolbox.AUAudioUnitImplementation
@@ -9673,7 +9699,7 @@ verbose: Included kAUNodeInteraction_Connection from AudioToolbox.AUGraph
 verbose: Included kAUNodeInteraction_InputCallback from AudioToolbox.AUGraph
 verbose: Included AudioUnitNodeConnection from AudioToolbox.AUGraph
 verbose: Included AUNodeRenderCallback from AudioToolbox.AUGraph
-verbose: Exception [Name: 'AUNodeInteraction', JsName: 'AUNodeInteraction', Module: 'AudioToolbox.AUGraph', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AUGraph.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'AUNodeInteraction', JsName: 'AUNodeInteraction', Module: 'AudioToolbox.AUGraph', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AUGraph.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included AUGraphConnectNodeInput from AudioToolbox.AUGraph
 verbose: Included AUGraphSetNodeInputCallback from AudioToolbox.AUGraph
 verbose: Included AUGraphDisconnectNodeInput from AudioToolbox.AUGraph
@@ -10793,9 +10819,6 @@ verbose: Included kCGColorSpaceITUR_709 from CoreGraphics.CGColorSpace
 verbose: Included kCGColorSpaceITUR_2020 from CoreGraphics.CGColorSpace
 verbose: Included kCGColorSpaceROMMRGB from CoreGraphics.CGColorSpace
 verbose: Included kCGColorSpaceDCIP3 from CoreGraphics.CGColorSpace
-verbose: Included kCGColorSpaceExtendedLinearITUR_2020 from CoreGraphics.CGColorSpace
-verbose: Included kCGColorSpaceExtendedLinearDisplayP3 from CoreGraphics.CGColorSpace
-verbose: Included kCGColorSpaceITUR_2020_PQ_EOTF from CoreGraphics.CGColorSpace
 verbose: Included kCGColorSpaceExtendedSRGB from CoreGraphics.CGColorSpace
 verbose: Included kCGColorSpaceLinearSRGB from CoreGraphics.CGColorSpace
 verbose: Included kCGColorSpaceExtendedLinearSRGB from CoreGraphics.CGColorSpace
@@ -11309,7 +11332,6 @@ verbose: Included kCGColorConversionTransformFromSpace from CoreGraphics.CGColor
 verbose: Included kCGColorConversionTransformToSpace from CoreGraphics.CGColorConversionInfo
 verbose: Included kCGColorConversionTransformApplySpace from CoreGraphics.CGColorConversionInfo
 verbose: Included CGColorConversionInfoCreate from CoreGraphics.CGColorConversionInfo
-verbose: Included CGColorConversionInfoCreateWithOptions from CoreGraphics.CGColorConversionInfo
 verbose: Included kCGColorConversionBlackPointCompensation from CoreGraphics.CGColorConversionInfo
 verbose: Included kCGColorConversionTRCSize from CoreGraphics.CGColorConversionInfo
 verbose: Included CGDataConsumerCallbacks from CoreGraphics.CGDataConsumer
@@ -11824,7 +11846,6 @@ verbose: Included kCMFormatDescriptionExtension_Vendor from CoreMedia.CMFormatDe
 verbose: Included kCMFormatDescriptionVendor_Apple from CoreMedia.CMFormatDescription
 verbose: Included kCMFormatDescriptionExtension_MasteringDisplayColorVolume from CoreMedia.CMFormatDescription
 verbose: Included kCMFormatDescriptionExtension_ContentLightLevelInfo from CoreMedia.CMFormatDescription
-verbose: Included kCMFormatDescriptionExtension_AlternativeTransferCharacteristics from CoreMedia.CMFormatDescription
 verbose: Included CMVideoFormatDescriptionCreate from CoreMedia.CMFormatDescription
 verbose: Included CMVideoFormatDescriptionCreateForImageBuffer from CoreMedia.CMFormatDescription
 verbose: Included CMVideoFormatDescriptionCreateFromH264ParameterSets from CoreMedia.CMFormatDescription
@@ -11911,7 +11932,6 @@ verbose: Included kCMTimeCodeFormatDescriptionKey_LangCode from CoreMedia.CMForm
 verbose: Included kCMMetadataFormatType_ICY from CoreMedia.CMFormatDescription
 verbose: Included kCMMetadataFormatType_ID3 from CoreMedia.CMFormatDescription
 verbose: Included kCMMetadataFormatType_Boxed from CoreMedia.CMFormatDescription
-verbose: Included kCMMetadataFormatType_EMSG from CoreMedia.CMFormatDescription
 verbose: Included kCMFormatDescriptionExtensionKey_MetadataKeyTable from CoreMedia.CMFormatDescription
 verbose: Included kCMMetadataFormatDescriptionKey_Namespace from CoreMedia.CMFormatDescription
 verbose: Included kCMMetadataFormatDescriptionKey_Value from CoreMedia.CMFormatDescription
@@ -13045,7 +13065,7 @@ verbose: Included SFNTLookupSegment from CoreText.SFNTLayoutTypes
 verbose: Included SFNTLookupSegmentHeader from CoreText.SFNTLayoutTypes
 verbose: Included SFNTLookupSingle from CoreText.SFNTLayoutTypes
 verbose: Included SFNTLookupSingleHeader from CoreText.SFNTLayoutTypes
-verbose: Exception [Name: 'SFNTLookupTable', JsName: 'SFNTLookupTable', Module: 'CoreText.SFNTLayoutTypes', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/SFNTLayoutTypes.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'SFNTLookupTable', JsName: 'SFNTLookupTable', Module: 'CoreText.SFNTLayoutTypes', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/SFNTLayoutTypes.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included kSTClassEndOfText from CoreText.SFNTLayoutTypes
 verbose: Included kSTClassOutOfBounds from CoreText.SFNTLayoutTypes
 verbose: Included kSTClassDeletedGlyph from CoreText.SFNTLayoutTypes
@@ -13155,7 +13175,7 @@ verbose: Included MortRearrangementSubtable from CoreText.SFNTLayoutTypes
 verbose: Included MortContextualSubtable from CoreText.SFNTLayoutTypes
 verbose: Included MortLigatureSubtable from CoreText.SFNTLayoutTypes
 verbose: Included MortInsertionSubtable from CoreText.SFNTLayoutTypes
-verbose: Exception [Name: 'MortSubtable', JsName: 'MortSubtable', Module: 'CoreText.SFNTLayoutTypes', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/SFNTLayoutTypes.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'MortSubtable', JsName: 'MortSubtable', Module: 'CoreText.SFNTLayoutTypes', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/SFNTLayoutTypes.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included MortFeatureEntry from CoreText.SFNTLayoutTypes
 verbose: Included MortChain from CoreText.SFNTLayoutTypes
 verbose: Included MortTable from CoreText.SFNTLayoutTypes
@@ -13170,7 +13190,7 @@ verbose: Included MorxRearrangementSubtable from CoreText.SFNTLayoutTypes
 verbose: Included MorxContextualSubtable from CoreText.SFNTLayoutTypes
 verbose: Included MorxLigatureSubtable from CoreText.SFNTLayoutTypes
 verbose: Included MorxInsertionSubtable from CoreText.SFNTLayoutTypes
-verbose: Exception [Name: 'MorxSubtable', JsName: 'MorxSubtable', Module: 'CoreText.SFNTLayoutTypes', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/SFNTLayoutTypes.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'MorxSubtable', JsName: 'MorxSubtable', Module: 'CoreText.SFNTLayoutTypes', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/SFNTLayoutTypes.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included MorxChain from CoreText.SFNTLayoutTypes
 verbose: Included MorxTable from CoreText.SFNTLayoutTypes
 verbose: Included kPROPTag from CoreText.SFNTLayoutTypes
@@ -13243,7 +13263,7 @@ verbose: Included KernStateEntry from CoreText.SFNTLayoutTypes
 verbose: Included KernOffsetTable from CoreText.SFNTLayoutTypes
 verbose: Included KernSimpleArrayHeader from CoreText.SFNTLayoutTypes
 verbose: Included KernIndexArrayHeader from CoreText.SFNTLayoutTypes
-verbose: Exception [Name: 'KernVersion0SubtableHeader', JsName: 'KernVersion0SubtableHeader', Module: 'CoreText.SFNTLayoutTypes', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/SFNTLayoutTypes.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'KernVersion0SubtableHeader', JsName: 'KernVersion0SubtableHeader', Module: 'CoreText.SFNTLayoutTypes', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/SFNTLayoutTypes.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included kKERXTag from CoreText.SFNTLayoutTypes
 verbose: Included kKERXCurrentVersion from CoreText.SFNTLayoutTypes
 verbose: Included kKERXVertical from CoreText.SFNTLayoutTypes
@@ -13285,7 +13305,7 @@ verbose: Included KerxAnchorPointAction from CoreText.SFNTLayoutTypes
 verbose: Included KerxCoordinateAction from CoreText.SFNTLayoutTypes
 verbose: Included KerxSimpleArrayHeader from CoreText.SFNTLayoutTypes
 verbose: Included KerxIndexArrayHeader from CoreText.SFNTLayoutTypes
-verbose: Exception [Name: 'KerxSubtableHeader', JsName: 'KerxSubtableHeader', Module: 'CoreText.SFNTLayoutTypes', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/SFNTLayoutTypes.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'KerxSubtableHeader', JsName: 'KerxSubtableHeader', Module: 'CoreText.SFNTLayoutTypes', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/SFNTLayoutTypes.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included kBSLNTag from CoreText.SFNTLayoutTypes
 verbose: Included kBSLNCurrentVersion from CoreText.SFNTLayoutTypes
 verbose: Included kBSLNDistanceFormatNoMap from CoreText.SFNTLayoutTypes
@@ -13304,7 +13324,7 @@ verbose: Included kBSLNNoBaseline from CoreText.SFNTLayoutTypes
 verbose: Included kBSLNNoBaselineOverride from CoreText.SFNTLayoutTypes
 verbose: Included BslnFormat0Part from CoreText.SFNTLayoutTypes
 verbose: Included BslnFormat2Part from CoreText.SFNTLayoutTypes
-verbose: Exception [Name: 'BslnTable', JsName: 'BslnTable', Module: 'CoreText.SFNTLayoutTypes', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/SFNTLayoutTypes.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'BslnTable', JsName: 'BslnTable', Module: 'CoreText.SFNTLayoutTypes', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/SFNTLayoutTypes.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included ALMXGlyphEntry from CoreText.SFNTLayoutTypes
 verbose: Included ROTAGlyphEntry from CoreText.SFNTLayoutTypes
 verbose: Included kANKRCurrentVersion from CoreText.SFNTLayoutTypes
@@ -15687,22 +15707,11 @@ verbose: Included UIAccessibilityZoomType from UIKit.UIAccessibilityZoom
 verbose: Included UIAccessibilityZoomTypeInsertionPoint from UIKit.UIAccessibilityZoom
 verbose: Included UIAccessibilityZoomFocusChanged from UIKit.UIAccessibilityZoom
 verbose: Included UIAccessibilityRegisterGestureConflictWithZoom from UIKit.UIAccessibilityZoom
-verbose: Included UIGuidedAccessErrorDomain from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessErrorCode from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessErrorPermissionDenied from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessErrorFailed from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessRestrictionState from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessRestrictionStateAllow from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessRestrictionStateDeny from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessRestrictionDelegate from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessRestrictionStateForIdentifier from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessAccessibilityFeature from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessAccessibilityFeatureVoiceOver from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessAccessibilityFeatureZoom from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessAccessibilityFeatureAssistiveTouch from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessAccessibilityFeatureInvertColors from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessAccessibilityFeatureGrayscaleDisplay from UIKit.UIGuidedAccess
-verbose: Included UIGuidedAccessConfigureAccessibilityFeatures from UIKit.UIGuidedAccess
+verbose: Included UIGuidedAccessRestrictionState from UIKit.UIGuidedAccessRestrictions
+verbose: Included UIGuidedAccessRestrictionStateAllow from UIKit.UIGuidedAccessRestrictions
+verbose: Included UIGuidedAccessRestrictionStateDeny from UIKit.UIGuidedAccessRestrictions
+verbose: Included UIGuidedAccessRestrictionDelegate from UIKit.UIGuidedAccessRestrictions
+verbose: Included UIGuidedAccessRestrictionStateForIdentifier from UIKit.UIGuidedAccessRestrictions
 verbose: Included UIAccessibilityLocationDescriptor from UIKit.UIAccessibilityLocationDescriptor
 verbose: Included UIAccessibility from UIKit.UIAccessibility
 verbose: Included UIAccessibilityConvertFrameToScreenCoordinates from UIKit.UIAccessibility
@@ -17334,8 +17343,6 @@ verbose: Included AVAsynchronousKeyValueLoading from AVFoundation.AVAsynchronous
 verbose: Included AVContentKeySystemFairPlayStreaming from AVFoundation.AVContentKeySession
 verbose: Included AVContentKeySystemClearKey from AVFoundation.AVContentKeySession
 verbose: Included AVContentKeySession from AVFoundation.AVContentKeySession
-verbose: Included AVContentKeySessionServerPlaybackContextOptionProtocolVersions from AVFoundation.AVContentKeySession
-verbose: Included AVContentKeySessionServerPlaybackContextOptionServerChallenge from AVFoundation.AVContentKeySession
 verbose: Included AVContentKeyRecipients from AVFoundation.AVContentKeySession
 verbose: Included AVContentKeySessionPendingExpiredSessionReports from AVFoundation.AVContentKeySession
 verbose: Included AVContentKeyRequestRetryReasonTimedOut from AVFoundation.AVContentKeySession
@@ -18342,16 +18349,16 @@ verbose: Included MTLSharedEventListener from Metal.MTLEvent
 verbose: Included MTLSharedEvent from Metal.MTLEvent
 verbose: Included MTLSharedEventHandle from Metal.MTLEvent
 verbose: Included posix_memalign from _Builtin_intrinsics.intel.mm_malloc
-verbose: Exception [Name: '__mm_loadh_pi_struct', JsName: '__mm_loadh_pi_struct', Module: '_Builtin_intrinsics.intel.sse', File: '/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal/metadata-generator/bin/lib/clang/7.0.0/include/xmmintrin.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Vector] : Vector type is not supported.
+verbose: Exception [Name: '__mm_loadh_pi_struct', JsName: '__mm_loadh_pi_struct', Module: '_Builtin_intrinsics.intel.sse', File: '/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal/metadata-generator/bin/lib/clang/7.0.0/include/xmmintrin.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Vector] : Vector type is not supported.
 verbose: Included __mm_load_ss_struct from _Builtin_intrinsics.intel.sse
 verbose: Included __mm_load1_ps_struct from _Builtin_intrinsics.intel.sse
-verbose: Exception [Name: '__loadu_ps', JsName: '__loadu_ps', Module: '_Builtin_intrinsics.intel.sse', File: '/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal/metadata-generator/bin/lib/clang/7.0.0/include/xmmintrin.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Vector] : Vector type is not supported.
+verbose: Exception [Name: '__loadu_ps', JsName: '__loadu_ps', Module: '_Builtin_intrinsics.intel.sse', File: '/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal/metadata-generator/bin/lib/clang/7.0.0/include/xmmintrin.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Vector] : Vector type is not supported.
 verbose: Included __mm_store_ss_struct from _Builtin_intrinsics.intel.sse
 verbose: Included _mm_sfence from _Builtin_intrinsics.intel.sse
 verbose: Included _mm_getcsr from _Builtin_intrinsics.intel.sse
 verbose: Included _mm_setcsr from _Builtin_intrinsics.intel.sse
 verbose: Included __mm_load1_pd_struct from _Builtin_intrinsics.intel.sse2
-verbose: Exception [Name: '__loadu_pd', JsName: '__loadu_pd', Module: '_Builtin_intrinsics.intel.sse2', File: '/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal/metadata-generator/bin/lib/clang/7.0.0/include/emmintrin.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Vector] : Vector type is not supported.
+verbose: Exception [Name: '__loadu_pd', JsName: '__loadu_pd', Module: '_Builtin_intrinsics.intel.sse2', File: '/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal/metadata-generator/bin/lib/clang/7.0.0/include/emmintrin.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Vector] : Vector type is not supported.
 verbose: Included __loadu_si64 from _Builtin_intrinsics.intel.sse2
 verbose: Included __mm_load_sd_struct from _Builtin_intrinsics.intel.sse2
 verbose: Included __mm_loadh_pd_struct from _Builtin_intrinsics.intel.sse2
@@ -18359,7 +18366,7 @@ verbose: Included __mm_loadl_pd_struct from _Builtin_intrinsics.intel.sse2
 verbose: Included __mm_store_sd_struct from _Builtin_intrinsics.intel.sse2
 verbose: Included __mm_storeh_pd_struct from _Builtin_intrinsics.intel.sse2
 verbose: Included __mm_storeh_pd_struct from _Builtin_intrinsics.intel.sse2
-verbose: Exception [Name: '__loadu_si128', JsName: '__loadu_si128', Module: '_Builtin_intrinsics.intel.sse2', File: '/Users/matthew/Desktop/AcuaTest2/acuaV_2/acua-mobile/platforms/ios/internal/metadata-generator/bin/lib/clang/7.0.0/include/emmintrin.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Vector] : Vector type is not supported.
+verbose: Exception [Name: '__loadu_si128', JsName: '__loadu_si128', Module: '_Builtin_intrinsics.intel.sse2', File: '/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/ios/internal/metadata-generator/bin/lib/clang/7.0.0/include/emmintrin.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Vector] : Vector type is not supported.
 verbose: Included __mm_loadl_epi64_struct from _Builtin_intrinsics.intel.sse2
 verbose: Included __mm_storel_epi64_struct from _Builtin_intrinsics.intel.sse2
 verbose: Included _mm_clflush from _Builtin_intrinsics.intel.sse2
@@ -23996,24 +24003,11 @@ verbose: Included GCGamepadSnapShotDataV100FromNSData from GameController.GCGame
 verbose: Included NSDataFromGCGamepadSnapShotDataV100 from GameController.GCGamepadSnapshot
 verbose: Included GCExtendedGamepad from GameController.GCExtendedGamepad
 verbose: Included GCExtendedGamepadSnapshot from GameController.GCExtendedGamepadSnapshot
-verbose: Included GCExtendedGamepadSnapshotDataVersion from GameController.GCExtendedGamepadSnapshot
-verbose: Included GCExtendedGamepadSnapshotDataVersion1 from GameController.GCExtendedGamepadSnapshot
-verbose: Included GCExtendedGamepadSnapshotDataVersion2 from GameController.GCExtendedGamepadSnapshot
-verbose: Included GCCurrentExtendedGamepadSnapshotDataVersion from GameController.GCExtendedGamepadSnapshot
-verbose: Included GCExtendedGamepadSnapshotData from GameController.GCExtendedGamepadSnapshot
-verbose: Included GCExtendedGamepadSnapshotDataFromNSData from GameController.GCExtendedGamepadSnapshot
-verbose: Included NSDataFromGCExtendedGamepadSnapshotData from GameController.GCExtendedGamepadSnapshot
 verbose: Included GCExtendedGamepadSnapShotDataV100 from GameController.GCExtendedGamepadSnapshot
 verbose: Included GCExtendedGamepadSnapShotDataV100FromNSData from GameController.GCExtendedGamepadSnapshot
 verbose: Included NSDataFromGCExtendedGamepadSnapShotDataV100 from GameController.GCExtendedGamepadSnapshot
 verbose: Included GCMicroGamepad from GameController.GCMicroGamepad
 verbose: Included GCMicroGamepadSnapshot from GameController.GCMicroGamepadSnapshot
-verbose: Included GCMicroGamepadSnapshotDataVersion from GameController.GCMicroGamepadSnapshot
-verbose: Included GCMicroGamepadSnapshotDataVersion1 from GameController.GCMicroGamepadSnapshot
-verbose: Included GCCurrentMicroGamepadSnapshotDataVersion from GameController.GCMicroGamepadSnapshot
-verbose: Included GCMicroGamepadSnapshotData from GameController.GCMicroGamepadSnapshot
-verbose: Included GCMicroGamepadSnapshotDataFromNSData from GameController.GCMicroGamepadSnapshot
-verbose: Included NSDataFromGCMicroGamepadSnapshotData from GameController.GCMicroGamepadSnapshot
 verbose: Included GCMicroGamepadSnapShotDataV100 from GameController.GCMicroGamepadSnapshot
 verbose: Included GCMicroGamepadSnapShotDataV100FromNSData from GameController.GCMicroGamepadSnapshot
 verbose: Included NSDataFromGCMicroGamepadSnapShotDataV100 from GameController.GCMicroGamepadSnapshot
@@ -24656,7 +24650,7 @@ verbose: Included DNSServiceReconfirmRecord from dnssd
 verbose: Included PeerConnectionRelease from dnssd
 verbose: Included DNSServiceNATPortMappingCreate from dnssd
 verbose: Included DNSServiceConstructFullName from dnssd
-verbose: Exception [Name: 'TXTRecordCreate', JsName: 'TXTRecordCreate', Module: 'dnssd', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/dns_sd.h'] : Can't create type dependency. --> [Type Pointer] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'TXTRecordCreate', JsName: 'TXTRecordCreate', Module: 'dnssd', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/dns_sd.h'] : Can't create type dependency. --> [Type Pointer] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included TXTRecordContainsKey from dnssd
 verbose: Included TXTRecordGetValuePtr from dnssd
 verbose: Included TXTRecordGetCount from dnssd
@@ -24995,13 +24989,10 @@ verbose: Included kCMSampleBufferFlag_AudioBufferList_Assure16ByteAlignment from
 verbose: Included CMSampleTimingInfo from CoreMedia.CMSampleBuffer
 verbose: Included kCMTimingInfoInvalid from CoreMedia.CMSampleBuffer
 verbose: Included CMSampleBufferCreate from CoreMedia.CMSampleBuffer
-verbose: Included CMSampleBufferCreateWithMakeDataReadyHandler from CoreMedia.CMSampleBuffer
 verbose: Included CMSampleBufferCreateReady from CoreMedia.CMSampleBuffer
 verbose: Included CMAudioSampleBufferCreateWithPacketDescriptions from CoreMedia.CMSampleBuffer
-verbose: Included CMAudioSampleBufferCreateWithPacketDescriptionsAndMakeDataReadyHandler from CoreMedia.CMSampleBuffer
 verbose: Included CMAudioSampleBufferCreateReadyWithPacketDescriptions from CoreMedia.CMSampleBuffer
 verbose: Included CMSampleBufferCreateForImageBuffer from CoreMedia.CMSampleBuffer
-verbose: Included CMSampleBufferCreateForImageBufferWithMakeDataReadyHandler from CoreMedia.CMSampleBuffer
 verbose: Included CMSampleBufferCreateReadyWithImageBuffer from CoreMedia.CMSampleBuffer
 verbose: Included CMSampleBufferCreateCopy from CoreMedia.CMSampleBuffer
 verbose: Included CMSampleBufferCreateCopyWithNewTiming from CoreMedia.CMSampleBuffer
@@ -25808,10 +25799,6 @@ verbose: Included AVAudioSessionRouteSharingPolicy from AVFoundation.AVFAudio.AV
 verbose: Included AVAudioSessionRouteSharingPolicyDefault from AVFoundation.AVFAudio.AVAudioSession
 verbose: Included AVAudioSessionRouteSharingPolicyLongForm from AVFoundation.AVFAudio.AVAudioSession
 verbose: Included AVAudioSessionRouteSharingPolicyIndependent from AVFoundation.AVFAudio.AVAudioSession
-verbose: Included AVAudioSessionPromptStyle from AVFoundation.AVFAudio.AVAudioSession
-verbose: Included AVAudioSessionPromptStyleNone from AVFoundation.AVFAudio.AVAudioSession
-verbose: Included AVAudioSessionPromptStyleShort from AVFoundation.AVFAudio.AVAudioSession
-verbose: Included AVAudioSessionPromptStyleNormal from AVFoundation.AVFAudio.AVAudioSession
 verbose: Included AVAudioSessionErrorCode from AVFoundation.AVFAudio.AVAudioSession
 verbose: Included AVAudioSessionErrorCodeNone from AVFoundation.AVFAudio.AVAudioSession
 verbose: Included AVAudioSessionErrorCodeMediaServicesFailed from AVFoundation.AVFAudio.AVAudioSession
@@ -26365,7 +26352,6 @@ verbose: Included AVSampleBufferDisplayLayerFailedToDecodeNotification from AVFo
 verbose: Included AVSampleBufferDisplayLayerFailedToDecodeNotificationErrorKey from AVFoundation.AVSampleBufferDisplayLayer
 verbose: Included AVSampleBufferDisplayLayer from AVFoundation.AVSampleBufferDisplayLayer
 verbose: Included AVSampleBufferDisplayLayerQueueManagement from AVFoundation.AVSampleBufferDisplayLayer
-verbose: Included AVSampleBufferDisplayLayerImageProtection from AVFoundation.AVSampleBufferDisplayLayer
 verbose: Included AVSampleBufferRenderSynchronizer from AVFoundation.AVSampleBufferRenderSynchronizer
 verbose: Included AVSampleBufferRenderSynchronizerRateDidChangeNotification from AVFoundation.AVSampleBufferRenderSynchronizer
 verbose: Included AVSampleBufferRenderSynchronizerRendererManagement from AVFoundation.AVSampleBufferRenderSynchronizer
@@ -26423,8 +26409,6 @@ verbose: Included RPRecordingErrorFailedApplicationConnectionInterrupted from Re
 verbose: Included RPRecordingErrorFailedNoMatchingApplicationContext from ReplayKit.RPError
 verbose: Included RPRecordingErrorFailedMediaServicesFailure from ReplayKit.RPError
 verbose: Included RPRecordingErrorVideoMixingFailure from ReplayKit.RPError
-verbose: Included RPRecordingErrorBroadcastSetupFailed from ReplayKit.RPError
-verbose: Included RPRecordingErrorCodeSuccessful from ReplayKit.RPError
 verbose: Included glActiveTexture from OpenGLES.ES2.gl
 verbose: Included glAttachShader from OpenGLES.ES2.gl
 verbose: Included glBindAttribLocation from OpenGLES.ES2.gl
@@ -30139,7 +30123,7 @@ verbose: Included segment_command from MachO.loader
 verbose: Included segment_command_64 from MachO.loader
 verbose: Included section from MachO.loader
 verbose: Included section_64 from MachO.loader
-verbose: Exception [Name: 'fvmlib', JsName: 'fvmlib', Module: 'MachO.loader', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/mach-o/loader.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'fvmlib', JsName: 'fvmlib', Module: 'MachO.loader', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/mach-o/loader.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included thread_command from MachO.loader
 verbose: Included routines_command from MachO.loader
 verbose: Included routines_command_64 from MachO.loader
@@ -30241,10 +30225,10 @@ verbose: Included _mh_execute_header from MachO.ldsyms
 verbose: Included _mh_bundle_header from MachO.ldsyms
 verbose: Included _mh_dylib_header from MachO.ldsyms
 verbose: Included _mh_dylinker_header from MachO.ldsyms
-verbose: Exception [Name: 'nlist', JsName: 'nlist', Module: 'MachO.nlist', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/mach-o/nlist.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
-verbose: Exception [Name: 'nlist_64', JsName: 'nlist_64', Module: 'MachO.nlist', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/mach-o/nlist.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
-verbose: Exception [Name: 'ranlib', JsName: 'ranlib', Module: 'MachO.ranlib', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/mach-o/ranlib.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
-verbose: Exception [Name: 'ranlib_64', JsName: 'ranlib_64', Module: 'MachO.ranlib', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/mach-o/ranlib.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'nlist', JsName: 'nlist', Module: 'MachO.nlist', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/mach-o/nlist.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'nlist_64', JsName: 'nlist_64', Module: 'MachO.nlist', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/mach-o/nlist.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'ranlib', JsName: 'ranlib', Module: 'MachO.ranlib', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/mach-o/ranlib.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'ranlib_64', JsName: 'ranlib_64', Module: 'MachO.ranlib', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/mach-o/ranlib.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included relocation_info from MachO.reloc
 verbose: Included scattered_relocation_info from MachO.reloc
 verbose: Included reloc_type_generic from MachO.reloc
@@ -30658,7 +30642,6 @@ verbose: Included SKBlendModeMultiply from SpriteKit.SKNode
 verbose: Included SKBlendModeMultiplyX2 from SpriteKit.SKNode
 verbose: Included SKBlendModeScreen from SpriteKit.SKNode
 verbose: Included SKBlendModeReplace from SpriteKit.SKNode
-verbose: Included SKBlendModeMultiplyAlpha from SpriteKit.SKNode
 verbose: Included SKNodeFocusBehavior from SpriteKit.SKNode
 verbose: Included SKNodeFocusBehaviorNone from SpriteKit.SKNode
 verbose: Included SKNodeFocusBehaviorOccluding from SpriteKit.SKNode
@@ -30736,7 +30719,7 @@ verbose: Included SKTextureFilteringMode from SpriteKit.SKTexture
 verbose: Included SKTextureFilteringNearest from SpriteKit.SKTexture
 verbose: Included SKTextureFilteringLinear from SpriteKit.SKTexture
 verbose: Included SKTexture from SpriteKit.SKTexture
-verbose: Exception [Name: 'GLKQuaternionIdentity', JsName: 'GLKQuaternionIdentity', Module: 'GLKit.GLKQuaternion', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKQuaternion.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: 'GLKQuaternionIdentity', JsName: 'GLKQuaternionIdentity', Module: 'GLKit.GLKQuaternion', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKQuaternion.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included GLKMatrixStackCreate from GLKit.GLKMatrixStack
 verbose: Included GLKMatrixStackGetTypeID from GLKit.GLKMatrixStack
 verbose: Included GLKMatrixStackPush from GLKit.GLKMatrixStack
@@ -32995,8 +32978,6 @@ verbose: Included objc_setAssociatedObject from ObjectiveC.runtime
 verbose: Included objc_getAssociatedObject from ObjectiveC.runtime
 verbose: Included objc_removeAssociatedObjects from ObjectiveC.runtime
 verbose: Included objc_setHook_getImageName from ObjectiveC.runtime
-verbose: Included objc_setHook_getClass from ObjectiveC.runtime
-verbose: Included _objc_realizeClassFromSwift from ObjectiveC.runtime
 verbose: Included class_lookupMethod from ObjectiveC.runtime
 verbose: Included class_respondsToMethod from ObjectiveC.runtime
 verbose: Included _objc_flush_caches from ObjectiveC.runtime
@@ -33117,11 +33098,9 @@ verbose: Included kCMBufferQueueError_InvalidTriggerCondition from CoreMedia.CMB
 verbose: Included kCMBufferQueueError_InvalidTriggerToken from CoreMedia.CMBufferQueue
 verbose: Included kCMBufferQueueError_InvalidBuffer from CoreMedia.CMBufferQueue
 verbose: Included CMBufferCallbacks from CoreMedia.CMBufferQueue
-verbose: Included CMBufferHandlers from CoreMedia.CMBufferQueue
 verbose: Included CMBufferQueueGetCallbacksForUnsortedSampleBuffers from CoreMedia.CMBufferQueue
 verbose: Included CMBufferQueueGetCallbacksForSampleBuffersSortedByOutputPTS from CoreMedia.CMBufferQueue
 verbose: Included CMBufferQueueCreate from CoreMedia.CMBufferQueue
-verbose: Included CMBufferQueueCreateWithHandlers from CoreMedia.CMBufferQueue
 verbose: Included CMBufferQueueGetTypeID from CoreMedia.CMBufferQueue
 verbose: Included CMBufferQueueEnqueue from CoreMedia.CMBufferQueue
 verbose: Included CMBufferQueueDequeueAndRetain from CoreMedia.CMBufferQueue
@@ -33156,13 +33135,10 @@ verbose: Included kCMBufferQueueTrigger_WhenBufferCountBecomesGreaterThan from C
 verbose: Included kCMBufferQueueTrigger_WhenDurationBecomesGreaterThanOrEqualToAndBufferCountBecomesGreaterThan from CoreMedia.CMBufferQueue
 verbose: Included CMBufferQueueInstallTrigger from CoreMedia.CMBufferQueue
 verbose: Included CMBufferQueueInstallTriggerWithIntegerThreshold from CoreMedia.CMBufferQueue
-verbose: Included CMBufferQueueInstallTriggerHandler from CoreMedia.CMBufferQueue
-verbose: Included CMBufferQueueInstallTriggerHandlerWithIntegerThreshold from CoreMedia.CMBufferQueue
 verbose: Included CMBufferQueueRemoveTrigger from CoreMedia.CMBufferQueue
 verbose: Included CMBufferQueueTestTrigger from CoreMedia.CMBufferQueue
 verbose: Included CMBufferQueueCallForEachBuffer from CoreMedia.CMBufferQueue
 verbose: Included CMBufferQueueSetValidationCallback from CoreMedia.CMBufferQueue
-verbose: Included CMBufferQueueSetValidationHandler from CoreMedia.CMBufferQueue
 verbose: Included kCMSimpleQueueError_AllocationFailed from CoreMedia.CMSimpleQueue
 verbose: Included kCMSimpleQueueError_RequiredParameterMissing from CoreMedia.CMSimpleQueue
 verbose: Included kCMSimpleQueueError_ParameterOutOfRange from CoreMedia.CMSimpleQueue
@@ -33925,8 +33901,6 @@ verbose: Included kVTCompressionPropertyKey_SourceFrameCount from VideoToolbox.V
 verbose: Included kVTCompressionPropertyKey_ExpectedFrameRate from VideoToolbox.VTCompressionProperties
 verbose: Included kVTCompressionPropertyKey_ExpectedDuration from VideoToolbox.VTCompressionProperties
 verbose: Included kVTCompressionPropertyKey_BaseLayerFrameRate from VideoToolbox.VTCompressionProperties
-verbose: Included kVTVideoEncoderSpecification_RequiredEncoderGPURegistryID from VideoToolbox.VTCompressionProperties
-verbose: Included kVTVideoEncoderSpecification_PreferredEncoderGPURegistryID from VideoToolbox.VTCompressionProperties
 verbose: Included kVTEncodeFrameOptionKey_ForceKeyFrame from VideoToolbox.VTCompressionProperties
 verbose: Included kVTCompressionPropertyKey_CleanAperture from VideoToolbox.VTCompressionProperties
 verbose: Included kVTCompressionPropertyKey_PixelAspectRatio from VideoToolbox.VTCompressionProperties
@@ -34082,12 +34056,6 @@ verbose: Included kVTVideoEncoderList_EncoderID from VideoToolbox.VTVideoEncoder
 verbose: Included kVTVideoEncoderList_CodecName from VideoToolbox.VTVideoEncoderList
 verbose: Included kVTVideoEncoderList_EncoderName from VideoToolbox.VTVideoEncoderList
 verbose: Included kVTVideoEncoderList_DisplayName from VideoToolbox.VTVideoEncoderList
-verbose: Included kVTVideoEncoderList_GPURegistryID from VideoToolbox.VTVideoEncoderList
-verbose: Included kVTVideoEncoderList_SupportedSelectionProperties from VideoToolbox.VTVideoEncoderList
-verbose: Included kVTVideoEncoderList_PerformanceRating from VideoToolbox.VTVideoEncoderList
-verbose: Included kVTVideoEncoderList_QualityRating from VideoToolbox.VTVideoEncoderList
-verbose: Included kVTVideoEncoderList_InstanceLimit from VideoToolbox.VTVideoEncoderList
-verbose: Included kVTVideoEncoderList_IsHardwareAccelerated from VideoToolbox.VTVideoEncoderList
 verbose: Included VTCopySupportedPropertyDictionaryForEncoder from VideoToolbox.VTVideoEncoderList
 verbose: Included VTCreateCGImageFromCVPixelBuffer from VideoToolbox.VTUtilities
 verbose: Included kVTPixelTransferPropertyKey_ScalingMode from VideoToolbox.VTPixelTransferProperties
@@ -34255,7 +34223,6 @@ verbose: Included kJSTypeBoolean from JavaScriptCore.JSValueRef
 verbose: Included kJSTypeNumber from JavaScriptCore.JSValueRef
 verbose: Included kJSTypeString from JavaScriptCore.JSValueRef
 verbose: Included kJSTypeObject from JavaScriptCore.JSValueRef
-verbose: Included kJSTypeSymbol from JavaScriptCore.JSValueRef
 verbose: Included JSTypedArrayType from JavaScriptCore.JSValueRef
 verbose: Included kJSTypedArrayTypeInt8Array from JavaScriptCore.JSValueRef
 verbose: Included kJSTypedArrayTypeInt16Array from JavaScriptCore.JSValueRef
@@ -34286,7 +34253,6 @@ verbose: Included JSValueMakeUndefined from JavaScriptCore.JSValueRef
 verbose: Included JSValueMakeNull from JavaScriptCore.JSValueRef
 verbose: Included JSValueMakeBoolean from JavaScriptCore.JSValueRef
 verbose: Included JSValueMakeNumber from JavaScriptCore.JSValueRef
-verbose: Included JSValueMakeSymbol from JavaScriptCore.JSValueRef
 verbose: Included JSValueMakeString from JavaScriptCore.JSValueRef
 verbose: Included JSValueMakeFromJSONString from JavaScriptCore.JSValueRef
 verbose: Included JSValueCreateJSONString from JavaScriptCore.JSValueRef
@@ -34378,7 +34344,6 @@ verbose: Included SubscriptSupport from JavaScriptCore.JSContext
 verbose: Included JSContextRefSupport from JavaScriptCore.JSContext
 verbose: Included JSValue from JavaScriptCore.JSValue
 verbose: Included StructSupport from JavaScriptCore.JSValue
-verbose: Included PropertyAccess from JavaScriptCore.JSValue
 verbose: Included SubscriptSupport from JavaScriptCore.JSValue
 verbose: Included JSValueRefSupport from JavaScriptCore.JSValue
 verbose: Included JSPropertyDescriptorWritableKey from JavaScriptCore.JSValue
@@ -35852,7 +35817,7 @@ verbose: Included ARSKViewDelegate from ARKit.ARSKView
 verbose: Included ARSKView from ARKit.ARSKView
 verbose: Included TNSCoreVersionNumber from TNSCore
 verbose: Included TNSCoreVersionString from TNSCore
-verbose: Exception [Name: 'vsignbitf', JsName: 'vsignbitf', Module: 'Accelerate.vecLib.vfp', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/vfp.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Vector] : Vector type is not supported.
+verbose: Exception [Name: 'vsignbitf', JsName: 'vsignbitf', Module: 'Accelerate.vecLib.vfp', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/vfp.h'] : Can't create type dependency. --> [Type Typedef] : Can't create type dependency. --> [Type Vector] : Vector type is not supported.
 verbose: Included DSPComplex from Accelerate.vecLib.vDSP
 verbose: Included DSPDoubleComplex from Accelerate.vecLib.vDSP
 verbose: Included DSPSplitComplex from Accelerate.vecLib.vDSP
@@ -38257,7 +38222,7 @@ verbose: Included SparseLSMRConvergenceTest_t from Accelerate.vecLib.Sparse_Solv
 verbose: Included SparseLSMRCTDefault from Accelerate.vecLib.Sparse_Solve
 verbose: Included SparseLSMRCTFongSaunders from Accelerate.vecLib.Sparse_Solve
 verbose: Included SparseLSMROptions from Accelerate.vecLib.Sparse_Solve
-verbose: Exception [Name: '', JsName: 'SparseIterativeMethod', Module: 'Accelerate.vecLib.Sparse_Solve', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Sparse/Solve.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
+verbose: Exception [Name: '', JsName: 'SparseIterativeMethod', Module: 'Accelerate.vecLib.Sparse_Solve', File: '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Sparse/Solve.h'] : Can't create type dependency. --> [Type Elaborated] : Can't create type dependency. --> [Type Record] : The record is an union.
 verbose: Included SparseRetain from Accelerate.vecLib.Sparse_Solve
 verbose: Included SparseRetain from Accelerate.vecLib.Sparse_Solve
 verbose: Included SparseRetain from Accelerate.vecLib.Sparse_Solve
@@ -39316,14 +39281,12 @@ verbose: Included CLSBinaryValueType from ClassKit.CLSBinaryItem
 verbose: Included CLSBinaryValueTypeTrueFalse from ClassKit.CLSBinaryItem
 verbose: Included CLSBinaryValueTypePassFail from ClassKit.CLSBinaryItem
 verbose: Included CLSBinaryValueTypeYesNo from ClassKit.CLSBinaryItem
-verbose: Included CLSBinaryValueTypeCorrectIncorrect from ClassKit.CLSBinaryItem
 verbose: Included CLSBinaryItem from ClassKit.CLSBinaryItem
 verbose: Included CLSQuantityItem from ClassKit.CLSQuantityItem
 verbose: Included CLSDataStoreDelegate from ClassKit.CLSDataStore
 verbose: Included CLSDataStore from ClassKit.CLSDataStore
 verbose: Included Contexts from ClassKit.CLSDataStore
 verbose: Included CLSDeepLinks from ClassKit.NSUserActivity_CLSDeepLinks
-verbose: Included CLSContextProvider from ClassKit.CLSContextProvider
 verbose: Included WatchKitErrorDomain from WatchKit.WKError
 verbose: Included WatchKitErrorCode from WatchKit.WKError
 verbose: Included WatchKitUnknownError from WatchKit.WKError
@@ -39918,11 +39881,9 @@ verbose: Included PKPaymentNetworkChinaUnionPay from PassKit.PKConstants
 verbose: Included PKPaymentNetworkDiscover from PassKit.PKConstants
 verbose: Included PKPaymentNetworkEftpos from PassKit.PKConstants
 verbose: Included PKPaymentNetworkElectron from PassKit.PKConstants
-verbose: Included PKPaymentNetworkElo from PassKit.PKConstants
 verbose: Included PKPaymentNetworkIDCredit from PassKit.PKConstants
 verbose: Included PKPaymentNetworkInterac from PassKit.PKConstants
 verbose: Included PKPaymentNetworkJCB from PassKit.PKConstants
-verbose: Included PKPaymentNetworkMada from PassKit.PKConstants
 verbose: Included PKPaymentNetworkMaestro from PassKit.PKConstants
 verbose: Included PKPaymentNetworkMasterCard from PassKit.PKConstants
 verbose: Included PKPaymentNetworkPrivateLabel from PassKit.PKConstants
@@ -40066,13 +40027,6 @@ verbose: Included PKAddPaymentPassRequestConfiguration from PassKit.PKAddPayment
 verbose: Included PKAddPaymentPassRequest from PassKit.PKAddPaymentPassViewController
 verbose: Included PKAddPaymentPassViewControllerDelegate from PassKit.PKAddPaymentPassViewController
 verbose: Included PKAddPaymentPassViewController from PassKit.PKAddPaymentPassViewController
-verbose: Included PKDisbursementVoucher from PassKit.PKDisbursementVoucher
-verbose: Included PKDisbursementRequestSchedule from PassKit.PKDisbursementRequest
-verbose: Included PKDisbursementRequestScheduleOneTime from PassKit.PKDisbursementRequest
-verbose: Included PKDisbursementRequestScheduleFuture from PassKit.PKDisbursementRequest
-verbose: Included PKDisbursementRequest from PassKit.PKDisbursementRequest
-verbose: Included PKDisbursementAuthorizationControllerDelegate from PassKit.PKDisbursementAuthorizationController
-verbose: Included PKDisbursementAuthorizationController from PassKit.PKDisbursementAuthorizationController
 verbose: Included TWRequestMethodGET from Twitter.TWRequest
 verbose: Included TWRequestMethodPOST from Twitter.TWRequest
 verbose: Included TWRequestMethodDELETE from Twitter.TWRequest
@@ -40132,15 +40086,8 @@ verbose: Included SKErrorStoreProductNotAvailable from StoreKit.SKError
 verbose: Included SKErrorCloudServicePermissionDenied from StoreKit.SKError
 verbose: Included SKErrorCloudServiceNetworkConnectionFailed from StoreKit.SKError
 verbose: Included SKErrorCloudServiceRevoked from StoreKit.SKError
-verbose: Included SKErrorPrivacyAcknowledgementRequired from StoreKit.SKError
-verbose: Included SKErrorUnauthorizedRequestData from StoreKit.SKError
-verbose: Included SKErrorInvalidOfferIdentifier from StoreKit.SKError
-verbose: Included SKErrorInvalidSignature from StoreKit.SKError
-verbose: Included SKErrorMissingOfferParams from StoreKit.SKError
-verbose: Included SKErrorInvalidOfferPrice from StoreKit.SKError
 verbose: Included SKPayment from StoreKit.SKPayment
 verbose: Included SKMutablePayment from StoreKit.SKPayment
-verbose: Included SKPaymentDiscount from StoreKit.SKPaymentDiscount
 verbose: Included SKPaymentQueue from StoreKit.SKPaymentQueue
 verbose: Included SKPaymentTransactionObserver from StoreKit.SKPaymentQueue
 verbose: Included SKPaymentTransactionState from StoreKit.SKPaymentTransaction
@@ -40161,9 +40108,6 @@ verbose: Included SKProductDiscountPaymentMode from StoreKit.SKProductDiscount
 verbose: Included SKProductDiscountPaymentModePayAsYouGo from StoreKit.SKProductDiscount
 verbose: Included SKProductDiscountPaymentModePayUpFront from StoreKit.SKProductDiscount
 verbose: Included SKProductDiscountPaymentModeFreeTrial from StoreKit.SKProductDiscount
-verbose: Included SKProductDiscountType from StoreKit.SKProductDiscount
-verbose: Included SKProductDiscountTypeIntroductory from StoreKit.SKProductDiscount
-verbose: Included SKProductDiscountTypeSubscription from StoreKit.SKProductDiscount
 verbose: Included SKProductDiscount from StoreKit.SKProductDiscount
 verbose: Included SKRequest from StoreKit.SKRequest
 verbose: Included SKRequestDelegate from StoreKit.SKRequest
@@ -40646,9 +40590,6 @@ verbose: Included HKCategoryTypeIdentifierMenstrualFlow from HealthKit.HKTypeIde
 verbose: Included HKCategoryTypeIdentifierIntermenstrualBleeding from HealthKit.HKTypeIdentifiers
 verbose: Included HKCategoryTypeIdentifierSexualActivity from HealthKit.HKTypeIdentifiers
 verbose: Included HKCategoryTypeIdentifierMindfulSession from HealthKit.HKTypeIdentifiers
-verbose: Included HKCategoryTypeIdentifierHighHeartRateEvent from HealthKit.HKTypeIdentifiers
-verbose: Included HKCategoryTypeIdentifierLowHeartRateEvent from HealthKit.HKTypeIdentifiers
-verbose: Included HKCategoryTypeIdentifierIrregularHeartRhythmEvent from HealthKit.HKTypeIdentifiers
 verbose: Included HKCharacteristicTypeIdentifierBiologicalSex from HealthKit.HKTypeIdentifiers
 verbose: Included HKCharacteristicTypeIdentifierBloodType from HealthKit.HKTypeIdentifiers
 verbose: Included HKCharacteristicTypeIdentifierDateOfBirth from HealthKit.HKTypeIdentifiers
@@ -40820,7 +40761,6 @@ verbose: Included HKMetadataKeyElevationDescended from HealthKit.HKMetadata
 verbose: Included HKMetadataKeyFitnessMachineDuration from HealthKit.HKMetadata
 verbose: Included HKMetadataKeyIndoorBikeDistance from HealthKit.HKMetadata
 verbose: Included HKMetadataKeyCrossTrainerDistance from HealthKit.HKMetadata
-verbose: Included HKMetadataKeyHeartRateEventThreshold from HealthKit.HKMetadata
 verbose: Included HKObserverQuery from HealthKit.HKObserverQuery
 verbose: Included HKQuantity from HealthKit.HKQuantity
 verbose: Included HKQuantitySeriesSampleBuilder from HealthKit.HKQuantitySeriesSampleBuilder
@@ -40988,7 +40928,7 @@ verbose: Included SocketAckEmitter from SocketIO.Swift
 verbose: Included SocketAnyEvent from SocketIO.Swift
 verbose: Included SocketEngineSpec from SocketIO.Swift
 verbose: Included SocketEngine from SocketIO.Swift
-verbose: Included SocketIO_Swift_1482 from SocketIO.Swift
+verbose: Included SocketIO_Swift_474 from SocketIO.Swift
 verbose: Included SocketEngineClient from SocketIO.Swift
 verbose: Included SocketEnginePacketType from SocketIO.Swift
 verbose: Included SocketEnginePacketTypeOpen from SocketIO.Swift
@@ -41010,10 +40950,7 @@ verbose: Included SocketRawAckView from SocketIO.Swift
 verbose: Included SocketRawView from SocketIO.Swift
 verbose: Included FoundationStream from Starscream.Swift
 verbose: Included WebSocket from Starscream.Swift
-verbose: Included Delay from Toaster.Swift
 verbose: Included Toast from Toaster.Swift
-verbose: Included ToastCenter from Toaster.Swift
 verbose: Included ToastView from Toaster.Swift
 verbose: Included ToastWindow from Toaster.Swift
-verbose: Included Toaster_Swift_611 from Toaster.Swift
-37 warnings generated.
+38 warnings generated.

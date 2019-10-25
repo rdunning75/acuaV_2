@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		082ABEB6AD6F41AEB989E67F /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06A265591A647A4BE7410CF /* TNSWidgets.framework */; };
 		0F2EF1D677F4436F97D17CFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5F4F9A2B0F4599B6F3A511 /* Assets.xcassets */; };
-		34725A16ECF34AE2BA860C97 /* NativeScriptEmbedder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7E0C7B03D420699298383 /* NativeScriptEmbedder.m */; };
 		3E7BA9B4A4BA4B66B6555729 /* TNSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5607222F46D44749D92A57D /* TNSCore.framework */; };
 		4D2C4A33BEC7449497805C8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F48AEABA94F49E598A9BE22 /* LaunchScreen.storyboard */; };
 		6528C60A62294B0BAA9EF78B /* TNSListView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0F70E0E7F9422CB5730FF8 /* TNSListView.framework */; };
@@ -23,6 +22,7 @@
 		CD62955D1BB2678900AE3A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62955C1BB2678900AE3A93 /* main.m */; };
 		D8336FE7842B417D8112BBA2 /* TNSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5607222F46D44749D92A57D /* TNSCore.framework */; };
 		FFA1F27C32F54BEE8E99FFE0 /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A06A265591A647A4BE7410CF /* TNSWidgets.framework */; };
+		BB82688599594D87B645CE34 /* NativeScriptEmbedder.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F068D0C5AF445C9E2FC88F /* NativeScriptEmbedder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,7 +43,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1CF7E0C7B03D420699298383 /* NativeScriptEmbedder.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = NativeScriptEmbedder.m; path = "../../node_modules/tns-core-modules/platforms/ios/src/NativeScriptEmbedder.m"; sourceTree = "<group>"; };
 		1F48AEABA94F49E598A9BE22 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = LaunchScreen.storyboard; path = acuamobile/Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B5F4F9A2B0F4599B6F3A511 /* Assets.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = acuamobile/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		391174B321F1CBD300BA2583 /* TNSDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNSDebugging.h; path = internal/TNSDebugging.h; sourceTree = SOURCE_ROOT; };
@@ -51,7 +50,6 @@
 		391174B521F1D7BF00BA2583 /* nativescript-build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "nativescript-build.xcconfig"; path = "internal/nativescript-build.xcconfig"; sourceTree = SOURCE_ROOT; };
 		391174B721F1D99900BA2583 /* plugins-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "plugins-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		391174B821F1D99900BA2583 /* plugins-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "plugins-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
-		40A8C2EE5D9A482EABB1DAB1 /* module.modulemap */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "../../node_modules/tns-core-modules/platforms/ios/src/module.modulemap"; sourceTree = "<group>"; };
 		7A0F70E0E7F9422CB5730FF8 /* TNSListView.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = TNSListView.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework"; sourceTree = "<group>"; };
 		858B832E18CA111C00AB12DE /* acuamobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = acuamobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		858B833918CA111C00AB12DE /* acuamobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "acuamobile-Info.plist"; sourceTree = "<group>"; };
@@ -70,8 +68,10 @@
 		CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-release.xcconfig"; sourceTree = "<group>"; };
 		CDF4743E1BA4855C0087EA85 /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
 		CE707075F0D64791A74BE0D6 /* BarcodeScannerFramework.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = BarcodeScannerFramework.framework; path = "$(SRCROOT)/../../node_modules/nativescript-barcodescanner/platforms/ios/BarcodeScannerFramework.framework"; sourceTree = "<group>"; };
-		DD17526508EF4E9A8BAF2CE7 /* NativeScriptEmbedder.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = NativeScriptEmbedder.h; path = "../../node_modules/tns-core-modules/platforms/ios/src/NativeScriptEmbedder.h"; sourceTree = "<group>"; };
 		EE31DA4D62E645B77E76FCB9 /* Pods-acuamobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acuamobile.release.xcconfig"; path = "Target Support Files/Pods-acuamobile/Pods-acuamobile.release.xcconfig"; sourceTree = "<group>"; };
+		7162375AFFA944E6ACB06C1E /* NativeScriptEmbedder.h */ = {isa = PBXFileReference; name = NativeScriptEmbedder.h; path = "../../node_modules/tns-core-modules/platforms/ios/src/NativeScriptEmbedder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		05F068D0C5AF445C9E2FC88F /* NativeScriptEmbedder.m */ = {isa = PBXFileReference; name = NativeScriptEmbedder.m; path = "../../node_modules/tns-core-modules/platforms/ios/src/NativeScriptEmbedder.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B2D214EC56674F658F888A21 /* module.modulemap */ = {isa = PBXFileReference; name = module.modulemap; path = "../../node_modules/tns-core-modules/platforms/ios/src/module.modulemap"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = sourcecode.module-map; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,23 +90,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6FDF56416611469EA2CBBA1C /* tns-core-modules */ = {
-			isa = PBXGroup;
-			children = (
-				DD17526508EF4E9A8BAF2CE7 /* NativeScriptEmbedder.h */,
-				1CF7E0C7B03D420699298383 /* NativeScriptEmbedder.m */,
-				40A8C2EE5D9A482EABB1DAB1 /* module.modulemap */,
-			);
-			name = "tns-core-modules";
-			sourceTree = "<group>";
-		};
-		7E176746F1554F138E3F11EB /* TNSNativeSource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = TNSNativeSource;
-			sourceTree = "<group>";
-		};
 		858B832518CA111C00AB12DE = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +97,9 @@
 				858B833718CA111C00AB12DE /* acuamobile */,
 				858B833018CA111C00AB12DE /* Frameworks */,
 				858B832F18CA111C00AB12DE /* Products */,
-				6FDF56416611469EA2CBBA1C /* tns-core-modules */,
-				7E176746F1554F138E3F11EB /* TNSNativeSource */,
 				A899148CC513C3E82ECA1869 /* Pods */,
+				4F404F829DBB41388942D2BB /* tns-core-modules */,
+				6E6314E9A2FF44E1B494EB87 /* TNSNativeSource */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +171,23 @@
 				B9BC7ACAD9C04DB4AB606F57 /* build.xcconfig */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		4F404F829DBB41388942D2BB /* tns-core-modules */ = {
+			isa = PBXGroup;
+			children = (
+				7162375AFFA944E6ACB06C1E /* NativeScriptEmbedder.h */,
+				05F068D0C5AF445C9E2FC88F /* NativeScriptEmbedder.m */,
+				B2D214EC56674F658F888A21 /* module.modulemap */,
+			);
+			name = tns-core-modules;
+			sourceTree = "<group>";
+		};
+		6E6314E9A2FF44E1B494EB87 /* TNSNativeSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TNSNativeSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,7 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD62955D1BB2678900AE3A93 /* main.m in Sources */,
-				34725A16ECF34AE2BA860C97 /* NativeScriptEmbedder.m in Sources */,
+				BB82688599594D87B645CE34 /* NativeScriptEmbedder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,11 +482,17 @@
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 					"\"$(SRCROOT)/../../node_modules/tns-core-modules/platforms/ios/src\"",
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
+					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules/platforms/ios/src\"",
+					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
+					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
+					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/acuamobile/acuamobile-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = acuamobile;
 				WRAPPER_EXTENSION = app;
+				PRODUCT_BUNDLE_IDENTIFIER = "gov.lacounty.acua";
 			};
 			name = Debug;
 		};
@@ -512,11 +518,17 @@
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 					"\"$(SRCROOT)/../../node_modules/tns-core-modules/platforms/ios/src\"",
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
+					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules/platforms/ios/src\"",
+					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
+					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
+					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/acuamobile/acuamobile-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = acuamobile;
 				WRAPPER_EXTENSION = app;
+				PRODUCT_BUNDLE_IDENTIFIER = "gov.lacounty.acua";
 			};
 			name = Release;
 		};

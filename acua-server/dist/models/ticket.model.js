@@ -33,7 +33,7 @@ __decorate([
         type: 'number'
     }),
     __metadata("design:type", Number)
-], Ticket.prototype, "index", void 0);
+], Ticket.prototype, "index_", void 0);
 __decorate([
     repository_1.property({
         type: 'string',

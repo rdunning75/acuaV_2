@@ -1,4 +1,4 @@
-/**
+  /**
  * This is a Mongo Shell script. Run it with Mongo shell on command line:
  *     mongo script.js
  * or inside Mongo shell: load('script.js')
@@ -39,7 +39,7 @@ users.push({
   password: '123',
   location: 'Downey',
   window: 3,
-  loggedIn: true
+  loggedIn: false
 })
 
 // Agoura

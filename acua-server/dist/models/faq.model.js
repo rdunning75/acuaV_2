@@ -27,7 +27,7 @@ __decorate([
         type: 'number',
     }),
     __metadata("design:type", Number)
-], Faq.prototype, "index", void 0);
+], Faq.prototype, "index_", void 0);
 __decorate([
     repository_1.property({
         type: 'string',
