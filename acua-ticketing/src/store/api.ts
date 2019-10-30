@@ -12,7 +12,7 @@ export const api = axios.create({
  */
 
 export async function fetchTickets(user: any): Promise<Ticket[]> {
-  const order: string = 'filter[order]=index ASC'
+  const order: string = 'filter[order]=index_ ASC'
   const where: string = `filter[where][and][0][location]=${user.location}`
   + `&filter[where][and][1][window]=${user.window}`
   + `&filter[where][and][2][isComplete]=false`

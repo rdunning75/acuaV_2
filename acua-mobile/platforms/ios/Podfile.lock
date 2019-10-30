@@ -25,13 +25,13 @@ PODS:
     - Starscream (~> 3.1)
   - Starscream (3.1.0)
   - Toast (3.1.0)
-  - Toaster (2.3.0)
+  - Toaster (2.0.4)
 
 DEPENDENCIES:
   - MaterialComponents/Tabs (~> 84.4)
   - Socket.IO-Client-Swift (from `https://github.com/triniwiz/socket.io-client-swift.git`)
   - Toast (~> 3.0)
-  - Toaster (from `https://github.com/devxoul/Toaster.git`)
+  - Toaster (~> 2.0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -39,20 +39,16 @@ SPEC REPOS:
     - MDFInternationalization
     - Starscream
     - Toast
+    - Toaster
 
 EXTERNAL SOURCES:
   Socket.IO-Client-Swift:
     :git: https://github.com/triniwiz/socket.io-client-swift.git
-  Toaster:
-    :git: https://github.com/devxoul/Toaster.git
 
 CHECKOUT OPTIONS:
   Socket.IO-Client-Swift:
     :commit: eb39290d607fb092eb59af8f3532612b045f0ee0
     :git: https://github.com/triniwiz/socket.io-client-swift.git
-  Toaster:
-    :commit: 59a189c9baf9122e9853707d4f58883ba6b587cf
-    :git: https://github.com/devxoul/Toaster.git
 
 SPEC CHECKSUMS:
   MaterialComponents: 71139af6ca6875fbde8ab8e64a275b7fd6a22d7f
@@ -60,8 +56,8 @@ SPEC CHECKSUMS:
   Socket.IO-Client-Swift: 554ab1004ba68249d1dd14b10eddb11ea4cb4133
   Starscream: 08172b481e145289c4930cb567230fb55897cfa4
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
-  Toaster: 33d27524fb6829cdb6b247c924beab0cfa001b3e
+  Toaster: f13031c636ef065281bc11857be9a16c7659e04f
 
-PODFILE CHECKSUM: 5ae57bcf1b4946becfa69dc39c23f08c4de6be82
+PODFILE CHECKSUM: 255dd10a46725c3a2cad170f7c63198f4c279c3c
 
 COCOAPODS: 1.7.5

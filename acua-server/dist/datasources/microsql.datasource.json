@@ -1,6 +1,6 @@
 {
-    "name": "mysql",
-    "connector": "mysql",
+    "name": "microsql",
+    "connector": "mssql",
     "url": "",
     "host": "",
     "port": 0,

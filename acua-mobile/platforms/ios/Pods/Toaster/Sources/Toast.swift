@@ -1,29 +1,40 @@
+/*
+ * Toast.swift
+ *
+ *            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+ *                    Version 2, December 2004
+ *
+ * Copyright (C) 2013-2015 Su Yeol Jeon
+ *
+ * Everyone is permitted to copy and distribute verbatim or modified
+ * copies of this license document, and changing it is allowed as long
+ * as the name is changed.
+ *
+ *            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+ *   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+ *
+ *  0. You just DO WHAT THE FUCK YOU WANT TO.
+ *
+ */
+
 import UIKit
 
-public class Delay: NSObject {
-  @available(*, unavailable) private override init() {}
-  // `short` and `long` (lowercase) are reserved words in Objective-C
-  // so we capitalize them instead of the default `short_` and `long_`
-  @objc(Short) public static let short: TimeInterval = 2.0
-  @objc(Long) public static let long: TimeInterval = 3.5
+public struct Delay {
+  public static let short: TimeInterval = 2.0
+  public static let long: TimeInterval = 3.5
 }
 
 open class Toast: Operation {
 
   // MARK: Properties
 
-  @objc public var text: String? {
+  public var text: String? {
     get { return self.view.text }
     set { self.view.text = newValue }
   }
-  
-  @objc public var attributedText: NSAttributedString? {
-    get { return self.view.attributedText }
-    set { self.view.attributedText = newValue }
-  }
 
-  @objc public var delay: TimeInterval
-  @objc public var duration: TimeInterval
+  public var delay: TimeInterval
+  public var duration: TimeInterval
 
   private var _executing = false
   override open var isExecuting: Bool {
@@ -52,27 +63,18 @@ open class Toast: Operation {
 
   // MARK: UI
 
-  @objc public var view: ToastView = ToastView()
+  public var view: ToastView = ToastView()
 
 
   // MARK: Initializing
 
-  /// Initializer.
-  /// Instantiates `self.view`, so must be called on main thread.
-  @objc public init(text: String?, delay: TimeInterval = 0, duration: TimeInterval = Delay.short) {
+  public init(text: String?, delay: TimeInterval = 0, duration: TimeInterval = Delay.short) {
     self.delay = delay
     self.duration = duration
     super.init()
     self.text = text
   }
 
-  @objc public init(attributedText: NSAttributedString?, delay: TimeInterval = 0, duration: TimeInterval = Delay.short) {
-    self.delay = delay
-    self.duration = duration
-    super.init()
-    self.attributedText = attributedText
-  }
-  
 
   // MARK: Factory (Deprecated)
 
@@ -94,7 +96,7 @@ open class Toast: Operation {
 
   // MARK: Showing
 
-  @objc public func show() {
+  public func show() {
     ToastCenter.default.add(self)
   }
 
@@ -111,15 +113,14 @@ open class Toast: Operation {
   // MARK: Operation Subclassing
 
   override open func start() {
-    let isRunnable = !self.isFinished && !self.isCancelled && !self.isExecuting
-    guard isRunnable else { return }
+    guard !self.isExecuting else { return }
     guard Thread.isMainThread else {
       DispatchQueue.main.async { [weak self] in
         self?.start()
       }
       return
     }
-    main()
+    super.start()
   }
 
   override open func main() {
@@ -138,13 +139,6 @@ open class Toast: Operation {
           self.view.alpha = 1
         },
         completion: { completed in
-          if ToastCenter.default.isSupportAccessibility {
-            #if swift(>=4.2)
-            UIAccessibility.post(notification: .announcement, argument: self.view.text)
-            #else
-            UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, self.view.text)
-            #endif
-          }
           UIView.animate(
             withDuration: self.duration,
             animations: {
@@ -168,7 +162,8 @@ open class Toast: Operation {
     }
   }
 
-  func finish() {
+  open func finish() {
+    guard self.isExecuting else { return }
     self.isExecuting = false
     self.isFinished = true
   }
