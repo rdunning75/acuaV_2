@@ -1,18 +1,8 @@
 {
   "name": "mysql",
   "connector": "mysql",
-<<<<<<< HEAD
-  "url": "",
-  "host": "",
-  "port": 0,
-  "user": "",
-  "password": "",
-  "database": ""
-}
-=======
   "host": "acua-mysql.mysql.database.azure.com",
   "user": "mysqladmin@acua-mysql",
   "password": "Csula2020",
   "database": "quickstartdb"
 }
->>>>>>> d5a8d963b97dd8c60fdc4055c2adda3f289a7771
