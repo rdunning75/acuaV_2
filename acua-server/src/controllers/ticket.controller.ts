@@ -41,6 +41,7 @@ export class TicketController {
     'Lancaster': 1,
     'Palmdale': 1,
   }
+
   static windowGen: number = 0;
 
   public resetNumGen = new CronJob('00 00 00 * * *', () => {
@@ -86,13 +87,9 @@ export class TicketController {
       return null;
     }
 
-    // add function to generate window number from queue. 
-    // [. . . ]
-    // [. . . . ]
-    // [. . . [.] ] - > selected available window from employee
-    // window [1] [2] [3]
-    //         x   x   | 
     const window = windows[TicketController.windowGen++ % windows.length].window;
+
+
 
     ticket.number = TicketController.numberGen[ticket.location];
     ticket.index_ = TicketController.numberGen[ticket.location]++;
