@@ -25,9 +25,6 @@
           <v-tab to="/manager/tickets">
             Tickets
           </v-tab>
-          <v-tab to="/manager/faqs">
-            FAQs
-          </v-tab>
         </v-tabs>
       </template>
     </v-toolbar>

@@ -72,7 +72,7 @@ export default class TicketCard extends Vue {
   private users = users
 
   public get queue(): Ticket[] {
-    return this.tickets.xtickets
+    return this.tickets.tickets
   }
 
   public get ticket(): Ticket {
@@ -84,7 +84,7 @@ export default class TicketCard extends Vue {
 
     if (ticket.strikes < 2) {
       ticket.strikes++
-      ticket.index += 5
+      ticket.index_ += 5
       this.tickets.strikeTicket({ id, ticket }).then((res) => {
         this.tickets.loadTickets()
         tickets.ticketCount(this.users.user)

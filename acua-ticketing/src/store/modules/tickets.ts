@@ -56,9 +56,9 @@ class TicketsModule extends VuexModule {
     this.limit = limit
   }
 
-  public get xtickets(): Ticket[] {
+  /*public get xtickets(): Ticket[] {
     return this.tickets.slice(0, this.limit)
-  }
+  }*/
 
   public get firstTicket(): Ticket {
     return this.tickets[0]

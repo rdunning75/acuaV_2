@@ -1,5 +1,6 @@
 <template>
   <v-navigation-drawer
+    permanent
     fixed
     right
     clipped
@@ -27,6 +28,7 @@
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title>Ticket #{{ticket.number}}</v-list-tile-title>
+          <v-list-tile-sub-title>Name: {{ticket.name}}</v-list-tile-sub-title>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
@@ -38,6 +40,9 @@
     <v-list dense v-if="queue.length > 0 && remaining > 0">
       <v-subheader>+ {{remaining}} more</v-subheader>
     </v-list>
+    <v-list-tile-action>
+      <v-btn flat color="primary" @click="resolve(ticket.id, ticket)">Next</v-btn>
+    </v-list-tile-action>
   </v-navigation-drawer>
 </template>
 
@@ -53,7 +58,7 @@ export default class TicketQueue extends Vue {
   private users = users
 
   public get queue(): Ticket[] {
-    return this.tickets.xtickets
+    return this.tickets.tickets
   }
 
   public get ticket(): Ticket {
@@ -66,6 +71,17 @@ export default class TicketQueue extends Vue {
 
   public get window(): number | null {
     return this.users.window === null ? null : this.users.window + 1
+  }
+
+    public resolve(id: number, ticket: Ticket): void {
+    this.tickets.setLoader()
+
+    ticket.isComplete = true
+    this.tickets.resolve({ id, ticket }).then((res) => {
+      this.tickets.loadTickets()
+      tickets.ticketCount(this.users.user)
+      this.tickets.setLoader()
+    })
   }
 }
 </script>
