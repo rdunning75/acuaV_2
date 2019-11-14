@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Toaster-Swift.h</key>
 		<data>
-		xWVlPmHNwocCEvdPB67F76IGfQY=
+		ltn+NuzCc01MEqnfrY7VpqsAoJo=
 		</data>
 		<key>Headers/Toaster-umbrella.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Headers/Toaster.h</key>
 		<data>
-		u29ICNU35SWJ6gXzuu4/uGTkS/M=
+		iQAtJaFR99HiV3M5Q4WtemTycVo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		coisvhCRHI8pTOHOKVapZzkt8Bc=
+		ubZwKSFoSzZftbY8ZmtzJYsdvMU=
 		</data>
 		<key>Modules/Toaster.swiftmodule/i386.swiftdoc</key>
 		<data>
-		Eh5FW4kYiAAjuriwoVkv8eMfPmY=
+		0zUNit6oPj1+C5laG8cgzc1Mghc=
 		</data>
 		<key>Modules/Toaster.swiftmodule/i386.swiftmodule</key>
 		<data>
-		iUc3MJ2rt1vYLESGEB7C5DzeiHA=
+		uq2h16Qvx03i3gqSrzXBZ7wWDe0=
 		</data>
 		<key>Modules/Toaster.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		IKR9hZnr7uq+WhHu9THvBeAvoJA=
+		qpn/LHDVxVU2zI7wCq8HuN3fFSY=
 		</data>
 		<key>Modules/Toaster.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		wctgdRwo6grVSwMadIatcXpdslQ=
+		Pae/Z9tMXRE6J4QFkAeKiVtRIrM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,11 +47,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xWVlPmHNwocCEvdPB67F76IGfQY=
+			ltn+NuzCc01MEqnfrY7VpqsAoJo=
 			</data>
 			<key>hash2</key>
 			<data>
-			zT0V6qPDFZtHojLqbdRTue1OouG6pxJYLnhJESxEq0o=
+			OGh91O13Thoe5h6rxDqKPIDSfjCaPSVTLdQUKR6ju1A=
 			</data>
 		</dict>
 		<key>Headers/Toaster-umbrella.h</key>
@@ -69,55 +69,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u29ICNU35SWJ6gXzuu4/uGTkS/M=
+			iQAtJaFR99HiV3M5Q4WtemTycVo=
 			</data>
 			<key>hash2</key>
 			<data>
-			O6N8tvSeaudd8QLZEswClAp8ueZp9TkF36P5VKQQOa0=
+			ylJE0uUz0QORyik+w4fbnBettmDjFncgJpmGoWMk8tQ=
 			</data>
 		</dict>
 		<key>Modules/Toaster.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Eh5FW4kYiAAjuriwoVkv8eMfPmY=
+			0zUNit6oPj1+C5laG8cgzc1Mghc=
 			</data>
 			<key>hash2</key>
 			<data>
-			7zNUruJywNTVG+9vQaE2EwEG200MrUp3W1C5m3W1asg=
+			7gK7DTmOrxWttAxe3XckwifjoZpp+GO+6LWkSMvUPFo=
 			</data>
 		</dict>
 		<key>Modules/Toaster.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iUc3MJ2rt1vYLESGEB7C5DzeiHA=
+			uq2h16Qvx03i3gqSrzXBZ7wWDe0=
 			</data>
 			<key>hash2</key>
 			<data>
-			bhQ11Dh9apg4WthbbXzakIyJiKkct4GScaor6rSxfDs=
+			Y5+R5QiD7kRY69skH6gP8EYLLUDCLT8wUzsEHuKiGik=
 			</data>
 		</dict>
 		<key>Modules/Toaster.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IKR9hZnr7uq+WhHu9THvBeAvoJA=
+			qpn/LHDVxVU2zI7wCq8HuN3fFSY=
 			</data>
 			<key>hash2</key>
 			<data>
-			26+IIIWdrgvF/IEvqlou7616MjsUvrByIeTpmcSp0K0=
+			X3Lrsf0uIieTVFCAogR5fRnLF96M7wryJEpZma4WUw4=
 			</data>
 		</dict>
 		<key>Modules/Toaster.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wctgdRwo6grVSwMadIatcXpdslQ=
+			Pae/Z9tMXRE6J4QFkAeKiVtRIrM=
 			</data>
 			<key>hash2</key>
 			<data>
-			XB0QvmfbTe2Aawx/2ecCy4hlUhP1bpR87BJl1pSbAJI=
+			VX5Gup0JJ2HAx/eP6y10gIwXNUbmC7bUNiO5dPzi9+E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
