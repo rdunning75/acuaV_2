@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Current Ticket -->
-    <v-card min-height="317" hover v-if="queue.length > 0">
+    <v-card min-height="317" hover v-if="check === true">
       <v-card-title class="headline">
         Ticket #{{ticket.number}}
       </v-card-title>
@@ -71,8 +71,12 @@ export default class TicketCard extends Vue {
   private tickets = tickets // ticket state manager
   private users = users
 
+  public get check(): boolean {
+    return this.tickets.check
+  }
+
   public get queue(): Ticket[] {
-    return this.tickets.xtickets
+    return this.tickets.tickets
   }
 
   public get ticket(): Ticket {
@@ -84,7 +88,7 @@ export default class TicketCard extends Vue {
 
     if (ticket.strikes < 2) {
       ticket.strikes++
-      ticket.index += 5
+      ticket.index_ += 5
       this.tickets.strikeTicket({ id, ticket }).then((res) => {
         this.tickets.loadTickets()
         tickets.ticketCount(this.users.user)
@@ -101,13 +105,12 @@ export default class TicketCard extends Vue {
   }
 
   public resolve(id: number, ticket: Ticket): void {
-    this.tickets.setLoader()
-
     ticket.isComplete = true
     this.tickets.resolve({ id, ticket }).then((res) => {
+      tickets.setFalse()
       this.tickets.loadTickets()
       tickets.ticketCount(this.users.user)
-      this.tickets.setLoader()
+      // this.tickets.setLoader()
     })
   }
 }

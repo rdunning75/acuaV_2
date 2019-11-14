@@ -21,8 +21,18 @@ import { fetchTickets, removeTicket, strikeTicket, fetchTotal } from '../api'
 class TicketsModule extends VuexModule {
   public tickets: Ticket[] = []
   public count: number = 0
-  public limit: number = 4
   public ticketLoader: boolean = false
+  public check: boolean = false
+
+  @Mutation
+  public setCheck() {
+    this.check = true
+  }
+
+  @Mutation
+  public setFalse() {
+    this.check = false
+  }
 
   @MutationAction
   public async loadTickets() {
@@ -51,14 +61,9 @@ class TicketsModule extends VuexModule {
     this.ticketLoader = !this.ticketLoader
   }
 
-  @Mutation
-  public setLimit(limit: number) {
-    this.limit = limit
-  }
-
-  public get xtickets(): Ticket[] {
+  /*public get xtickets(): Ticket[] {
     return this.tickets.slice(0, this.limit)
-  }
+  }*/
 
   public get firstTicket(): Ticket {
     return this.tickets[0]

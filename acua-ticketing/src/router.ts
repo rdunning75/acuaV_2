@@ -7,7 +7,7 @@ Vue.use(Router)
 
 const router = new Router({
   mode: 'history',
-  base: process.env.BASE_URL || 'http://localhost:8080/',
+  base: process.env.BASE_URL,
   routes: [
     {
       path: '/',
@@ -23,11 +23,6 @@ const router = new Router({
       path: '/manager/tickets',
       name: 'manager',
       component: () => import('./views/Manager.vue')
-    },
-    {
-      path: '/manager/faqs',
-      name: 'faqs',
-      component: () => import('./views/FaqManager.vue')
     },
     {
       path: '*',

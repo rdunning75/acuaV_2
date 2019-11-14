@@ -1,7 +1,7 @@
 export interface Ticket {
   id: string
   number: number
-  index: number
+  index_: number
   phone: string
   name: string
   query: string
