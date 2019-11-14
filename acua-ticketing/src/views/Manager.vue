@@ -69,9 +69,9 @@ export default class Manager extends Vue {
   private pollData(): void {
     this.polling = setInterval(() => {
       tickets.ticketCount(this.users.user)
-      if (tickets.tickets.length < 12) {
+      /* if (tickets.tickets.length < 12) {
         tickets.loadTickets()
-      }
+      } */
     }, 11000)
 
     this.countdown = setInterval(() => {
