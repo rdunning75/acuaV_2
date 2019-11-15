@@ -18,7 +18,11 @@
             </v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
+<<<<<<< HEAD
               <v-btn dark color="teal" @keyup.enter="submit" @click="login">Login</v-btn>
+=======
+              <v-btn dark color="teal" @click="login">Login</v-btn>
+>>>>>>> fa3139329b05e6f1ce5bf87f957f6157ae2d9028
             </v-card-actions>
           </v-card>
         </v-flex>
