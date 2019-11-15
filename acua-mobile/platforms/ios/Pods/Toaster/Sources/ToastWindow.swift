@@ -62,7 +62,7 @@ open class ToastWindow: UIWindow {
   public override init(frame: CGRect) {
     super.init(frame: frame)
     self.isUserInteractionEnabled = false
-    self.windowLevel = CGFloat.greatestFiniteMagnitude
+    self.windowLevel = UIWindow.Level(rawValue: CGFloat.greatestFiniteMagnitude)
     self.backgroundColor = .clear
     self.isHidden = false
     self.handleRotate(UIApplication.shared.statusBarOrientation)
@@ -70,25 +70,25 @@ open class ToastWindow: UIWindow {
     NotificationCenter.default.addObserver(
       self,
       selector: #selector(self.bringWindowToTop),
-      name: .UIWindowDidBecomeVisible,
+      name: UIWindow.didBecomeVisibleNotification,
       object: nil
     )
     NotificationCenter.default.addObserver(
       self,
       selector: #selector(self.statusBarOrientationWillChange),
-      name: .UIApplicationWillChangeStatusBarOrientation,
+      name: UIApplication.willChangeStatusBarOrientationNotification,
       object: nil
     )
     NotificationCenter.default.addObserver(
       self,
       selector: #selector(self.statusBarOrientationDidChange),
-      name: .UIApplicationDidChangeStatusBarOrientation,
+      name: UIApplication.didChangeStatusBarOrientationNotification,
       object: nil
     )
     NotificationCenter.default.addObserver(
       self,
       selector: #selector(self.applicationDidBecomeActive),
-      name: .UIApplicationDidBecomeActive,
+      name: UIApplication.didBecomeActiveNotification,
       object: nil
     )
   }
@@ -98,24 +98,24 @@ open class ToastWindow: UIWindow {
   }
 
   /// Bring ToastWindow to top when another window is being shown.
-  func bringWindowToTop(_ notification: Notification) {
+    @objc func bringWindowToTop(_ notification: Notification) {
     if !(notification.object is ToastWindow) {
       ToastWindow.shared.isHidden = true
       ToastWindow.shared.isHidden = false
     }
   }
 
-  dynamic func statusBarOrientationWillChange() {
+    @objc dynamic func statusBarOrientationWillChange() {
     self.isStatusBarOrientationChanging = true
   }
 
-  dynamic func statusBarOrientationDidChange() {
+    @objc dynamic func statusBarOrientationDidChange() {
     let orientation = UIApplication.shared.statusBarOrientation
     self.handleRotate(orientation)
     self.isStatusBarOrientationChanging = false
   }
 
-  func applicationDidBecomeActive() {
+    @objc func applicationDidBecomeActive() {
     let orientation = UIApplication.shared.statusBarOrientation
     self.handleRotate(orientation)
   }

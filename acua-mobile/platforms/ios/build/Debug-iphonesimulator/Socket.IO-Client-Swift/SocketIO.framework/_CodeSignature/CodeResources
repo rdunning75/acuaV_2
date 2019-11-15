@@ -10,27 +10,43 @@
 		</data>
 		<key>Headers/SocketIO-Swift.h</key>
 		<data>
-		LQIOWQx7xxaK+9WNou6hq0Fwtmw=
+		Vso1mv70dfYtRvBcakVtLaY7M+g=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		doWwKkqEfdo791v1hBclFbwXPgc=
+		pFcO0xvg/XMG/jOx+eOHLSZI/qI=
+		</data>
+		<key>Modules/SocketIO.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
+		<data>
+		K5D4z1cmhaYwGmT3u8w1ktWCeSw=
+		</data>
+		<key>Modules/SocketIO.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
+		<data>
+		BW9M4454j8bULI019ZRzFdRd6sg=
 		</data>
 		<key>Modules/SocketIO.swiftmodule/i386.swiftdoc</key>
 		<data>
-		Cgf6B0Hy1Hk1OA/oHNeIMlQvRc0=
+		K5D4z1cmhaYwGmT3u8w1ktWCeSw=
 		</data>
 		<key>Modules/SocketIO.swiftmodule/i386.swiftmodule</key>
 		<data>
-		xAXn2xnlsZ4C/r37FZnzodK4IQA=
+		BW9M4454j8bULI019ZRzFdRd6sg=
+		</data>
+		<key>Modules/SocketIO.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		28XwwwG0ko6DSNddIXwZGYHBdlw=
+		</data>
+		<key>Modules/SocketIO.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		Mgz9irhPJt6FKFhYdbKjE80qlG4=
 		</data>
 		<key>Modules/SocketIO.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		ZKaSrOgpAMCvKJ4tQHKTep7yErY=
+		28XwwwG0ko6DSNddIXwZGYHBdlw=
 		</data>
 		<key>Modules/SocketIO.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		GF8KLq2D23by7gPUX4O4ooPJs9Q=
+		Mgz9irhPJt6FKFhYdbKjE80qlG4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,55 +70,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LQIOWQx7xxaK+9WNou6hq0Fwtmw=
+			Vso1mv70dfYtRvBcakVtLaY7M+g=
 			</data>
 			<key>hash2</key>
 			<data>
-			IS13BPxsr/sw0yATdAt9dsS35tVKT5sfGNFvCyY8C0Q=
+			G9tc6TEzLYZe0S3V/BmnoqW8S+ViI/xBNo2IB9LoMKQ=
+			</data>
+		</dict>
+		<key>Modules/SocketIO.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K5D4z1cmhaYwGmT3u8w1ktWCeSw=
+			</data>
+			<key>hash2</key>
+			<data>
+			o/gs03bKh/hXU4FN8JdGy2fM6OJDjJjRqcxzZb+FwJ4=
+			</data>
+		</dict>
+		<key>Modules/SocketIO.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BW9M4454j8bULI019ZRzFdRd6sg=
+			</data>
+			<key>hash2</key>
+			<data>
+			veHjiAqILeJt8N5gVWa2+m/eng2Nk22ysS8O/UclAp8=
 			</data>
 		</dict>
 		<key>Modules/SocketIO.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Cgf6B0Hy1Hk1OA/oHNeIMlQvRc0=
+			K5D4z1cmhaYwGmT3u8w1ktWCeSw=
 			</data>
 			<key>hash2</key>
 			<data>
-			5tTKgCbHpBLH6DSFkuiQN5CNR38EodtfvL4KbgHpGMc=
+			o/gs03bKh/hXU4FN8JdGy2fM6OJDjJjRqcxzZb+FwJ4=
 			</data>
 		</dict>
 		<key>Modules/SocketIO.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xAXn2xnlsZ4C/r37FZnzodK4IQA=
+			BW9M4454j8bULI019ZRzFdRd6sg=
 			</data>
 			<key>hash2</key>
 			<data>
-			UFNUmjIcDRAjYm4awEX9zvnXZRTy0oZYTMsXxYrfi3Q=
+			veHjiAqILeJt8N5gVWa2+m/eng2Nk22ysS8O/UclAp8=
+			</data>
+		</dict>
+		<key>Modules/SocketIO.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			28XwwwG0ko6DSNddIXwZGYHBdlw=
+			</data>
+			<key>hash2</key>
+			<data>
+			EbHcU7kz+BwccHk4Z6xOeWaw+aOmHQpl4DszLadTdho=
+			</data>
+		</dict>
+		<key>Modules/SocketIO.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Mgz9irhPJt6FKFhYdbKjE80qlG4=
+			</data>
+			<key>hash2</key>
+			<data>
+			eBFqKtT8NzdfxjZc5wOuGsmwtfWhn1HTGA8DMoIyEtY=
 			</data>
 		</dict>
 		<key>Modules/SocketIO.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZKaSrOgpAMCvKJ4tQHKTep7yErY=
+			28XwwwG0ko6DSNddIXwZGYHBdlw=
 			</data>
 			<key>hash2</key>
 			<data>
-			6w0n3WfYUm2uDAfgJeylg6afKhaELTFzTA7fGetH53c=
+			EbHcU7kz+BwccHk4Z6xOeWaw+aOmHQpl4DszLadTdho=
 			</data>
 		</dict>
 		<key>Modules/SocketIO.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GF8KLq2D23by7gPUX4O4ooPJs9Q=
+			Mgz9irhPJt6FKFhYdbKjE80qlG4=
 			</data>
 			<key>hash2</key>
 			<data>
-			8mS8kkRhKSgUbf/fnuQriizYQUnnqFq+bNG/P58fSu8=
+			eBFqKtT8NzdfxjZc5wOuGsmwtfWhn1HTGA8DMoIyEtY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
