@@ -1,9 +1,0 @@
-{
-    "name": "mongo",
-    "connector": "mongodb",
-    "host": "localhost",
-    "port": 27017,
-    "url": "",
-    "password": "",
-    "database": "test"
-}
