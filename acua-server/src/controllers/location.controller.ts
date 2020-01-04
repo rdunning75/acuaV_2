@@ -34,19 +34,8 @@ export class LocationController {
       },
     },
   })
-  async create(
-    @requestBody({
-      content: {
-        'application/json': {
-          schema: getModelSchemaRef(Location, {
-            title: 'NewLocation',
-            
-          }),
-        },
-      },
-    })
-    location: Location,
-  ): Promise<Location> {
+
+  async create(@requestBody()location: Location): Promise<Location> {
     return this.locationRepository.create(location);
   }
 
@@ -58,6 +47,7 @@ export class LocationController {
       },
     },
   })
+
   async count(
     @param.query.object('where', getWhereSchemaFor(Location)) where?: Where<Location>,
   ): Promise<Count> {

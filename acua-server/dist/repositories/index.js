@@ -7,4 +7,7 @@ __export(require("./ticket.repository"));
 __export(require("./user.repository"));
 __export(require("./animal.repository"));
 __export(require("./faq.repository"));
+__export(require("./ticket-history.repository"));
+__export(require("./location.repository"));
+__export(require("./users.repository"));
 //# sourceMappingURL=index.js.map

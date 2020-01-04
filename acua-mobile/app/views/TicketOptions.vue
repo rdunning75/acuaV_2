@@ -19,10 +19,6 @@
             <ListPicker row="1" :items="choices" selectedIndex="0"
                         @selectedIndexChange="selectedIndexChanged" v-model="selectedIndex"/>
 
-<!--            <Label class="msg" row="3" text="You are always allowed to go to the kennels without asking"-->
-<!--                   v-if="!isTicket" textWrap="true"/>-->
-
-
             <StackLayout row="3" v-if="isTicket">
                 <Label class="msg" text="   Tell us about what you would like to know" textWrap="true"/>
 

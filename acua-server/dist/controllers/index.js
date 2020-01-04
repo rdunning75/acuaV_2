@@ -8,4 +8,7 @@ __export(require("./ticket.controller"));
 __export(require("./user.controller"));
 __export(require("./animal.controller"));
 __export(require("./faq.controller"));
+__export(require("./users.controller"));
+__export(require("./ticket-history.controller"));
+__export(require("./location.controller"));
 //# sourceMappingURL=index.js.map

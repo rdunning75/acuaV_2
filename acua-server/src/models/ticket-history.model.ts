@@ -1,6 +1,6 @@
 import {Entity, model, property} from '@loopback/repository';
 
-@model({settings: {strict: false}})
+@model({settings: {}})
 export class TicketHistory extends Entity {
   @property({
     type: 'number',
@@ -8,47 +8,43 @@ export class TicketHistory extends Entity {
     required: true,
     generated: true,
   })
-  tic_iid: number;
+  tic_id: number;
 
   @property({
     type: 'number',
     required: true,
-    default: 0,
   })
   user_id: number;
 
   @property({
     type: 'number',
     required: true,
-    default: 0,
   })
   loc_id: number;
 
   @property({
     type: 'number',
     required: true,
-    default: 0,
   })
   win_id: number;
 
   @property({
-    type: 'any',
+    type: 'string',
     required: true,
   })
-      // tslint:disable-next-line:no-any
-  time_created: any;
+  time_created: string;
 
   @property({
-    type:'any',
+    type: 'string',
     required: true,
   })
-      // tslint:disable-next-line:no-any
-  time_serviced: any;
+  time_serviced: string;
 
   @property({
     type: 'boolean',
+    required: true,
   })
-  serviced?: boolean;
+  serviced: boolean;
 
   @property({
     type: 'string',
@@ -64,20 +60,15 @@ export class TicketHistory extends Entity {
 
   @property({
     type: 'string',
+    required: true,
   })
-  reason_of_vist?: string;
+  reason_of_visit: string;
 
   @property({
     type: 'string',
   })
-  user_note?: string;
+  user_notes?: string;
 
-  // Define well-known properties here
-
-  // Indexer property to allow additional data
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  // tslint:disable-next-line:no-any
-  [prop: string]: any;
 
   constructor(data?: Partial<TicketHistory>) {
     super(data);

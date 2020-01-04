@@ -34,19 +34,7 @@ export class UsersController {
       },
     },
   })
-  async create(
-    @requestBody({
-      content: {
-        'application/json': {
-          schema: getModelSchemaRef(Users, {
-            title: 'NewUsers',
-            
-          }),
-        },
-      },
-    })
-    users: Users,
-  ): Promise<Users> {
+  async create(@requestBody() users: Users):  Promise<Users> {
     return this.usersRepository.create(users);
   }
 

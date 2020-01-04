@@ -5,7 +5,7 @@ import {inject} from '@loopback/core';
 
 export class TicketHistoryRepository extends DefaultCrudRepository<
   TicketHistory,
-  typeof TicketHistory.prototype.tic_iid,
+  typeof TicketHistory.prototype.tic_id,
   TicketHistoryRelations
 > {
   constructor(

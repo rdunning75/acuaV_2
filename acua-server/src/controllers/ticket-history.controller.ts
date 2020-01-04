@@ -34,19 +34,7 @@ export class TicketHistoryController {
       },
     },
   })
-  async create(
-    @requestBody({
-      content: {
-        'application/json': {
-          schema: getModelSchemaRef(TicketHistory, {
-            title: 'NewTicketHistory',
-            
-          }),
-        },
-      },
-    })
-    ticketHistory: TicketHistory,
-  ): Promise<TicketHistory> {
+  async create(@requestBody()ticketHistory: Omit<TicketHistory, 'id'>,): Promise<TicketHistory> {
     return this.ticketHistoryRepository.create(ticketHistory);
   }
 

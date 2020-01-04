@@ -7,4 +7,7 @@ __export(require("./ticket.model"));
 __export(require("./user.model"));
 __export(require("./animal.model"));
 __export(require("./faq.model"));
+__export(require("./ticket-history.model"));
+__export(require("./users.model"));
+__export(require("./location.model"));
 //# sourceMappingURL=index.js.map
