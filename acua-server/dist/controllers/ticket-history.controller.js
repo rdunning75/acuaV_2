@@ -17,85 +17,94 @@ const rest_1 = require("@loopback/rest");
 const models_1 = require("../models");
 const repositories_1 = require("../repositories");
 let TicketHistoryController = class TicketHistoryController {
-    constructor(ticketHistoryRepository) {
-        this.ticketHistoryRepository = ticketHistoryRepository;
+    constructor(tickethistoryRepository) {
+        this.tickethistoryRepository = tickethistoryRepository;
     }
-    async create(ticketHistory) {
-        return this.ticketHistoryRepository.create(ticketHistory);
+    async create(tickethistory) {
+        return this.tickethistoryRepository.create(tickethistory);
     }
     async count(where) {
-        return this.ticketHistoryRepository.count(where);
+        return this.tickethistoryRepository.count(where);
     }
     async find(filter) {
-        return this.ticketHistoryRepository.find(filter);
+        return this.tickethistoryRepository.find(filter);
     }
-    async updateAll(ticketHistory, where) {
-        return this.ticketHistoryRepository.updateAll(ticketHistory, where);
+    async updateAll(tickethistory, where) {
+        return this.tickethistoryRepository.updateAll(tickethistory, where);
     }
     async findById(id) {
-        return this.ticketHistoryRepository.findById(id);
+        return this.tickethistoryRepository.findById(id);
     }
-    async updateById(id, ticketHistory) {
-        await this.ticketHistoryRepository.updateById(id, ticketHistory);
+    async updateById(id, tickethistory) {
+        await this.tickethistoryRepository.updateById(id, tickethistory);
     }
-    async replaceById(id, ticketHistory) {
-        await this.ticketHistoryRepository.replaceById(id, ticketHistory);
+    async replaceById(id, tickethistory) {
+        await this.tickethistoryRepository.replaceById(id, tickethistory);
     }
     async deleteById(id) {
-        await this.ticketHistoryRepository.deleteById(id);
+        await this.tickethistoryRepository.deleteById(id);
     }
 };
 __decorate([
-    rest_1.post('/ticket-histories', {
+    rest_1.post('/tickethistories', {
         responses: {
             '200': {
-                description: 'TicketHistory model instance',
-                content: { 'application/json': { schema: rest_1.getModelSchemaRef(models_1.TicketHistory) } },
+                description: 'Tickethistory model instance',
+                content: { 'application/json': { schema: rest_1.getModelSchemaRef(models_1.Tickethistory) } },
             },
         },
     }),
-    __param(0, rest_1.requestBody()),
+    __param(0, rest_1.requestBody({
+        content: {
+            'application/json': {
+                schema: rest_1.getModelSchemaRef(models_1.Tickethistory, {
+                    title: 'NewTickethistory',
+                    exclude: ['id'],
+                }),
+            },
+        },
+    })),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], TicketHistoryController.prototype, "create", null);
 __decorate([
-    rest_1.get('/ticket-histories/count', {
+    rest_1.get('/tickethistories/count', {
         responses: {
             '200': {
-                description: 'TicketHistory model count',
+                description: 'Tickethistory model count',
                 content: { 'application/json': { schema: repository_1.CountSchema } },
             },
         },
     }),
-    __param(0, rest_1.param.query.object('where', rest_1.getWhereSchemaFor(models_1.TicketHistory))),
+    __param(0, rest_1.param.query.object('where', rest_1.getWhereSchemaFor(models_1.Tickethistory))),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], TicketHistoryController.prototype, "count", null);
 __decorate([
-    rest_1.get('/ticket-histories', {
+    rest_1.get('/tickethistories', {
         responses: {
             '200': {
-                description: 'Array of TicketHistory model instances',
+                description: 'Array of Tickethistory model instances',
                 content: {
                     'application/json': {
-                        schema: { type: 'array', items: rest_1.getModelSchemaRef(models_1.TicketHistory) },
+                        schema: { type: 'array', items: rest_1.getModelSchemaRef(models_1.Tickethistory) },
                     },
                 },
             },
         },
     }),
-    __param(0, rest_1.param.query.object('filter', rest_1.getFilterSchemaFor(models_1.TicketHistory))),
+    __param(0, rest_1.param.query.object('filter', rest_1.getFilterSchemaFor(models_1.Tickethistory))),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], TicketHistoryController.prototype, "find", null);
 __decorate([
-    rest_1.patch('/ticket-histories', {
+    rest_1.patch('/tickethistories', {
         responses: {
             '200': {
-                description: 'TicketHistory PATCH success count',
+                description: 'Tickethistory PATCH success count',
                 content: { 'application/json': { schema: repository_1.CountSchema } },
             },
         },
@@ -103,21 +112,21 @@ __decorate([
     __param(0, rest_1.requestBody({
         content: {
             'application/json': {
-                schema: rest_1.getModelSchemaRef(models_1.TicketHistory, { partial: true }),
+                schema: rest_1.getModelSchemaRef(models_1.Tickethistory, { partial: true }),
             },
         },
     })),
-    __param(1, rest_1.param.query.object('where', rest_1.getWhereSchemaFor(models_1.TicketHistory))),
+    __param(1, rest_1.param.query.object('where', rest_1.getWhereSchemaFor(models_1.Tickethistory))),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [models_1.TicketHistory, Object]),
+    __metadata("design:paramtypes", [models_1.Tickethistory, Object]),
     __metadata("design:returntype", Promise)
 ], TicketHistoryController.prototype, "updateAll", null);
 __decorate([
-    rest_1.get('/ticket-histories/{id}', {
+    rest_1.get('/tickethistories/{id}', {
         responses: {
             '200': {
-                description: 'TicketHistory model instance',
-                content: { 'application/json': { schema: rest_1.getModelSchemaRef(models_1.TicketHistory) } },
+                description: 'Tickethistory model instance',
+                content: { 'application/json': { schema: rest_1.getModelSchemaRef(models_1.Tickethistory) } },
             },
         },
     }),
@@ -127,10 +136,10 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], TicketHistoryController.prototype, "findById", null);
 __decorate([
-    rest_1.patch('/ticket-histories/{id}', {
+    rest_1.patch('/tickethistories/{id}', {
         responses: {
             '204': {
-                description: 'TicketHistory PATCH success',
+                description: 'Tickethistory PATCH success',
             },
         },
     }),
@@ -138,33 +147,33 @@ __decorate([
     __param(1, rest_1.requestBody({
         content: {
             'application/json': {
-                schema: rest_1.getModelSchemaRef(models_1.TicketHistory, { partial: true }),
+                schema: rest_1.getModelSchemaRef(models_1.Tickethistory, { partial: true }),
             },
         },
     })),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number, models_1.TicketHistory]),
+    __metadata("design:paramtypes", [Number, models_1.Tickethistory]),
     __metadata("design:returntype", Promise)
 ], TicketHistoryController.prototype, "updateById", null);
 __decorate([
-    rest_1.put('/ticket-histories/{id}', {
+    rest_1.put('/tickethistories/{id}', {
         responses: {
             '204': {
-                description: 'TicketHistory PUT success',
+                description: 'Tickethistory PUT success',
             },
         },
     }),
     __param(0, rest_1.param.path.number('id')),
     __param(1, rest_1.requestBody()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number, models_1.TicketHistory]),
+    __metadata("design:paramtypes", [Number, models_1.Tickethistory]),
     __metadata("design:returntype", Promise)
 ], TicketHistoryController.prototype, "replaceById", null);
 __decorate([
-    rest_1.del('/ticket-histories/{id}', {
+    rest_1.del('/tickethistories/{id}', {
         responses: {
             '204': {
-                description: 'TicketHistory DELETE success',
+                description: 'Tickethistory DELETE success',
             },
         },
     }),
@@ -174,8 +183,8 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], TicketHistoryController.prototype, "deleteById", null);
 TicketHistoryController = __decorate([
-    __param(0, repository_1.repository(repositories_1.TicketHistoryRepository)),
-    __metadata("design:paramtypes", [repositories_1.TicketHistoryRepository])
+    __param(0, repository_1.repository(repositories_1.TickethistoryRepository)),
+    __metadata("design:paramtypes", [repositories_1.TickethistoryRepository])
 ], TicketHistoryController);
 exports.TicketHistoryController = TicketHistoryController;
 //# sourceMappingURL=ticket-history.controller.js.map

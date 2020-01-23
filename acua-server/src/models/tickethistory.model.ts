@@ -1,7 +1,7 @@
 import {Entity, model, property} from '@loopback/repository';
 
-@model({settings: {}})
-export class TicketHistory extends Entity {
+@model({settings: {strict: false}})
+export class Tickethistory extends Entity {
   @property({
     type: 'number',
     id: true,
@@ -36,15 +36,8 @@ export class TicketHistory extends Entity {
 
   @property({
     type: 'string',
-    required: true,
   })
-  time_serviced: string;
-
-  @property({
-    type: 'boolean',
-    required: true,
-  })
-  serviced: boolean;
+  time_serviced?: string;
 
   @property({
     type: 'string',
@@ -67,16 +60,21 @@ export class TicketHistory extends Entity {
   @property({
     type: 'string',
   })
-  user_notes?: string;
+  user_note?: string;
 
+  // Define well-known properties here
 
-  constructor(data?: Partial<TicketHistory>) {
+  // Indexer property to allow additional data
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  [prop: string]: any;
+
+  constructor(data?: Partial<Tickethistory>) {
     super(data);
   }
 }
 
-export interface TicketHistoryRelations {
+export interface TickethistoryRelations {
   // describe navigational properties here
 }
 
-export type TicketHistoryWithRelations = TicketHistory & TicketHistoryRelations;
+export type TickethistoryWithRelations = Tickethistory & TickethistoryRelations;
