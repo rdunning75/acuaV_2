@@ -1,11 +1,8 @@
 <template>
   <div>
     <!-- Current Ticket -->
-<<<<<<< HEAD
-    <v-card min-height="317" hover v-if="queue.length > 0">
-=======
+
     <v-card min-height="317" hover v-if="check === true">
->>>>>>> fa3139329b05e6f1ce5bf87f957f6157ae2d9028
       <v-card-title class="headline">
         Ticket #{{ticket.number}}
       </v-card-title>
