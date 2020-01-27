@@ -1,8 +1,10 @@
-# These folders will not be uploaded to GitHub
+# These folders/files will not be uploaded to GitHub
 
 acua-mobile/node_modules/*
-acua-server/node_modules/*
-acua-ticketing/node_modules/*
 acua-mobile/platforms/*
+acua-server/node_modules/*
+acau-server/dist/*
+acua-mobule/platforms/
+acua-ticketing/node_modules/*
 acua-mobile/.DS_Store
 .DS_Store

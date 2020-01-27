@@ -1,4 +1,4 @@
-export default class {
+  export default class {
 
   constructor () {
     this.location = 'temp'
