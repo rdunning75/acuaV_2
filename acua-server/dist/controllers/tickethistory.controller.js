@@ -20,6 +20,9 @@ let TickethistoryController = class TickethistoryController {
     constructor(tickethistoryRepository) {
         this.tickethistoryRepository = tickethistoryRepository;
     }
+    async create(tickethistory) {
+        return this.tickethistoryRepository.create(tickethistory);
+    }
     async count(where) {
         return this.tickethistoryRepository.count(where);
     }
@@ -51,6 +54,21 @@ __decorate([
             },
         },
     }),
+    __param(0, rest_1.requestBody({
+        content: {
+            'application/json': {
+                schema: rest_1.getModelSchemaRef(models_1.Tickethistory, {
+                    title: 'NewTickethistory',
+                    exclude: ['id'],
+                }),
+            },
+        },
+    })),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], TickethistoryController.prototype, "create", null);
+__decorate([
     rest_1.get('/tickethistories/count', {
         responses: {
             '200': {
