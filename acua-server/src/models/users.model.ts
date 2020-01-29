@@ -5,7 +5,7 @@ export class Users extends Entity {
   @property({
     type: 'number',
     id: true,
-    required: true,
+    required: false,
     generated: true,
   })
   id: number;
@@ -23,16 +23,22 @@ export class Users extends Entity {
   password: string;
 
   @property({
-    type: 'string',
-    required: true,
+    type: 'string'
   })
   first_name: string;
 
   @property({
-    type: 'string',
-    required: true,
+    type: 'string'
   })
   last_name: string;
+
+
+
+  // @property({
+  //   type: 'boolean',
+  //   default: false,
+  // })
+  // loggedIn: boolean;
 
   // Define well-known properties here
 

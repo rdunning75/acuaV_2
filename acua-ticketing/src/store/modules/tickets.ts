@@ -52,8 +52,16 @@ class TicketsModule extends VuexModule {
     await strikeTicket(id, ticket)
   }
 
+  // Ticket params work! It Gets stuck on id = 1 if you uncomment console.log(id, ticket)
+  // Might be becuase the delete method or patch method hasnt been updated?
+  // But the old version never used DELETE request IIRC? So it may be something else
+  // therefore not letting us perform a PATCH request when trying to resolve?
+
   @Action
   public async resolve({ id, ticket}: {id: number, ticket: Ticket}) {
+    // By uncommenting this, you will see the results in the browser console.
+    // You will also get lint errors which can be ignored if you comment out console.log(id, ticket) again
+    // console.log(id, ticket)
     await removeTicket(id, ticket)
   }
 

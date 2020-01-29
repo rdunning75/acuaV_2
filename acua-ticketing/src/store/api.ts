@@ -2,7 +2,7 @@ import axios from 'axios'
 import { Ticket, UserSubmit, User, Faq } from './models'
 
 export const api = axios.create({
-  baseURL: 'https://acua-server.herokuapp.com/' // points to loopback server wherever hosted
+  baseURL: 'http://[::1]:3000/' // points to loopback server wherever hosted
 })
 
 /**
@@ -10,31 +10,35 @@ export const api = axios.create({
  */
 
 export async function fetchTickets(user: any): Promise<Ticket[]> {
-  const order: string = 'filter[order]=index_ ASC'
-  const where: string = `filter[where][and][0][location]=${user.location}`
-  + `&filter[where][and][2][isComplete]=false`
-  const limit: string = 'filter[limit]=12'
+  // const order: string = 'filter[order]=index_ ASC'
+  // const where: string = `filter[where][and][0][location]=${user.location}`
+  // + `&filter[where][and][2][isComplete]=false`
+  // const limit: string = 'filter[limit]=12'
 
-  const response = await api.get(`/tickets?${order}&${where}&${limit}`)
+  // const response = await api.get(`/tickets?${order}&${where}&${limit}`)
+  const response = await api.get(`/tickethistories`)
 
   return response.data as Ticket[]
 }
 
 export async function fetchTotal(user: any): Promise<number> {
-  const where: string = `where[and][0][location]=${user.location}`
-  + `&where[and][2][isComplete]=false`
+  // const where: string = `where[and][0][location]=${user.location}`
+  // + `&where[and][2][isComplete]=false`
 
-  const response = await api.get(`/tickets/count?${where}`)
-
+  // const response = await api.get(`/tickets/count?${where}`)
+  const response = await api.get(`/tickethistories/count`)
   return response.data.count as number
 }
 
 export async function removeTicket(id: number, update: any): Promise<void> {
-  await api.patch(`tickets/${id}`, update)
+  // console.log('TESTTTTTTT')
+  // console.log(id)
+  // console.log(update)
+  await api.patch(`tickethistories/${id}`, update)
 }
 
 export async function strikeTicket(id: number, ticket: Ticket): Promise<void> {
-  await api.put(`tickets/${id}`, ticket)
+  await api.put(`tickethistories/${id}`, ticket)
 }
 
 
