@@ -71,6 +71,7 @@ export default class TicketCard extends Vue {
   public active: boolean = false
   private tickets = tickets // ticket state manager
   private users = users
+  private strikes = 0
 
 
   public get check(): boolean {
@@ -94,9 +95,9 @@ export default class TicketCard extends Vue {
     // HOWEVER, keep in mind that this method is only called when the user Strikes and is only Resolved when the
     // strikes passes 3.
     // But From the previous comments, this wont happen since we are not even keeping track of strikes at this point.
-    // if (ticket.strikes < 2) {
-    if (false) {
-      // ticket.strikes++
+    if (this.strikes < 2) {
+    // if (false) {
+      ticket.strikes++
       // ticket.index_ += 5
       this.tickets.strikeTicket({ id, ticket }).then((res) => {
         this.tickets.loadTickets()
@@ -105,6 +106,10 @@ export default class TicketCard extends Vue {
       })
     } else {
       // ticket.isComplete = true
+      // ticket.time_serviced = "hi"
+      
+      // Move down the queue LOC
+
       this.tickets.resolve({ id, ticket }).then((res) => {
         this.tickets.loadTickets()
         tickets.ticketCount(this.users.user)
@@ -115,13 +120,20 @@ export default class TicketCard extends Vue {
 
   public resolve(id: number, ticket: Ticket): void {
 
-    // ticket.isComplete = true
+    ticket.time_serviced = this.serviced_timestamp()
     this.tickets.resolve({ id, ticket }).then((res) => {
       tickets.setFalse()
       this.tickets.loadTickets()
       tickets.ticketCount(this.users.user)
       // this.tickets.setLoader()
     })
+  }
+
+  private serviced_timestamp() {
+    const current_datetime = new Date()
+    let date = `${current_datetime.getMonth()}/${current_datetime.getDate()}/${current_datetime.getFullYear()} `
+    let time = `${current_datetime.getHours()}:${current_datetime.getMinutes()}:${current_datetime.getSeconds()}`
+    return date + time
   }
 }
 </script>

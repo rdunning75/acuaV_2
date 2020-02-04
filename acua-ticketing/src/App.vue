@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar color="teal" dark app>
+    <v-toolbar color='#117FA7' dark app>
       <v-toolbar-title>ACUA Ticketing Manager</v-toolbar-title>
       <v-spacer/>
       <span v-if="username !== null">
@@ -13,12 +13,12 @@
               </v-icon>
             </v-btn>
           </template>
-          <span class="teal--text">Logout</span>
+          <span class="#117FA7--text">Logout</span>
         </v-tooltip>
       </span>
       <template v-slot:extension v-if="username !== null">
         <v-tabs
-          color="teal"
+          color="#117FA7"
           grow
         >
           <v-tabs-slider color="white"></v-tabs-slider>
@@ -68,6 +68,10 @@ export default class App extends Vue {
     if (this.user !== null) {
       this.users.logoutUser({user: this.user})
     }
+  }
+
+  public get dynamicColor() {
+    return '#117FA7'
   }
 
 }

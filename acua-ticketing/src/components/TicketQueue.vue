@@ -9,7 +9,7 @@
     <v-list dense>
       <v-list-tile>
         <v-list-tile-content>
-          <v-list-tile-title class="title text-xs-center">Window {{window}} Queue</v-list-tile-title>
+          <v-list-tile-title class="title text-xs-center">Window {{username}} Queue</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
@@ -42,7 +42,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { Ticket } from '@/store/models'
+import { Ticket, User } from '@/store/models'
 import tickets from '@/store/modules/tickets'
 import users from '@/store/modules/users'
 
@@ -62,6 +62,15 @@ export default class TicketQueue extends Vue {
   public get remaining(): number {
 
     return this.tickets.count
+  }
+
+  // test
+  public get first_name(): string {
+    return this.users.first_name
+  }
+
+  public get username(): string | null {
+    return this.users.username === null ? null : this.users.username
   }
 
   public get window(): number | null {

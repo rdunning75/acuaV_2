@@ -10,13 +10,15 @@ export const api = axios.create({
  */
 
 export async function fetchTickets(user: any): Promise<Ticket[]> {
-  // const order: string = 'filter[order]=index_ ASC'
+  const order: string = 'filter[order]=time_created ASC'
   // const where: string = `filter[where][and][0][location]=${user.location}`
   // + `&filter[where][and][2][isComplete]=false`
   // const limit: string = 'filter[limit]=12'
-
-  // const response = await api.get(`/tickets?${order}&${where}&${limit}`)
-  const response = await api.get(`/tickethistories`)
+  const where: string = `filter[where][time_serviced]=not serviced`
+  // + `&filter[where][and][2][isComplete]=false`
+  // const response = await api.get(`/tickethistories?${order}&${where}&${limit}`)
+  const response = await api.get(`/tickethistories?${order}&${where}`)
+  // const response = await api.get(`/tickethistories`)
 
   return response.data as Ticket[]
 }
