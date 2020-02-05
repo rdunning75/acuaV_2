@@ -65,9 +65,9 @@ export default class TicketQueue extends Vue {
   }
 
   // test
-  public get first_name(): string {
-    return this.users.first_name
-  }
+  // public get first_name(): string {
+  //   return this.users.first_name
+  // }
 
   public get username(): string | null {
     return this.users.username === null ? null : this.users.username

@@ -97,7 +97,7 @@ export default class TicketCard extends Vue {
     // But From the previous comments, this wont happen since we are not even keeping track of strikes at this point.
     if (this.strikes < 2) {
     // if (false) {
-      ticket.strikes++
+    //   ticket.strikes++
       // ticket.index_ += 5
       this.tickets.strikeTicket({ id, ticket }).then((res) => {
         this.tickets.loadTickets()

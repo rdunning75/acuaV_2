@@ -22,7 +22,7 @@
 		CD62955D1BB2678900AE3A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62955C1BB2678900AE3A93 /* main.m */; };
 		D8336FE7842B417D8112BBA2 /* TNSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5607222F46D44749D92A57D /* TNSCore.framework */; };
 		FFA1F27C32F54BEE8E99FFE0 /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A06A265591A647A4BE7410CF /* TNSWidgets.framework */; };
-		BB82688599594D87B645CE34 /* NativeScriptEmbedder.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F068D0C5AF445C9E2FC88F /* NativeScriptEmbedder.m */; };
+		BF363EB89AFA4301A00E25AD /* NativeScriptEmbedder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8875F6D21445893D5011E /* NativeScriptEmbedder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,9 +69,9 @@
 		CDF4743E1BA4855C0087EA85 /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
 		CE707075F0D64791A74BE0D6 /* BarcodeScannerFramework.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = BarcodeScannerFramework.framework; path = "$(SRCROOT)/../../node_modules/nativescript-barcodescanner/platforms/ios/BarcodeScannerFramework.framework"; sourceTree = "<group>"; };
 		EE31DA4D62E645B77E76FCB9 /* Pods-acuamobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acuamobile.release.xcconfig"; path = "Target Support Files/Pods-acuamobile/Pods-acuamobile.release.xcconfig"; sourceTree = "<group>"; };
-		7162375AFFA944E6ACB06C1E /* NativeScriptEmbedder.h */ = {isa = PBXFileReference; name = NativeScriptEmbedder.h; path = "../../node_modules/tns-core-modules/platforms/ios/src/NativeScriptEmbedder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		05F068D0C5AF445C9E2FC88F /* NativeScriptEmbedder.m */ = {isa = PBXFileReference; name = NativeScriptEmbedder.m; path = "../../node_modules/tns-core-modules/platforms/ios/src/NativeScriptEmbedder.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		B2D214EC56674F658F888A21 /* module.modulemap */ = {isa = PBXFileReference; name = module.modulemap; path = "../../node_modules/tns-core-modules/platforms/ios/src/module.modulemap"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = sourcecode.module-map; explicitFileType = undefined; includeInIndex = 0; };
+		A1B490BF876F41049D165754 /* NativeScriptEmbedder.h */ = {isa = PBXFileReference; name = NativeScriptEmbedder.h; path = "../../node_modules/tns-core-modules/platforms/ios/src/NativeScriptEmbedder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7AA8875F6D21445893D5011E /* NativeScriptEmbedder.m */ = {isa = PBXFileReference; name = NativeScriptEmbedder.m; path = "../../node_modules/tns-core-modules/platforms/ios/src/NativeScriptEmbedder.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		E44F27A2154947EDBBD1C430 /* module.modulemap */ = {isa = PBXFileReference; name = module.modulemap; path = "../../node_modules/tns-core-modules/platforms/ios/src/module.modulemap"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = sourcecode.module-map; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 				858B833018CA111C00AB12DE /* Frameworks */,
 				858B832F18CA111C00AB12DE /* Products */,
 				A899148CC513C3E82ECA1869 /* Pods */,
-				4F404F829DBB41388942D2BB /* tns-core-modules */,
 				6E6314E9A2FF44E1B494EB87 /* TNSNativeSource */,
+				188D30B109404945931BF2CB /* tns-core-modules */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,21 +173,21 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		4F404F829DBB41388942D2BB /* tns-core-modules */ = {
-			isa = PBXGroup;
-			children = (
-				7162375AFFA944E6ACB06C1E /* NativeScriptEmbedder.h */,
-				05F068D0C5AF445C9E2FC88F /* NativeScriptEmbedder.m */,
-				B2D214EC56674F658F888A21 /* module.modulemap */,
-			);
-			name = tns-core-modules;
-			sourceTree = "<group>";
-		};
 		6E6314E9A2FF44E1B494EB87 /* TNSNativeSource */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = TNSNativeSource;
+			sourceTree = "<group>";
+		};
+		188D30B109404945931BF2CB /* tns-core-modules */ = {
+			isa = PBXGroup;
+			children = (
+				A1B490BF876F41049D165754 /* NativeScriptEmbedder.h */,
+				7AA8875F6D21445893D5011E /* NativeScriptEmbedder.m */,
+				E44F27A2154947EDBBD1C430 /* module.modulemap */,
+			);
+			name = tns-core-modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,7 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD62955D1BB2678900AE3A93 /* main.m in Sources */,
-				BB82688599594D87B645CE34 /* NativeScriptEmbedder.m in Sources */,
+				BF363EB89AFA4301A00E25AD /* NativeScriptEmbedder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +487,7 @@
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules/platforms/ios/src\"",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/acuamobile/acuamobile-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -523,6 +524,7 @@
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
 					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules/platforms/ios/src\"",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/acuamobile/acuamobile-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
