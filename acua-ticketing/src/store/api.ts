@@ -2,7 +2,7 @@ import axios from 'axios'
 import { Ticket, UserSubmit, User, Faq } from './models'
 
 export const api = axios.create({
-  baseURL: 'http://[::1]:3000/' // points to loopback server wherever hosted
+  baseURL: 'https://acuaserver.herokuapp.com' // points to loopback server wherever hosted
 })
 
 /**

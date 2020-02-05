@@ -48,6 +48,14 @@ class UsersModule extends VuexModule {
     return null
   }
 
+  public get first_name(): string | null {
+    if (this.user !== null) {
+      return this.user.first_name
+    }
+
+    return null
+  }
+
   public get window(): number | null {
     if (this.user !== null) {
       return this.user.window

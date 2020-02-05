@@ -9,7 +9,7 @@
     <v-list dense>
       <v-list-tile>
         <v-list-tile-content>
-          <v-list-tile-title class="title text-xs-center">Window {{username}} Queue</v-list-tile-title>
+          <v-list-tile-title class="title text-xs-center">Window {{first_name}} Queue</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
@@ -64,10 +64,17 @@ export default class TicketQueue extends Vue {
     return this.tickets.count
   }
 
+<<<<<<< HEAD
   // test
   // public get first_name(): string {
   //   return this.users.first_name
   // }
+=======
+  // test - error Property 'first_name' does not exist on type 'UsersModule'.
+  public get first_name(): string | null {
+    return this.users.first_name
+  }
+>>>>>>> 7ce75c05d7c2818ae0d409c6f87345f736d75da1
 
   public get username(): string | null {
     return this.users.username === null ? null : this.users.username

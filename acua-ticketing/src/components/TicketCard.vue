@@ -20,7 +20,7 @@
             <v-list-tile>
               <v-list-tile-content>Question:</v-list-tile-content>
               <v-list-tile-action>
-                <v-btn flat icon color="teal" @click="active = true">
+                <v-btn flat icon color="#117FA7" @click="active = true">
                   <v-icon>
                     open_in_new
                   </v-icon>
@@ -95,9 +95,15 @@ export default class TicketCard extends Vue {
     // HOWEVER, keep in mind that this method is only called when the user Strikes and is only Resolved when the
     // strikes passes 3.
     // But From the previous comments, this wont happen since we are not even keeping track of strikes at this point.
+<<<<<<< HEAD
     if (this.strikes < 2) {
     // if (false) {
     //   ticket.strikes++
+=======
+    // if (this.strikes < 2) {
+    if (false) {
+      // ticket.strikes++
+>>>>>>> 7ce75c05d7c2818ae0d409c6f87345f736d75da1
       // ticket.index_ += 5
       this.tickets.strikeTicket({ id, ticket }).then((res) => {
         this.tickets.loadTickets()
@@ -107,7 +113,6 @@ export default class TicketCard extends Vue {
     } else {
       // ticket.isComplete = true
       // ticket.time_serviced = "hi"
-      
       // Move down the queue LOC
 
       this.tickets.resolve({ id, ticket }).then((res) => {
@@ -130,9 +135,9 @@ export default class TicketCard extends Vue {
   }
 
   private serviced_timestamp() {
-    const current_datetime = new Date()
-    let date = `${current_datetime.getMonth()}/${current_datetime.getDate()}/${current_datetime.getFullYear()} `
-    let time = `${current_datetime.getHours()}:${current_datetime.getMinutes()}:${current_datetime.getSeconds()}`
+    const currentDatetime = new Date()
+    const date = `${currentDatetime.getMonth()}/${currentDatetime.getDate()}/${currentDatetime.getFullYear()} `
+    const time = `${currentDatetime.getHours()}:${currentDatetime.getMinutes()}:${currentDatetime.getSeconds()}`
     return date + time
   }
 }
