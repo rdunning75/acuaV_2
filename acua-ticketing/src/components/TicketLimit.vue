@@ -31,9 +31,9 @@ export default class TicketLimit extends Vue {
     return this.tickets.firstTicket
   }
 
-    public resolve(): void {
-      tickets.setCheck()
-    }
+  public resolve(): void {
+    tickets.setCheck()
+  }
 }
 </script>
 
