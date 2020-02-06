@@ -20,6 +20,6 @@
 
 /* button on android is styled with default setting when border radius is omitted*/
 .button{
-  border-radius: 25%;
+  border-radius: 0;
 }
 </style>
