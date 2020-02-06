@@ -1,6 +1,6 @@
 import {Entity, model, property} from '@loopback/repository';
 
-@model({settings: {strict: false}})
+@model({settings: {}})
 export class Tickethistory extends Entity {
   @property({
     type: 'number',
@@ -12,9 +12,8 @@ export class Tickethistory extends Entity {
 
   @property({
     type: 'number',
-    required: true,
   })
-  user_id: number;
+  user_id?: number;
 
   @property({
     type: 'number',
@@ -24,9 +23,14 @@ export class Tickethistory extends Entity {
 
   @property({
     type: 'number',
+  })
+  win_id?: number;
+
+  @property({
+    type: 'number',
     required: true,
   })
-  win_id: number;
+  queue_index: number;
 
   @property({
     type: 'string',
@@ -47,9 +51,8 @@ export class Tickethistory extends Entity {
 
   @property({
     type: 'string',
-    required: true,
   })
-  last_name: string;
+  last_name?: string;
 
   @property({
     type: 'string',
@@ -62,11 +65,12 @@ export class Tickethistory extends Entity {
   })
   user_note?: string;
 
-  // Define well-known properties here
+  @property({
+    type: 'string',
+    required: true,
+  })
+  is_striked: string;
 
-  // Indexer property to allow additional data
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [prop: string]: any;
 
   constructor(data?: Partial<Tickethistory>) {
     super(data);
