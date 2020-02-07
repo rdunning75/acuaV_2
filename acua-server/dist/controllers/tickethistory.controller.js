@@ -16,7 +16,7 @@ const repository_1 = require("@loopback/repository");
 const rest_1 = require("@loopback/rest");
 const models_1 = require("../models");
 const repositories_1 = require("../repositories");
-let TicketHistoryController = class TicketHistoryController {
+let TickethistoryController = class TickethistoryController {
     constructor(tickethistoryRepository) {
         this.tickethistoryRepository = tickethistoryRepository;
     }
@@ -59,7 +59,7 @@ __decorate([
             'application/json': {
                 schema: rest_1.getModelSchemaRef(models_1.Tickethistory, {
                     title: 'NewTickethistory',
-                    exclude: ['id'],
+                    exclude: ['tic_id'],
                 }),
             },
         },
@@ -67,7 +67,7 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
-], TicketHistoryController.prototype, "create", null);
+], TickethistoryController.prototype, "create", null);
 __decorate([
     rest_1.get('/tickethistories/count', {
         responses: {
@@ -81,7 +81,7 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
-], TicketHistoryController.prototype, "count", null);
+], TickethistoryController.prototype, "count", null);
 __decorate([
     rest_1.get('/tickethistories', {
         responses: {
@@ -99,7 +99,7 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
-], TicketHistoryController.prototype, "find", null);
+], TickethistoryController.prototype, "find", null);
 __decorate([
     rest_1.patch('/tickethistories', {
         responses: {
@@ -120,7 +120,7 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [models_1.Tickethistory, Object]),
     __metadata("design:returntype", Promise)
-], TicketHistoryController.prototype, "updateAll", null);
+], TickethistoryController.prototype, "updateAll", null);
 __decorate([
     rest_1.get('/tickethistories/{id}', {
         responses: {
@@ -134,7 +134,7 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number]),
     __metadata("design:returntype", Promise)
-], TicketHistoryController.prototype, "findById", null);
+], TickethistoryController.prototype, "findById", null);
 __decorate([
     rest_1.patch('/tickethistories/{id}', {
         responses: {
@@ -154,7 +154,7 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number, models_1.Tickethistory]),
     __metadata("design:returntype", Promise)
-], TicketHistoryController.prototype, "updateById", null);
+], TickethistoryController.prototype, "updateById", null);
 __decorate([
     rest_1.put('/tickethistories/{id}', {
         responses: {
@@ -168,7 +168,7 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number, models_1.Tickethistory]),
     __metadata("design:returntype", Promise)
-], TicketHistoryController.prototype, "replaceById", null);
+], TickethistoryController.prototype, "replaceById", null);
 __decorate([
     rest_1.del('/tickethistories/{id}', {
         responses: {
@@ -181,10 +181,10 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number]),
     __metadata("design:returntype", Promise)
-], TicketHistoryController.prototype, "deleteById", null);
-TicketHistoryController = __decorate([
+], TickethistoryController.prototype, "deleteById", null);
+TickethistoryController = __decorate([
     __param(0, repository_1.repository(repositories_1.TickethistoryRepository)),
     __metadata("design:paramtypes", [repositories_1.TickethistoryRepository])
-], TicketHistoryController);
-exports.TicketHistoryController = TicketHistoryController;
-//# sourceMappingURL=ticket-history.controller.js.map
+], TickethistoryController);
+exports.TickethistoryController = TickethistoryController;
+//# sourceMappingURL=tickethistory.controller.js.map

@@ -27,12 +27,6 @@ export class Tickethistory extends Entity {
   win_id?: number;
 
   @property({
-    type: 'number',
-    required: true,
-  })
-  queue_index: number;
-
-  @property({
     type: 'string',
     required: true,
   })
@@ -58,18 +52,24 @@ export class Tickethistory extends Entity {
     type: 'string',
     required: true,
   })
+  email: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  phone: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
   reason_of_visit: string;
 
   @property({
     type: 'string',
   })
   user_note?: string;
-
-  @property({
-    type: 'string',
-    required: true,
-  })
-  is_striked: string;
 
 
   constructor(data?: Partial<Tickethistory>) {
