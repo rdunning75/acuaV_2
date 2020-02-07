@@ -95,15 +95,10 @@ export default class TicketCard extends Vue {
     // HOWEVER, keep in mind that this method is only called when the user Strikes and is only Resolved when the
     // strikes passes 3.
     // But From the previous comments, this wont happen since we are not even keeping track of strikes at this point.
-<<<<<<< HEAD
-    if (this.strikes < 2) {
-    // if (false) {
-    //   ticket.strikes++
-=======
+
     // if (this.strikes < 2) {
     if (false) {
       // ticket.strikes++
->>>>>>> 7ce75c05d7c2818ae0d409c6f87345f736d75da1
       // ticket.index_ += 5
       this.tickets.strikeTicket({ id, ticket }).then((res) => {
         this.tickets.loadTickets()
