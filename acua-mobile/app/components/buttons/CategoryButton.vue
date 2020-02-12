@@ -1,7 +1,7 @@
 <template>
 <StackLayout>
   <Image verticalAlignment="center" :src="src" stretch="aspectFit" height="110" ios:height="120" class="image" @tap="action" />
-  <Button verticalAlignment="bottom" class="button" :text="`${icon} ${title}`" @tap="action" />
+  <Button verticalAlignment="bottom" class="button" :text="`${title}`" @tap="action" />
 </StackLayout>
 </template>
 

@@ -54,7 +54,7 @@
       <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
     <key>CFBundleIdentifier</key>
-    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <string>gov.lacounty.acua</string>
     <key>CFBundleURLTypes</key>
     <array>
       <dict>

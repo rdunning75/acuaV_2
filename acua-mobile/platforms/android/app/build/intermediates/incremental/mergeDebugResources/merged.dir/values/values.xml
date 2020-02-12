@@ -170,7 +170,7 @@
     <color name="ns_accent">#33B5E5</color>
     <color name="ns_blue">#272734</color>
     <color name="ns_primary">#F5F5F5</color>
-    <color name="ns_primaryDark">#757575</color>
+    <color name="ns_primaryDark">#02556e</color>
     <color name="possible_result_points">#c0ffbd21</color>
     <color name="pressedColor">#16000000</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
@@ -527,7 +527,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with <ns2:g example="Mail" id="application_name">%s</ns2:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">acuamobile</string>
+    <string name="app_name">acua</string>
     <string name="app_picker_name">Applications</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bookmark_picker_name">Bookmarks</string>
@@ -686,7 +686,7 @@
     <string name="sbc_name">Google Book Search</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="title_activity_kimera">acuamobile</string>
+    <string name="title_activity_kimera">acua</string>
     <string name="wifi_changing_network">Requesting connection to network\u2026</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

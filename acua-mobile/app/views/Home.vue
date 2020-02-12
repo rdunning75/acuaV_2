@@ -1,33 +1,45 @@
 <template>
   <Page >
     <ActionBar ios.position="left" class="Action_Bar">
-      <Label text="Welcome" fontSize="20" verticalAlignment="center"/>
+      <Label text="Welcome to Downey" fontSize="20" verticalAlignment="center"/>
       <ActionItem @tap="toFaq" ios.systemIcon="12" ios.position="right" android.systemIcon="ic_menu_search" android.position="actionBar" />
     </ActionBar>
 
     <StackLayout backgroundColor="#b21a82">
 
-      <GridLayout class="layout cover" columns="*,*" rows="*,*,*">
+      <GridLayout class="layout cover" columns="*" rows="*,*,*">
         <!--Adoption -->
+
+        <!--
         <CategoryButton verticalAlignment="center" margin="5" row="0" col="0" src="~/assets/images/animals.icon.png" :icon="''"
         :title="titles[0]" :action="toAdoption" class="homepage-blue HomeButton" textWrap="true"/>
-          
+        -->
+
         <!--Service Request -->
+        <!--
         <CategoryButton verticalAlignment="center"  margin="5" row="1" col="0" src="~/assets/images/services.icon.png" :icon="''"
         :title="titles[2]" :action="toServiceRequest" class="homepage-blue HomeButton" textWrap="true"/>
-         
+        -->
+
         <!--FAQ -->
+        <!--
         <CategoryButton verticalAlignment="center"  margin="5" row="0" col="1" src="~/assets/images/noise.icon.png" :icon="''"
         :title="titles[3]" :action="toFaq" class="homepage-blue HomeButton" textWrap="true"/>
-        
+        -->
+
         <!--Ticket -->
+
+        <Image row="0" col="0" src="~/assets/images/Final Logo White.png"></Image>
+        
         <CategoryButton verticalAlignment="center"  margin="5" row="2" col="0" src="~/assets/images/hoursicon.png" 
         :icon="'fa-map-marker' | fonticon" :title="titles[4]" :action="toQRScanner" class="fa homepage-blue HomeButton" textWrap="true"/>
        
         <!--Find a Location -->
+        <!--
         <CategoryButton verticalAlignment="center" margin="5" row="1" col="1" src="~/assets/images/locationicon.png" :icon="''"
         :title="titles[5]" :action="toLocationList" class="homepage-blue HomeButton" textWrap="true"/>
-      
+        -->
+
       </GridLayout>
 
     </StackLayout>
@@ -48,14 +60,14 @@ import { mapState, mapActions, mapMutations } from "vuex"
 export default {
   data() {
     return {
-      actionBar: "Welcome",
+      actionBar: "Welcome to Downey",
       msg: "Hello World!",
       titles: [
         "Adopt an Animal!",
         "Services & Fees",
         "Service Request",
         "FAQ",
-        "Grab a Ticket!",
+        "Create a Ticket",
         "Find Our Location"
       ],
       textWrap: false,
@@ -178,7 +190,7 @@ export default {
 @import "../AnimalCenter";
 
 .Action_Bar {
-  background-color: #009fca;
+  background-color: #3f4041;
   color: #ffffff;
 }
 
@@ -198,7 +210,8 @@ export default {
 }
 
   .cover {
-    background: linear-gradient(45deg, plum, #009fca)
+    /*background: #009fca*/
+    background: linear-gradient(45deg, #3f4041, #3e88d1)
 }
 
 .homepage-blue {
@@ -210,9 +223,9 @@ export default {
 }
 
 .HomeButton {
-  background-color: rgba(255, 255, 255, 1);
+  background: linear-gradient(135deg, #d3d3d3 5%, #ffffff);
   border-radius: 25;
-  font-size: 14%;
+  font-size: 50%;
   font-weight: bold;
   padding-top: 7em;
   letter-spacing: 0;

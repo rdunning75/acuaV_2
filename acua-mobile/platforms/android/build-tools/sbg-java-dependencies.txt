@@ -1,56 +1,56 @@
-/usr/local/share/android-sdk/platforms/android-28/android.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/e2119b5dd54c19c839f7d0ff04051d16/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/80b2aff25152a8179fd371b083a56a15/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/35e734109279e56c8567616c7ebc3ac7/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/4805b6e818e8dcce935b53e63d04104d/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/1ab344dff72ddc46a48e466adf239a52/annotation-1.0.0.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/eba0353008b63bd7511e45be1a6d48fe/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/0d11e0269ed21095b4df1d87582d569c/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/1d4f4b26873a8815e76618b2fb8b3999/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/4bf7c1edb06d83d2432195e55c9b7581/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/e864be422c4aa5dbc40df0a3c08b2d04/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/9d9dc46986e4662b128025f35889ba09/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/e41256108f5d7b56fd928793321f40c6/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/369a892f4b490d655b59a9294646eb2e/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/a204c1e0899f3915f0e548091ced9226/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/dfee51b79cfb5f74e9053a866869d689/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/42ef99d4b90a6d2bd52ffa35ae59ebfe/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/dd51dc4341779bca2f418c33efdd039e/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/7e58f8c481bdb6b28c3f7765120bc542/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/ae011f85cd005855b4956ff05fd4b278/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/cb5a1c2323b70f7ed10527652d277b8c/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/6ec1335decc454de269992a500e3de19/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/698fc8c7d0d60dfabac90cf8758bd9d2/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/eace68bd86dc7bf99c5030bf3fe1b0fb/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/4e9cc90f823bb518f2f77ae8042f5d7e/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/5df6155b90866228e7bfe0c11e630ddb/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/b013162fc527154677104e744829b9ac/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/2edbd5a88e88cd47242fea844471397f/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/1d5c5e17f8076bebb58c20ad3e20bbbc/collection-1.0.0.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/919f770f7e9378386233e80031f7799d/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/31233fe7024cda34bc0c002daee5224a/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/8628532253d1d90beb40d47b0ef92f1e/core-common-2.0.0.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/dfc4389e24ac0bcdb2c6efe4554f62b8/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/5f84ad96120bedaa6922cbfba90fa70e/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/fea32347d9185a9aa1c59d38826c2a87/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/9fc5414f4588d403f1ae2a41c2365a85/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/0711cac84a56867b23177e57fd937c25/okio-1.13.0.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/8818a1a9f035f3eff4745ba2cca7270b/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/acc1ae06a928558466a23c93d63fb1ad/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/49f695bb4c620db99e3845114e24655a/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/59b117c6bde5670680bdb4fbceafc710/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/9fbd90002d9772e6995aa144542a5f36/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/56c3af5c8bafe40f10787f5722c6c9d9/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/80a34bf097f22093ffe2421c1d20424a/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/72514dbb6b404279f205890c5313eb35/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/6cc50472934ec430d97706c1a41be295/socket.io-client-1.0.0.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/8daa618fd9a21806951422479be6709f/engine.io-client-1.0.0.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/0959389f6867210508615be2808523b3/okhttp-3.8.1.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/7c84e033f7e67ffe4a9955c0589b3374/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/920232547676233cdd9b551769e30497/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/ecf431ce6cdecd381e54b7c0b13be612/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/58a97f96e0685e4eb03a2a87db8dd53a/lifecycle-common-2.0.0.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/a3fc58db78fa415b5346a057b9adc294/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/5308c638665dac7071f1f7a110b93552/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/13a38f91dbc11036fa126be9bc2747c1/classes.jar
-/Users/DrSamsonnite/Desktop/CS Course materials/Senior DEsign/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/f42b75e33a5ac646f02022631cd59a2d/classes.jar
+/Users/jtran/Library/Android/sdk/platforms/android-28/android.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/42e7c405233dde406c48c78df047475d/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/a8aeff624362b846a8c8b1fbfdc72dbf/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/f6df28c1c2fc0c346ea3b9f1c28da588/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/43df2433447c0987207110b7ae4036c0/collection-1.0.0.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/c6aea3ab18aba3c8c68a952cb2c2e5f3/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/733a10df900f7c273fcf1c233ae2e45a/core-common-2.0.0.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/af169b1d54f2eda6aaaace17ac454b62/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/7aa397d7543d7a39b26f34a4a8f1e742/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/58ab3fb14b65a077a15035e84b968058/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/1c04792e87a5ea398a6af183b447c6a0/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/7c94e724896ae55981e27efdaea3d9df/lifecycle-common-2.0.0.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/ea8a8189491ef05a1be03a5dee4ff2ba/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/1d0a786a4fd335f018957e3da4d1360e/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/66c8c53d7b3027f508f39c67927305e2/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/45370090b7bdd64c53e2308ec4d6ca5a/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/d92afbd849df9ce2323cbc5471a89e19/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/da139cda2344612af7be8cecb628c2aa/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/23fd7db83fb766dca18def73e7f27b92/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/6ba720dc3234a6dda29a868740bc031f/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/8dc9a945d9794805ba64bf87a7219af3/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/f244ac65c88cba4d74f432b399f195a1/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/0d7914a57ca4c3f168c720fdca6d5323/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/a112ad0f8af8ea74097ecd9598b18fa3/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/7e726023567c1a5fd16177b5c0ac9633/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/eae29b69c0e62a758acbb4c87292578d/annotation-1.0.0.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/5447528d6cba722d3c925e39e9716062/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/a8ddfc6cf53ef539119dd860fd5ee5be/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/ede8687025b675aa2c427e2a237b378b/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/4fa50c957c731560378ad9166d326c27/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/e5ce394b9b2d9708af2c4f4f1e095d97/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/10c3f5595fe7ed8a87c984721bc12819/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/02553b44e1e09e1b741c9d41f3faf76d/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/638d6caca1576c01955010c9453e6f08/okio-1.13.0.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/e030e661a63a5270e64a0478c7bb63ba/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/21ee5b194f3bfa48e924f6b36c3f1bc3/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/6ced28db92815838b0f7cde2cffdd789/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/3732f95566880100210c36f80181c813/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/421d2ceb1c28762456164cafe718188d/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/44fbe2baa45b81bef9392f30fa4630d1/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/716dacb6af385c05c7131d998973603a/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/b31723db80370d467c428fcd59f1652f/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/ed1d39340fa869161a7df1b48390fc61/okhttp-3.8.1.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/50770eea8dbf2d3a19cac058162101fb/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/36facbd5ef9c00df0e6fc056003d6c8d/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/137fce11caa6f11d3fae97e154069050/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/9b1a541a482383f85cb682fbd015f6c7/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/aee671b90528f22dced23ce1f962c677/engine.io-client-1.0.0.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/b62ef644b555ff06d5fe335f109e7c8d/socket.io-client-1.0.0.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/918319d8f594195841f6ff4bcbf44b6c/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/39556259d0d73418304ba2da353e6b3f/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/2ec482f45e9e14d8b17885baba2d10cd/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/5db9cd732aa90c76c0585cf5cab6e3bb/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/49eb493392e76b8917c0467bec88af13/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/f541745fe1b4cd9d3fccf614ab3eb809/classes.jar
+/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/exploded-dependencies/5045852c9d21f529d76f30640592006f/classes.jar
