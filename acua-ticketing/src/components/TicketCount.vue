@@ -1,7 +1,7 @@
 <template>
-  <v-card color="teal" dark>
+  <v-card color="#117FA7" dark>
     <v-card-title class="headline">
-      Next Update &nbsp;
+      <!-- Next Update &nbsp;
       <v-progress-circular
         :rotate="-90"
         :size="50"
@@ -9,7 +9,7 @@
         dark
       >
         {{ 10 - (timer / 10) }}
-      </v-progress-circular>
+      </v-progress-circular> -->
       <v-spacer/>
       <span v-if="ticketCount !== 0">
         Tickets Remaining: {{ticketCount}}

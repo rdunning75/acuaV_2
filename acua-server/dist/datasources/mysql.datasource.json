@@ -1,8 +1,0 @@
-{
-    "name": "mysql",
-    "connector": "mysql",
-    "host": "acua-ticket.mysql.database.azure.com",
-    "user": "ACUAadmin@acua-ticket",
-    "password": "Csula2020",
-    "database": "quickstartdb"
-}

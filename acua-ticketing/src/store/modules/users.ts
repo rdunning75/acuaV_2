@@ -44,7 +44,13 @@ class UsersModule extends VuexModule {
     if (this.user !== null) {
       return this.user.username
     }
+    return null
+  }
 
+  public get first_name(): string | null {
+    if (this.user !== null) {
+      return this.user.first_name
+    }
     return null
   }
 
@@ -52,7 +58,13 @@ class UsersModule extends VuexModule {
     if (this.user !== null) {
       return this.user.window
     }
+    return null
+  }
 
+  public get id(): number | null {
+    if (this.user !== null) {
+      return this.user.id
+    }
     return null
   }
 }

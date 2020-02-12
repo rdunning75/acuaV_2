@@ -1,16 +1,16 @@
 <template>
   <v-content>
-    <v-container fluid fill-height>
+    <v-container fluid fill-height @keydown.enter="login">
       <v-layout align-center justify-center>
         <v-flex xs12 sm8 md4>
           <v-card class="elevation-12">
-            <v-toolbar dark color="teal">
+            <v-toolbar dark color="#117FA7">
               <v-toolbar-title>Login</v-toolbar-title>
             </v-toolbar>
             <v-card-text>
               <v-form @submit="login">
-                <v-text-field color="teal" prepend-icon="person" name="login" label="Username" type="text" v-model="username"/>
-                <v-text-field color="teal" prepend-icon="lock" name="password" label="Password" type="password" v-model="password"/>
+                <v-text-field color="#117FA7" prepend-icon="person" name="login" label="Username" type="text" v-model="username"/>
+                <v-text-field color="#117FA7" prepend-icon="lock" name="password" label="Password" type="password" v-model="password"/>
               </v-form>
               <span class="error-text">
                 {{loginError}}
@@ -18,8 +18,7 @@
             </v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
-
-              <v-btn dark color="teal" @click="login">Login</v-btn>
+              <v-btn dark color="#117FA7" @click="login">Login</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>

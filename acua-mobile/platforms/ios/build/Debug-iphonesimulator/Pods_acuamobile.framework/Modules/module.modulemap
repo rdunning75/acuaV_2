@@ -1,6 +1,0 @@
-framework module Pods_acuamobile {
-  umbrella header "Pods-acuamobile-umbrella.h"
-
-  export *
-  module * { export * }
-}

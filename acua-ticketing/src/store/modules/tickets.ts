@@ -10,7 +10,8 @@ import store from '@/store'
 import { Ticket } from '../models'
 import userModule from './users'
 // import { fetchTickets, removeTicket, strikeTicket, fetchTotal } from '@/services/FakeTicketService'
-import { fetchTickets, removeTicket, strikeTicket, fetchTotal } from '../api'
+import { fetchTickets, removeTicket, strikeTicket, fetchTotal, refreshTicket } from '../api'
+import users from './users'
 
 @Module({
   namespaced: true,
@@ -52,9 +53,25 @@ class TicketsModule extends VuexModule {
     await strikeTicket(id, ticket)
   }
 
+  // Ticket params work! It Gets stuck on id = 1 if you uncomment console.log(id, ticket)
+  // Might be becuase the delete method or patch method hasnt been updated?
+  // But the old version never used DELETE request IIRC? So it may be something else
+  // therefore not letting us perform a PATCH request when trying to resolve?
+
   @Action
   public async resolve({ id, ticket}: {id: number, ticket: Ticket}) {
+    // By uncommenting this, you will see the results in the browser console.
+    // You will also get lint errors which can be ignored if you comment out console.log(id, ticket) again
+    // console.log(id, ticket)
     await removeTicket(id, ticket)
+  }
+
+  @Action
+  public async refresh({ id, ticket}: {id: number, ticket: Ticket}) {
+    // By uncommenting this, you will see the results in the browser console.
+    // You will also get lint errors which can be ignored if you comment out console.log(id, ticket) again
+    // console.log(id, ticket)
+    await refreshTicket(id, ticket)
   }
 
   @Mutation
@@ -68,6 +85,10 @@ class TicketsModule extends VuexModule {
 
   public get firstTicket(): Ticket {
     return this.tickets[0]
+  }
+
+  public setFirstTicket() {
+    this.tickets[0].user_id = 0
   }
 }
 
