@@ -165,7 +165,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import CoreGraphics;
 @import Foundation;
-@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -185,54 +184,15 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-SWIFT_CLASS("_TtC7Toaster5Delay")
-@interface Delay : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval Short;)
-+ (NSTimeInterval)Short SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval Long;)
-+ (NSTimeInterval)Long SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@class NSAttributedString;
-@class ToastView;
-
 SWIFT_CLASS("_TtC7Toaster5Toast")
 @interface Toast : NSOperation
-@property (nonatomic, copy) NSString * _Nullable text;
-@property (nonatomic, strong) NSAttributedString * _Nullable attributedText;
-@property (nonatomic) NSTimeInterval delay;
-@property (nonatomic) NSTimeInterval duration;
 @property (nonatomic, getter=isExecuting) BOOL executing;
 @property (nonatomic, getter=isFinished) BOOL finished;
-@property (nonatomic, strong) ToastView * _Nonnull view;
-/// Initializer.
-/// Instantiates <code>self.view</code>, so must be called on main thread.
-- (nonnull instancetype)initWithText:(NSString * _Nullable)text delay:(NSTimeInterval)delay duration:(NSTimeInterval)duration OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithAttributedText:(NSAttributedString * _Nullable)attributedText delay:(NSTimeInterval)delay duration:(NSTimeInterval)duration OBJC_DESIGNATED_INITIALIZER;
-- (void)show;
 - (void)cancel;
 - (void)start;
 - (void)main;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC7Toaster11ToastCenter")
-@interface ToastCenter : NSObject
-/// If this value is <code>true</code> and the user is using VoiceOver,
-/// VoiceOver will announce the text in the toast when <code>ToastView</code> is displayed.
-@property (nonatomic) BOOL isSupportAccessibility;
-/// By default, queueing for toast is enabled.
-/// If this value is <code>false</code>, only the last requested toast will be shown.
-@property (nonatomic) BOOL isQueueEnabled;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong, getter=default) ToastCenter * _Nonnull default_;)
-+ (ToastCenter * _Nonnull)default SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
-- (void)cancelAll;
 @end
 
 @class UIColor;
@@ -256,23 +216,6 @@ SWIFT_CLASS("_TtC7Toaster9ToastView")
 @property (nonatomic) CGFloat bottomOffsetPortrait;
 /// The bottom offset from the screen’s bottom in landscape mode.
 @property (nonatomic) CGFloat bottomOffsetLandscape;
-/// If this value is <code>true</code> and SafeArea is available,
-/// <code>safeAreaInsets.bottom</code> will be added to the <code>bottomOffsetPortrait</code> and <code>bottomOffsetLandscape</code>.
-/// Default value: false
-@property (nonatomic) BOOL useSafeAreaForBottomOffset;
-/// The width ratio of toast view in window, specified as a value from 0.0 to 1.0.
-/// Default value: 0.875
-@property (nonatomic) CGFloat maxWidthRatio;
-/// The shape of the layer’s shadow.
-@property (nonatomic) CGPathRef _Nullable shadowPath;
-/// The color of the layer’s shadow.
-@property (nonatomic, strong) UIColor * _Nullable shadowColor;
-/// The opacity of the layer’s shadow.
-@property (nonatomic) float shadowOpacity;
-/// The offset (in points) of the layer’s shadow.
-@property (nonatomic) CGSize shadowOffset;
-/// The blur radius (in points) used to render the layer’s shadow.
-@property (nonatomic) CGFloat shadowRadius;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder;
 - (void)layoutSubviews;
@@ -285,17 +228,8 @@ SWIFT_CLASS("_TtC7Toaster9ToastView")
 SWIFT_CLASS("_TtC7Toaster11ToastWindow")
 @interface ToastWindow : UIWindow
 @property (nonatomic, strong) UIViewController * _Nullable rootViewController;
-@property (nonatomic, getter=isHidden) BOOL hidden;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)addSubview:(UIView * _Nonnull)view;
-- (void)becomeKeyWindow;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
-
-@class UIResponder;
-
-@interface UIApplication (SWIFT_EXTENSION(Toaster))
-@property (nonatomic, readonly, strong) UIResponder * _Nullable nextResponder;
 @end
 
 #if __has_attribute(external_source_symbol)

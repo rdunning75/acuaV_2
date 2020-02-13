@@ -8,13 +8,17 @@
 		<data>
 		15daDZR3PWTrelUZgKvT6GMpAa0=
 		</data>
+		<key>Headers/Toast.h</key>
+		<data>
+		X4YL5vNO6jjNsgUlRwJe9sMUjnM=
+		</data>
 		<key>Headers/UIView+Toast.h</key>
 		<data>
 		PFdHheW7To5AKT+9OD8emByov8w=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3L3ce0YDHAxIq+zxWgzHd+8IFpM=
+		FbOqINR9hKjOy2RmZbJt+cWS2Ic=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -32,6 +36,17 @@
 			<key>hash2</key>
 			<data>
 			iRx8IUOKqZBogn3gF21FSoedd2U9juITwn/oM0+lec4=
+			</data>
+		</dict>
+		<key>Headers/Toast.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X4YL5vNO6jjNsgUlRwJe9sMUjnM=
+			</data>
+			<key>hash2</key>
+			<data>
+			Vbdxky+YMvKTkp3HhGBfGolls03+jxdOZSWDqCI2aGA=
 			</data>
 		</dict>
 		<key>Headers/UIView+Toast.h</key>

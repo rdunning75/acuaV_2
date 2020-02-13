@@ -2,7 +2,7 @@ import axios from 'axios'
 import { Ticket, UserSubmit, User, Faq } from './models'
 
 export const api = axios.create({
-  baseURL: 'https://acuaserver.herokuapp.com/' // points to loopback server wherever hosted
+  baseURL: 'https://acua-server.herokuapp.com/' // points to loopback server wherever hosted
 })
 
 /**
@@ -22,7 +22,6 @@ export async function fetchTickets(user: any): Promise<Ticket[]> {
 
 export async function fetchTotal(user: any): Promise<number> {
   const where: string = `where[and][0][location]=${user.location}`
-  + `&where[and][1][window]=${user.window}`
   + `&where[and][2][isComplete]=false`
 
   const response = await api.get(`/tickets/count?${where}`)
