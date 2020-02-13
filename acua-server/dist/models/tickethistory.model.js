@@ -27,7 +27,6 @@ __decorate([
 __decorate([
     repository_1.property({
         type: 'number',
-        required: true,
     }),
     __metadata("design:type", Number)
 ], Tickethistory.prototype, "user_id", void 0);
@@ -41,7 +40,6 @@ __decorate([
 __decorate([
     repository_1.property({
         type: 'number',
-        required: true,
     }),
     __metadata("design:type", Number)
 ], Tickethistory.prototype, "win_id", void 0);
@@ -68,10 +66,23 @@ __decorate([
 __decorate([
     repository_1.property({
         type: 'string',
-        required: true,
     }),
     __metadata("design:type", String)
 ], Tickethistory.prototype, "last_name", void 0);
+__decorate([
+    repository_1.property({
+        type: 'string',
+        required: true,
+    }),
+    __metadata("design:type", String)
+], Tickethistory.prototype, "email", void 0);
+__decorate([
+    repository_1.property({
+        type: 'string',
+        required: true,
+    }),
+    __metadata("design:type", String)
+], Tickethistory.prototype, "phone", void 0);
 __decorate([
     repository_1.property({
         type: 'string',
@@ -86,7 +97,7 @@ __decorate([
     __metadata("design:type", String)
 ], Tickethistory.prototype, "user_note", void 0);
 Tickethistory = __decorate([
-    repository_1.model({ settings: { strict: false } }),
+    repository_1.model({ settings: {} }),
     __metadata("design:paramtypes", [Object])
 ], Tickethistory);
 exports.Tickethistory = Tickethistory;

@@ -1,6 +1,6 @@
 <template>
   <v-content>
-    <v-container fluid fill-height>
+    <v-container fluid fill-height @keydown.enter="login">
       <v-layout align-center justify-center>
         <v-flex xs12 sm8 md4>
           <v-card class="elevation-12">
@@ -18,7 +18,6 @@
             </v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
-
               <v-btn dark color="#117FA7" @click="login">Login</v-btn>
             </v-card-actions>
           </v-card>

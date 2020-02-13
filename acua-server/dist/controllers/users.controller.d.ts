@@ -4,9 +4,7 @@ import { UsersRepository } from '../repositories';
 export declare class UsersController {
     usersRepository: UsersRepository;
     constructor(usersRepository: UsersRepository);
-    create(users: Users): Promise<Users>;
-    login(userSubmit: Users): Promise<Users | null>;
-    logout(userSubmit: Users): Promise<void>;
+    create(users: Omit<Users, 'id'>): Promise<Users>;
     count(where?: Where<Users>): Promise<Count>;
     find(filter?: Filter<Users>): Promise<Users[]>;
     updateAll(users: Users, where?: Where<Users>): Promise<Count>;

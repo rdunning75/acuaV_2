@@ -37,6 +37,7 @@ export async function removeTicket(id: number, update: any): Promise<void> {
   // console.log(id)
   // console.log(update)
   await api.patch(`tickethistories/${id}`, update)
+  // call get
 }
 
 export async function strikeTicket(id: number, ticket: Ticket): Promise<void> {

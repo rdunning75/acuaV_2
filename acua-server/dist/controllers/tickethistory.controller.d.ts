@@ -4,7 +4,7 @@ import { TickethistoryRepository } from '../repositories';
 export declare class TickethistoryController {
     tickethistoryRepository: TickethistoryRepository;
     constructor(tickethistoryRepository: TickethistoryRepository);
-    create(tickethistory: Omit<Tickethistory, 'id'>): Promise<Tickethistory>;
+    create(tickethistory: Omit<Tickethistory, 'tic_id'>): Promise<Tickethistory>;
     count(where?: Where<Tickethistory>): Promise<Count>;
     find(filter?: Filter<Tickethistory>): Promise<Tickethistory[]>;
     updateAll(tickethistory: Tickethistory, where?: Where<Tickethistory>): Promise<Count>;

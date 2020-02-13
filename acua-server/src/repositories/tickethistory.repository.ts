@@ -4,7 +4,7 @@ import {MysqlDataSource} from '../datasources';
 import {inject} from '@loopback/core';
 
 export class TickethistoryRepository extends DefaultCrudRepository<
-    Tickethistory,
+  Tickethistory,
   typeof Tickethistory.prototype.tic_id,
   TickethistoryRelations
 > {

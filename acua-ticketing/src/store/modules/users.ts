@@ -44,7 +44,6 @@ class UsersModule extends VuexModule {
     if (this.user !== null) {
       return this.user.username
     }
-
     return null
   }
 
@@ -52,7 +51,6 @@ class UsersModule extends VuexModule {
     if (this.user !== null) {
       return this.user.first_name
     }
-
     return null
   }
 
@@ -60,7 +58,6 @@ class UsersModule extends VuexModule {
     if (this.user !== null) {
       return this.user.window
     }
-
     return null
   }
 }
