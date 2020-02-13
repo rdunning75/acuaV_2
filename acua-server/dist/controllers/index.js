@@ -6,4 +6,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./ping.controller"));
 __export(require("./users.controller"));
 __export(require("./location.controller"));
+__export(require("./tickethistory.controller"));
 //# sourceMappingURL=index.js.map
