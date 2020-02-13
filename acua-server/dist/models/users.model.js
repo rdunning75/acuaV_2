@@ -19,7 +19,7 @@ __decorate([
     repository_1.property({
         type: 'number',
         id: true,
-        required: true,
+        required: false,
         generated: true,
     }),
     __metadata("design:type", Number)
@@ -40,15 +40,13 @@ __decorate([
 ], Users.prototype, "password", void 0);
 __decorate([
     repository_1.property({
-        type: 'string',
-        required: true,
+        type: 'string'
     }),
     __metadata("design:type", String)
 ], Users.prototype, "first_name", void 0);
 __decorate([
     repository_1.property({
-        type: 'string',
-        required: true,
+        type: 'string'
     }),
     __metadata("design:type", String)
 ], Users.prototype, "last_name", void 0);

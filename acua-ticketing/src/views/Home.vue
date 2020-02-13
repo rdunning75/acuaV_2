@@ -10,7 +10,7 @@
         >
           <router-link to="/login">
             <v-btn
-              color="teal"
+              color="#117FA7"
               dark
               large
             >
@@ -122,7 +122,7 @@
         <v-layout column align-center justify-center>
           <router-link to="/login">
             <v-btn
-              color="teal"
+              color="#117FA7"
               dark
               large
             >

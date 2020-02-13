@@ -37,6 +37,47 @@ export class UsersController {
   async create(@requestBody() users: Users):  Promise<Users> {
     return this.usersRepository.create(users);
   }
+//-------------------------------
+  @patch('/users/login', {
+    responses: {
+      '204': {
+        description: 'User login',
+        content: { 'application/json': { schema: { 'x-ts-type': Users } } },
+      },
+    },
+  })
+  async login(@requestBody() userSubmit: Users): Promise<Users | null> {
+    let user = await this.usersRepository.findOne({ where: { username: userSubmit.username } })
+
+    if (!user || user.password !== userSubmit.password)
+      return null
+
+    //user.loggedIn = true
+
+    await this.usersRepository.replaceById(user.id, user)
+
+    return user
+  }
+
+  @patch('/users/logout', {
+    responses: {
+      '204': {
+        description: 'User logout',
+        content: { 'application/json': { schema: { 'x-ts-type': Users } } },
+      },
+    },
+  })
+  async logout(@requestBody() userSubmit: Users): Promise<void> {
+    let user = await this.usersRepository.findOne({ where: { username: userSubmit.username } })
+
+    if (user !== null) {
+      //user.loggedIn = false
+
+      await this.usersRepository.replaceById(user.id, user)
+    }
+  }
+
+//-------------------------------
 
   @get('/users/count', {
     responses: {

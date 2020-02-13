@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/SocketIO.swiftmodule/i386.swiftmodule</key>
 		<data>
-		R3Q2SWHZPnDJvWbDDgdsPVJqdxk=
+		3+jzHoIsxJQ8Nds0COoWUkw81k4=
 		</data>
 		<key>Modules/SocketIO.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/SocketIO.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		BYYomsVCiOT92xSHiCmdxmU2J4w=
+		amWS0lND7fBEeCJtJf1DYfhee7s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -114,11 +114,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R3Q2SWHZPnDJvWbDDgdsPVJqdxk=
+			3+jzHoIsxJQ8Nds0COoWUkw81k4=
 			</data>
 			<key>hash2</key>
 			<data>
-			gdU3m0DjiDdrGeVigChywAJIA78jlRvENGwGgi/0SUw=
+			88MYawMfmF/lsBhJ7NmffwCO5zQJuaIFcNdfXQc0eqo=
 			</data>
 		</dict>
 		<key>Modules/SocketIO.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -158,11 +158,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BYYomsVCiOT92xSHiCmdxmU2J4w=
+			amWS0lND7fBEeCJtJf1DYfhee7s=
 			</data>
 			<key>hash2</key>
 			<data>
-			1GmJ+g7XUOXnyk2Z8Lq32KbK/V2YsETcpdkKHsL6nDI=
+			pF5zV6fgraNRreE1AKDvBynTD7ihHQwfsAgU9PffXMI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

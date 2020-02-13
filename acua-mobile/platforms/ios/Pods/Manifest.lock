@@ -34,7 +34,7 @@ DEPENDENCIES:
   - Toaster (~> 2.0.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - MaterialComponents
     - MDFInternationalization
     - Starscream
@@ -58,6 +58,6 @@ SPEC CHECKSUMS:
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   Toaster: f13031c636ef065281bc11857be9a16c7659e04f
 
-PODFILE CHECKSUM: 255dd10a46725c3a2cad170f7c63198f4c279c3c
+PODFILE CHECKSUM: 7a1154e8e94862e8f6966c25d1267dd14002ddf8
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4

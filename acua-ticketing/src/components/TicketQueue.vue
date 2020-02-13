@@ -9,7 +9,7 @@
     <v-list dense>
       <v-list-tile>
         <v-list-tile-content>
-          <v-list-tile-title class="title text-xs-center">Window {{window}} Queue</v-list-tile-title>
+          <v-list-tile-title class="title text-xs-center">Window {{first_name}} Queue</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
@@ -19,7 +19,7 @@
           <v-icon>local_play</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
-          <v-list-tile-title>Ticket #{{ticket.number}} (Current)</v-list-tile-title>
+          <v-list-tile-title>Ticket #{{ticket.tic_id}} (Current)</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
       <v-list-tile v-else>
@@ -27,8 +27,8 @@
           <v-icon>local_play</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
-          <v-list-tile-title>Ticket #{{ticket.number}}</v-list-tile-title>
-          <v-list-tile-sub-title>Name: {{ticket.name}}</v-list-tile-sub-title>
+          <v-list-tile-title>Ticket #{{ticket.tic_id}}</v-list-tile-title>
+          <v-list-tile-sub-title>Name: {{ticket.first_name}}</v-list-tile-sub-title>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
@@ -42,7 +42,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { Ticket } from '@/store/models'
+import { Ticket, User } from '@/store/models'
 import tickets from '@/store/modules/tickets'
 import users from '@/store/modules/users'
 
@@ -62,6 +62,22 @@ export default class TicketQueue extends Vue {
   public get remaining(): number {
 
     return this.tickets.count
+  }
+
+<<<<<<< HEAD
+  // test
+  // public get first_name(): string {
+  //   return this.users.first_name
+  // }
+=======
+  // test - error Property 'first_name' does not exist on type 'UsersModule'.
+  public get first_name(): string | null {
+    return this.users.first_name
+  }
+>>>>>>> 7ce75c05d7c2818ae0d409c6f87345f736d75da1
+
+  public get username(): string | null {
+    return this.users.username === null ? null : this.users.username
   }
 
   public get window(): number | null {

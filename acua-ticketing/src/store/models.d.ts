@@ -1,14 +1,28 @@
 export interface Ticket {
-  id: string
-  number: number
-  index_: number
-  phone: string
-  name: string
-  query: string
-  location: string
-  window: number
-  strikes: number
-  isComplete: boolean
+  // id: string
+  // number: number
+  // index_: number
+  // phone: string
+  // name: string
+  // query: string
+  // location: string
+  // window: number
+  // strikes: number
+  // isComplete: boolean,
+
+
+  tic_id: number,
+	user_id: number,
+	loc_id: number,
+	win_id: number,
+	time_created: string,
+	time_serviced: string,
+	first_name: string,
+	last_name: string,
+	reason_of_visit: string,
+	user_note: string,
+    // foreign key (user_id) references Users(id),
+    // foreign key (loc_id) references Location(id)
 }
 
 export interface Faq {
@@ -23,6 +37,9 @@ export interface Faq {
 export interface User {
   id: string
   username: string
+  password: string
+  first_name: string
+  last_name: string
   window: number
   location: string
 }
