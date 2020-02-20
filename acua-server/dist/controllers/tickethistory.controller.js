@@ -59,7 +59,7 @@ __decorate([
             'application/json': {
                 schema: rest_1.getModelSchemaRef(models_1.Tickethistory, {
                     title: 'NewTickethistory',
-                    exclude: ['id'],
+                    exclude: ['tic_id'],
                 }),
             },
         },

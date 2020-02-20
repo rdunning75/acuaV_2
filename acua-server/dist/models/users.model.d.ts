@@ -3,9 +3,10 @@ export declare class Users extends Entity {
     id: number;
     username: string;
     password: string;
-    first_name: string;
+    fist_name: string;
     last_name: string;
-    [prop: string]: any;
+    loc_id?: number;
+    win_id?: number;
     constructor(data?: Partial<Users>);
 }
 export interface UsersRelations {

@@ -19,7 +19,7 @@ __decorate([
     repository_1.property({
         type: 'number',
         id: true,
-        required: false,
+        required: true,
         generated: true,
     }),
     __metadata("design:type", Number)
@@ -40,18 +40,32 @@ __decorate([
 ], Users.prototype, "password", void 0);
 __decorate([
     repository_1.property({
-        type: 'string'
+        type: 'string',
+        required: true,
     }),
     __metadata("design:type", String)
-], Users.prototype, "first_name", void 0);
+], Users.prototype, "fist_name", void 0);
 __decorate([
     repository_1.property({
-        type: 'string'
+        type: 'string',
+        required: true,
     }),
     __metadata("design:type", String)
 ], Users.prototype, "last_name", void 0);
+__decorate([
+    repository_1.property({
+        type: 'number',
+    }),
+    __metadata("design:type", Number)
+], Users.prototype, "loc_id", void 0);
+__decorate([
+    repository_1.property({
+        type: 'number',
+    }),
+    __metadata("design:type", Number)
+], Users.prototype, "win_id", void 0);
 Users = __decorate([
-    repository_1.model({ settings: { strict: false } }),
+    repository_1.model({ settings: {} }),
     __metadata("design:paramtypes", [Object])
 ], Users);
 exports.Users = Users;

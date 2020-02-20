@@ -23,23 +23,6 @@ let UsersController = class UsersController {
     async create(users) {
         return this.usersRepository.create(users);
     }
-    //-------------------------------
-    async login(userSubmit) {
-        let user = await this.usersRepository.findOne({ where: { username: userSubmit.username } });
-        if (!user || user.password !== userSubmit.password)
-            return null;
-        //user.loggedIn = true
-        await this.usersRepository.replaceById(user.id, user);
-        return user;
-    }
-    async logout(userSubmit) {
-        let user = await this.usersRepository.findOne({ where: { username: userSubmit.username } });
-        if (user !== null) {
-            //user.loggedIn = false
-            await this.usersRepository.replaceById(user.id, user);
-        }
-    }
-    //-------------------------------
     async count(where) {
         return this.usersRepository.count(where);
     }
@@ -71,39 +54,20 @@ __decorate([
             },
         },
     }),
-    __param(0, rest_1.requestBody()),
+    __param(0, rest_1.requestBody({
+        content: {
+            'application/json': {
+                schema: rest_1.getModelSchemaRef(models_1.Users, {
+                    title: 'NewUsers',
+                    exclude: ['id'],
+                }),
+            },
+        },
+    })),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [models_1.Users]),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], UsersController.prototype, "create", null);
-__decorate([
-    rest_1.patch('/users/login', {
-        responses: {
-            '204': {
-                description: 'User login',
-                content: { 'application/json': { schema: { 'x-ts-type': models_1.Users } } },
-            },
-        },
-    }),
-    __param(0, rest_1.requestBody()),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [models_1.Users]),
-    __metadata("design:returntype", Promise)
-], UsersController.prototype, "login", null);
-__decorate([
-    rest_1.patch('/users/logout', {
-        responses: {
-            '204': {
-                description: 'User logout',
-                content: { 'application/json': { schema: { 'x-ts-type': models_1.Users } } },
-            },
-        },
-    }),
-    __param(0, rest_1.requestBody()),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [models_1.Users]),
-    __metadata("design:returntype", Promise)
-], UsersController.prototype, "logout", null);
 __decorate([
     rest_1.get('/users/count', {
         responses: {

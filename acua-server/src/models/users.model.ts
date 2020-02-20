@@ -32,13 +32,19 @@ export class Users extends Entity {
     type: 'string',
     required: true,
   })
-  first_name: string;
+  fist_name: string;
 
   @property({
     type: 'string',
     required: true,
   })
   last_name: string;
+
+  @property({
+    type: 'number',
+  })
+  loc_id?: number;
+  
 
 
   constructor(data?: Partial<Users>) {
