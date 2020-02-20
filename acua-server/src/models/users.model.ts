@@ -1,14 +1,20 @@
 import {Entity, model, property} from '@loopback/repository';
 
-@model({settings: {strict: false}})
+@model({settings: {}})
 export class Users extends Entity {
   @property({
     type: 'number',
     id: true,
-    required: false,
-    generated: true,
+    required: true,
+    generated: false,
   })
   id: number;
+
+  @property({
+    type: 'number',
+    default: 0,
+  })
+  win_id?: number;
 
   @property({
     type: 'string',
@@ -23,28 +29,17 @@ export class Users extends Entity {
   password: string;
 
   @property({
-    type: 'string'
+    type: 'string',
+    required: true,
   })
   first_name: string;
 
   @property({
-    type: 'string'
+    type: 'string',
+    required: true,
   })
   last_name: string;
 
-
-
-  // @property({
-  //   type: 'boolean',
-  //   default: false,
-  // })
-  // loggedIn: boolean;
-
-  // Define well-known properties here
-
-  // Indexer property to allow additional data
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [prop: string]: any;
 
   constructor(data?: Partial<Users>) {
     super(data);

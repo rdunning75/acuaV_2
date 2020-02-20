@@ -1,8 +1,8 @@
 {
     "name": "mysql",
     "connector": "mysql",
-    "host": "acua-ticket.mysql.database.azure.com",
-    "user": "ACUAadmin@acua-ticket",
-    "password": "Csula2020",
+    "host": "acua.mysql.database.azure.com",
+    "user": "acuaAdmin@acua",
+    "password": "Csula1234",
     "database": "quickstartdb"
 }
