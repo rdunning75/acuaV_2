@@ -4,7 +4,7 @@
 <v-card min-width="630">
   <v-card-text>
       <v-list-tile-action>
-      <v-btn flat color="primary" class="headline" @click="next(ticket.user_id , ticket)">Next</v-btn>
+      <v-btn flat color="primary" class="headline" @click="next">Next</v-btn>
       </v-list-tile-action>
     </v-card-text>
     <v-card min-height="317" min-width="630" align-center hover v-if="check === true">
@@ -114,19 +114,8 @@ export default class TicketCard extends Vue {
     })
   }
 
-  public next(id: number , ticket: Ticket): void {
-    this.tickets.loadTickets()
-    if (users.id == null) {
-      ticket.user_id = 1
-    } else {
-      ticket.user_id = users.id
-    }
-    this.tickets.refresh({id, ticket }).then((res) => {
-      tickets.setCheck()
-      this.tickets.loadTickets()
-      this.tickets.setLoader()
-    })
-    // this.tickets.loadTickets()
+  public next(): void {
+    tickets.setCheck()
   }
 
   private serviced_timestamp() {

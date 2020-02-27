@@ -10,7 +10,7 @@ import store from '@/store'
 import { Ticket } from '../models'
 import userModule from './users'
 // import { fetchTickets, removeTicket, strikeTicket, fetchTotal } from '@/services/FakeTicketService'
-import { fetchTickets, updateTicket, strikeTicket, fetchTotal, refreshTicket } from '../api'
+import { fetchTickets, updateTicket, strikeTicket, fetchTotal} from '../api'
 import users from './users'
 
 @Module({

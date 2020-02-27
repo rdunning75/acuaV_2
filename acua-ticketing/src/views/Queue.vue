@@ -15,9 +15,6 @@ import users from '@/store/modules/users'
 @Component({
   components: {
     TicketQueue,
-    // TicketCount,
-    // TicketCard,
-    // TicketLimit
   }
 })
 export default class Manager extends Vue {

@@ -6,12 +6,6 @@
           <v-flex d-flex xs6 offset-xs2>
             <TicketCard/>
           </v-flex>
-          <v-flex d-flex xs6>
-            <TicketCount :timer="timer"/>
-          </v-flex>
-          <v-flex d-flex xs6>
-            <TicketLimit/>
-          </v-flex>
         </v-layout>
       </v-container>
 
@@ -23,17 +17,12 @@
 import { Component, Vue } from 'vue-property-decorator'
 import TicketCard from '@/components/TicketCard.vue'
 import TicketQueue from '@/components/TicketQueue.vue'
-import TicketCount from '@/components/TicketCount.vue'
-import TicketLimit from '@/components/TicketLimit.vue'
 import tickets from '@/store/modules/tickets'
 import users from '@/store/modules/users'
 
 @Component({
   components: {
-    // TicketQueue,
-    // TicketCount,
     TicketCard,
-    // TicketLimit
   }
 })
 export default class Manager extends Vue {

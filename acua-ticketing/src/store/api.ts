@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { Ticket, UserSubmit, User, Faq } from './models'
+import { Ticket, UserSubmit, User} from './models'
 
 export const api = axios.create({
   baseURL: 'https://acuaserver.herokuapp.com/' // points to loopback server wherever hosted
@@ -45,9 +45,6 @@ export async function strikeTicket(id: number, ticket: Ticket): Promise<void> {
   await api.put(`tickethistories/${id}`, ticket)
 }
 
-export async function refreshTicket(id: number, ticket: Ticket): Promise<void> {
-  await api.patch(`tickethistories/${id}`, ticket)
-}
 
 /**
  * User API calls
