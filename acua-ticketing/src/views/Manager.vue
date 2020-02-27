@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div v-if="!loader">
+
       <v-container grid-list-xl>
         <v-layout row wrap>
-          <v-flex d-flex xs6 offset-xs3>
+          <v-flex d-flex xs6 offset-xs2>
             <TicketCard/>
           </v-flex>
           <v-flex d-flex xs6>
@@ -14,15 +14,7 @@
           </v-flex>
         </v-layout>
       </v-container>
-    </div>
-    <div class="text-xs-center" v-else>
-      <v-progress-circular
-        :size="100"
-        :width="7"
-        color="teal"
-        indeterminate
-      ></v-progress-circular>
-    </div>
+
     <TicketQueue/>
   </div>
 </template>
@@ -38,10 +30,10 @@ import users from '@/store/modules/users'
 
 @Component({
   components: {
-    TicketQueue,
-    TicketCount,
+    // TicketQueue,
+    // TicketCount,
     TicketCard,
-    TicketLimit
+    // TicketLimit
   }
 })
 export default class Manager extends Vue {

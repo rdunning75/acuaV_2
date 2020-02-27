@@ -56,7 +56,14 @@ class UsersModule extends VuexModule {
 
   public get window(): number | null {
     if (this.user !== null) {
-      return this.user.window
+      return this.user.win_id
+    }
+    return null
+  }
+
+  public get id(): number | null {
+    if (this.user !== null) {
+      return this.user.id
     }
     return null
   }

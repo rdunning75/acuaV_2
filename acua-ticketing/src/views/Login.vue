@@ -45,6 +45,7 @@ export default class Login extends Vue {
     .then(() => {
       if (users.user === null) {
         this.loginError = 'Invalid name or password'
+        // this.$router.push('/manager/tickets')
       } else {
         this.$router.push('/manager/tickets')
       }

@@ -1,31 +1,30 @@
 <template>
   <div>
     <!-- Current Ticket -->
-
-    <v-card min-height="317" hover v-if="check === true">
-      <v-card-title class="headline">
+<v-card min-width="630">
+  <v-card-text>
+      <v-list-tile-action>
+      <v-btn flat color="primary" class="headline" @click="next(ticket.user_id , ticket)">Next</v-btn>
+      </v-list-tile-action>
+    </v-card-text>
+    <v-card min-height="317" min-width="630" align-center hover v-if="check === true">
+      <v-card-title class="display-1">
         Ticket #{{ticket.tic_id}}
       </v-card-title>
       <v-divider/>
       <v-card-text>
         <v-list dense>
             <v-list-tile>
-              <v-list-tile-content>Name:</v-list-tile-content>
-              <v-list-tile-content class="align-end font-weight-bold">{{ ticket.first_name }}</v-list-tile-content>
+              <v-list-tile-content class="headline">Name:</v-list-tile-content>
+              <v-list-tile-content class="align-end font-weight-bold headline">{{ ticket.first_name }} {{ticket.last_name}}</v-list-tile-content>
             </v-list-tile>
             <v-list-tile>
-              <v-list-tile-content>Phone Number:</v-list-tile-content>
-              <v-list-tile-content class="align-end font-weight-bold">{{ ticket.phone }}</v-list-tile-content>
+              <v-list-tile-content class="headline">Phone Number:</v-list-tile-content>
+              <v-list-tile-content class="align-end font-weight-bold headline">{{ ticket.phone }}</v-list-tile-content>
             </v-list-tile>
             <v-list-tile>
-              <v-list-tile-content>Question:</v-list-tile-content>
-              <v-list-tile-action>
-                <v-btn flat icon color="#117FA7" @click="active = true">
-                  <v-icon>
-                    open_in_new
-                  </v-icon>
-                </v-btn>
-              </v-list-tile-action>
+              <v-list-tile-content class="headline">Question:</v-list-tile-content>
+              <v-list-tile-content class="align-end font-weight-bold headline">{{ticket.reason_of_visit}}</v-list-tile-content>
             </v-list-tile>
             <v-list-tile>
               <v-list-tile-content>Strikes:</v-list-tile-content>
@@ -43,20 +42,7 @@
         <v-btn flat color="primary" @click="resolve(ticket.tic_id, ticket)">resolve</v-btn>
       </v-card-actions>
     </v-card>
-    <!-- user's query -->
-    <v-dialog v-model="active" width="500">
-      <v-card>
-        <v-card-title class="headline">
-          Ticket #{{ queue.length > 0 ? ticket.number : -1 }} Question
-        </v-card-title>
-        <v-card-text>
-          {{ queue.length > 0 ? ticket.query : '' }}
-        </v-card-text>
-        <v-card-actions>
-          <v-btn flat color="primary" @click="active = false">close</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
+    </v-card>
   </div>
 </template>
 
@@ -95,14 +81,13 @@ export default class TicketCard extends Vue {
     // HOWEVER, keep in mind that this method is only called when the user Strikes and is only Resolved when the
     // strikes passes 3.
     // But From the previous comments, this wont happen since we are not even keeping track of strikes at this point.
-
     // if (this.strikes < 2) {
     if (false) {
       // ticket.strikes++
       // ticket.index_ += 5
       this.tickets.strikeTicket({ id, ticket }).then((res) => {
         this.tickets.loadTickets()
-        tickets.ticketCount(this.users.user)
+        // tickets.ticketCount(this.users.user)
         this.tickets.setLoader()
       })
     } else {
@@ -112,7 +97,7 @@ export default class TicketCard extends Vue {
 
       this.tickets.resolve({ id, ticket }).then((res) => {
         this.tickets.loadTickets()
-        tickets.ticketCount(this.users.user)
+        // tickets.ticketCount(this.users.user)
         this.tickets.setLoader()
       })
     }
@@ -127,6 +112,21 @@ export default class TicketCard extends Vue {
       tickets.ticketCount(this.users.user)
       // this.tickets.setLoader()
     })
+  }
+
+  public next(id: number , ticket: Ticket): void {
+    this.tickets.loadTickets()
+    if (users.id == null) {
+      ticket.user_id = 1
+    } else {
+      ticket.user_id = users.id
+    }
+    this.tickets.refresh({id, ticket }).then((res) => {
+      tickets.setCheck()
+      this.tickets.loadTickets()
+      this.tickets.setLoader()
+    })
+    // this.tickets.loadTickets()
   }
 
   private serviced_timestamp() {

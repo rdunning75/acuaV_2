@@ -25,6 +25,11 @@ const router = new Router({
       component: () => import('./views/Manager.vue')
     },
     {
+      path: '/queue',
+      name: 'queue',
+      component: () => import('./views/Queue.vue')
+    },
+    {
       path: '*',
       redirect: '/login'
     }
