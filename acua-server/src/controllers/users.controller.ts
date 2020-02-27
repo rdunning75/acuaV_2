@@ -17,44 +17,73 @@ import {
   del,
   requestBody,
 } from '@loopback/rest';
-import {Users} from '../models';
-import {UsersRepository} from '../repositories';
+import { Users } from '../models';
+import { UsersRepository } from '../repositories';
 
 export class UsersController {
   constructor(
     @repository(UsersRepository)
-    public usersRepository : UsersRepository,
-  ) {}
+    public usersRepository: UsersRepository,
+  ) { }
 
   @post('/users', {
     responses: {
       '200': {
         description: 'Users model instance',
-        content: {'application/json': {schema: getModelSchemaRef(Users)}},
+        content: { 'application/json': { schema: getModelSchemaRef(Users) } },
       },
     },
   })
-  async create(
-    @requestBody({
-      content: {
-        'application/json': {
-          schema: getModelSchemaRef(Users, {
-            title: 'NewUsers',
-            exclude: ['id'],
-          }),
-        },
-      },
-    })
-    users: Omit<Users, 'id'>,
-  ): Promise<Users> {
+  async create(@requestBody() users: Users): Promise<Users> {
     return this.usersRepository.create(users);
   }
+  //-------------------------------
+  @patch('/users/login', {
+    responses: {
+      '204': {
+        description: 'User login',
+        content: { 'application/json': { schema: { 'x-ts-type': Users } } },
+      },
+    },
+  })
+  async login(@requestBody() userSubmit: Users): Promise<Users | null> {
+    let user = await this.usersRepository.findOne({ where: { username: userSubmit.username } })
+
+    if (!user || user.password !== userSubmit.password)
+      return null
+
+    //user.loggedIn = true
+
+    await this.usersRepository.replaceById(user.id, user)
+
+    return user
+  }
+
+  @patch('/users/logout', {
+    responses: {
+      '204': {
+        description: 'User logout',
+        content: { 'application/json': { schema: { 'x-ts-type': Users } } },
+      },
+    },
+  })
+  async logout(@requestBody() userSubmit: Users): Promise<void> {
+    let user = await this.usersRepository.findOne({ where: { username: userSubmit.username } })
+
+    if (user !== null) {
+      //user.loggedIn = false
+
+      await this.usersRepository.replaceById(user.id, user)
+    }
+  }
+
+  //-------------------------------
 
   @get('/users/count', {
     responses: {
       '200': {
         description: 'Users model count',
-        content: {'application/json': {schema: CountSchema}},
+        content: { 'application/json': { schema: CountSchema } },
       },
     },
   })
@@ -70,7 +99,7 @@ export class UsersController {
         description: 'Array of Users model instances',
         content: {
           'application/json': {
-            schema: {type: 'array', items: getModelSchemaRef(Users)},
+            schema: { type: 'array', items: getModelSchemaRef(Users) },
           },
         },
       },
@@ -86,7 +115,7 @@ export class UsersController {
     responses: {
       '200': {
         description: 'Users PATCH success count',
-        content: {'application/json': {schema: CountSchema}},
+        content: { 'application/json': { schema: CountSchema } },
       },
     },
   })
@@ -94,7 +123,7 @@ export class UsersController {
     @requestBody({
       content: {
         'application/json': {
-          schema: getModelSchemaRef(Users, {partial: true}),
+          schema: getModelSchemaRef(Users, { partial: true }),
         },
       },
     })
@@ -108,7 +137,7 @@ export class UsersController {
     responses: {
       '200': {
         description: 'Users model instance',
-        content: {'application/json': {schema: getModelSchemaRef(Users)}},
+        content: { 'application/json': { schema: getModelSchemaRef(Users) } },
       },
     },
   })
@@ -128,7 +157,7 @@ export class UsersController {
     @requestBody({
       content: {
         'application/json': {
-          schema: getModelSchemaRef(Users, {partial: true}),
+          schema: getModelSchemaRef(Users, { partial: true }),
         },
       },
     })

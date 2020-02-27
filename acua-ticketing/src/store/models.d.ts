@@ -35,13 +35,13 @@ export interface Faq {
 }
 
 export interface User {
-  id: string
+  id: number
+  win_id: number
   username: string
   password: string
   first_name: string
   last_name: string
-  window: number
-  location: string
+  loc_id: number
 }
 
 export interface UserSubmit {

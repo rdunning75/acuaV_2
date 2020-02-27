@@ -1,6 +1,10 @@
 <template>
   <v-app>
     <v-toolbar color='#117FA7' dark app>
+    <v-img left :src="require('@/assets/acc-logo.png')"
+    contain
+    height="150px">
+  </v-img>
       <v-toolbar-title>ACUA Ticketing Manager</v-toolbar-title>
       <v-spacer/>
       <span v-if="username !== null">

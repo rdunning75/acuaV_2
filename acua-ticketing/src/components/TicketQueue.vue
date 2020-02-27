@@ -64,7 +64,6 @@ export default class TicketQueue extends Vue {
     return this.tickets.count
   }
 
-
   // test - error Property 'first_name' does not exist on type 'UsersModule'.
   public get first_name(): string | null {
     return this.users.first_name

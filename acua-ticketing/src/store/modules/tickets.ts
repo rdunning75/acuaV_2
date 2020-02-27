@@ -10,7 +10,8 @@ import store from '@/store'
 import { Ticket } from '../models'
 import userModule from './users'
 // import { fetchTickets, removeTicket, strikeTicket, fetchTotal } from '@/services/FakeTicketService'
-import { fetchTickets, removeTicket, strikeTicket, fetchTotal } from '../api'
+import { fetchTickets, updateTicket, strikeTicket, fetchTotal, refreshTicket } from '../api'
+import users from './users'
 
 @Module({
   namespaced: true,
@@ -27,6 +28,7 @@ class TicketsModule extends VuexModule {
 
   @Mutation
   public setCheck() {
+    // this.loadTickets()
     this.check = true
   }
 
@@ -62,7 +64,16 @@ class TicketsModule extends VuexModule {
     // By uncommenting this, you will see the results in the browser console.
     // You will also get lint errors which can be ignored if you comment out console.log(id, ticket) again
     // console.log(id, ticket)
-    await removeTicket(id, ticket)
+    await updateTicket(id, ticket)
+  }
+
+  @Action
+  public async refresh({ id, ticket}: {id: number, ticket: Ticket}) {
+    // By uncommenting this, you will see the results in the browser console.
+    // You will also get lint errors which can be ignored if you comment out console.log(id, ticket) again
+    // console.log(id, ticket)
+    await updateTicket(id, ticket)
+    // this.check = true
   }
 
   @Mutation
@@ -76,6 +87,10 @@ class TicketsModule extends VuexModule {
 
   public get firstTicket(): Ticket {
     return this.tickets[0]
+  }
+
+  public setFirstTicket() {
+    this.tickets[0].user_id = 0
   }
 }
 

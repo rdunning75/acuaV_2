@@ -2,7 +2,7 @@
   <v-card>
     <v-card-text>
       <v-list-tile-action>
-      <v-btn flat color="primary" @click="resolve()">Next</v-btn>
+      <v-btn flat color="primary" @click="next(ticket.user_id , ticket)">Next</v-btn>
       </v-list-tile-action>
     </v-card-text>
   </v-card>
@@ -23,16 +23,28 @@ export default class TicketLimit extends Vue {
 
   private users = users
 
-    public get window(): number | null {
+  public get window(): number | null {
     return this.users.window === null ? null : this.users.window + 1
   }
 
   public get ticket(): Ticket {
+    this.tickets.loadTickets()
     return this.tickets.firstTicket
   }
 
-  public resolve(): void {
-    tickets.setCheck()
+  public next(id: number , ticket: Ticket): void {
+    this.tickets.loadTickets()
+    if (users.id == null) {
+      ticket.user_id = 1
+    } else {
+      ticket.user_id = users.id
+    }
+    this.tickets.refresh({id, ticket }).then((res) => {
+      tickets.setCheck()
+      this.tickets.loadTickets()
+      this.tickets.setLoader()
+    })
+    // this.tickets.loadTickets()
   }
 }
 </script>
