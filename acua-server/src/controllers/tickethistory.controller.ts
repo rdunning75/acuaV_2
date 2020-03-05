@@ -17,20 +17,21 @@ import {
   del,
   requestBody,
 } from '@loopback/rest';
-import {Tickethistory} from '../models';
-import {TickethistoryRepository} from '../repositories';
+import { Tickethistory } from '../models';
+import { TickethistoryRepository } from '../repositories';
 
 export class TickethistoryController {
   constructor(
     @repository(TickethistoryRepository)
-    public tickethistoryRepository : TickethistoryRepository,
-  ) {}
+    public tickethistoryRepository: TickethistoryRepository,
+  ) { }
 
+  // Source of ticket creation error
   @post('/tickethistories', {
     responses: {
       '200': {
         description: 'Tickethistory model instance',
-        content: {'application/json': {schema: getModelSchemaRef(Tickethistory)}},
+        content: { 'application/json': { schema: getModelSchemaRef(Tickethistory) } },
       },
     },
   })
@@ -49,12 +50,13 @@ export class TickethistoryController {
   ): Promise<Tickethistory> {
     return this.tickethistoryRepository.create(tickethistory);
   }
+  // Source of ticket creation error
 
   @get('/tickethistories/count', {
     responses: {
       '200': {
         description: 'Tickethistory model count',
-        content: {'application/json': {schema: CountSchema}},
+        content: { 'application/json': { schema: CountSchema } },
       },
     },
   })
@@ -70,7 +72,7 @@ export class TickethistoryController {
         description: 'Array of Tickethistory model instances',
         content: {
           'application/json': {
-            schema: {type: 'array', items: getModelSchemaRef(Tickethistory)},
+            schema: { type: 'array', items: getModelSchemaRef(Tickethistory) },
           },
         },
       },
@@ -86,7 +88,7 @@ export class TickethistoryController {
     responses: {
       '200': {
         description: 'Tickethistory PATCH success count',
-        content: {'application/json': {schema: CountSchema}},
+        content: { 'application/json': { schema: CountSchema } },
       },
     },
   })
@@ -94,7 +96,7 @@ export class TickethistoryController {
     @requestBody({
       content: {
         'application/json': {
-          schema: getModelSchemaRef(Tickethistory, {partial: true}),
+          schema: getModelSchemaRef(Tickethistory, { partial: true }),
         },
       },
     })
@@ -108,7 +110,7 @@ export class TickethistoryController {
     responses: {
       '200': {
         description: 'Tickethistory model instance',
-        content: {'application/json': {schema: getModelSchemaRef(Tickethistory)}},
+        content: { 'application/json': { schema: getModelSchemaRef(Tickethistory) } },
       },
     },
   })
@@ -128,7 +130,7 @@ export class TickethistoryController {
     @requestBody({
       content: {
         'application/json': {
-          schema: getModelSchemaRef(Tickethistory, {partial: true}),
+          schema: getModelSchemaRef(Tickethistory, { partial: true }),
         },
       },
     })

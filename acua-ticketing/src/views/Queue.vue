@@ -30,7 +30,7 @@ export default class Manager extends Vue {
 
   public mounted(): void {
     tickets.loadTickets()
-    tickets.ticketCount(this.users.user)
+    // tickets.ticketCount(this.users.user)
     this.pollData()
   }
 
@@ -41,7 +41,7 @@ export default class Manager extends Vue {
 
   private pollData(): void {
     this.polling = setInterval(() => {
-      tickets.ticketCount(this.users.user)
+      // tickets.ticketCount(this.users.user)
 
       /* if (tickets.tickets.length < 12) {
         tickets.loadTickets()

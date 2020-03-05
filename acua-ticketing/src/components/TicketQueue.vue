@@ -9,28 +9,17 @@
     <v-list dense>
       <v-list-tile>
         <v-list-tile-content>
-          <v-list-tile-title class="title text-xs-center">Window {{first_name}} Queue</v-list-tile-title>
+          <v-list-tile-title class="title text-xs-center">Window Queue</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
     <v-list dense v-for="(ticket, i) in queue" :key="i">
-      <v-list-tile v-if="i === 0">
-        <v-list-tile-action>
-          <v-icon>local_play</v-icon>
-        </v-list-tile-action>
+
         <v-list-tile-content>
-          <v-list-tile-title>Ticket #{{ticket.tic_id}} (Current)</v-list-tile-title>
-        </v-list-tile-content>
-      </v-list-tile>
-      <v-list-tile v-else>
-        <v-list-tile-action>
-          <v-icon>local_play</v-icon>
-        </v-list-tile-action>
-        <v-list-tile-content>
-          <v-list-tile-title>Ticket #{{ticket.tic_id}}</v-list-tile-title>
+          <v-list-tile-title class ="headline">Ticket #{{ticket.tic_id}}</v-list-tile-title>
           <v-list-tile-sub-title>Name: {{ticket.first_name}}</v-list-tile-sub-title>
         </v-list-tile-content>
-      </v-list-tile>
+
     </v-list>
     <v-list dense v-if="queue.length === 0">
       <v-list-tile-content>
