@@ -1,48 +1,36 @@
 <template>
-    <div>
-        <v-container grid-list-xl>
-            <v-layout row wrap>
-                <v-flex d-flex xs6 offset-xs2>
-                    <TicketCard/>
-                </v-flex>
-                <v-flex d-flex xs6>
-                    <!--                    <TicketCount :timer="timer"/>-->
-                </v-flex>
-                <v-flex d-flex xs6>
-                    <!--                    <TicketLimit/>-->
-                </v-flex>
-            </v-layout>
-        </v-container>
-        <TicketQueue/>
-    </div>
+  <div>
+      <v-container grid-list-xl>
+        <v-layout row wrap>
+          <v-flex d-flex xs6 offset-xs2>
+            <TicketCard/>
+          </v-flex>
+        </v-layout>
+      </v-container>
+
+    <TicketQueue/>
+  </div>
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from 'vue-property-decorator'
-    import TicketCard from '@/components/TicketCard.vue'
-    import TicketQueue from '@/components/TicketQueue.vue'
-    import TicketCount from '@/components/TicketCount.vue'
-    import TicketLimit from '@/components/TicketLimit.vue'
-    import tickets from '@/store/modules/tickets'
-    import users from '@/store/modules/users'
-    import VueSocketIOExt, {Socket} from 'vue-socket.io-extended'
+import { Component, Vue } from 'vue-property-decorator'
+import TicketCard from '@/components/TicketCard.vue'
+import TicketQueue from '@/components/TicketQueue.vue'
+import tickets from '@/store/modules/tickets'
+import users from '@/store/modules/users'
 
-
-    @Component({
-        components: {
-            TicketQueue,
-            // TicketCount,
-            TicketCard,
-            // TicketLimit
-        }
-    })
-
-    export default class Manager extends Vue {
-        public timer: number = 0
-        private tickets = tickets
-        private users = users
-        private polling: number | undefined = undefined
-        private countdown: number | undefined = undefined
+@Component({
+  components: {
+    TicketCard,
+  }
+})
+export default class Manager extends Vue {
+  public timer: number = 0
+  private tickets  = tickets
+  private users = users
+  private polling: number | undefined = undefined
+  private countdown: number | undefined = undefined
+>>>>>>> 77cba57a5116117dba9d8ad1f99b10333603b5bf
 
         public get loader(): boolean {
             return tickets.ticketLoader;
@@ -54,6 +42,7 @@
             this.pollData()
         }
 
+
         public beforeDestroy(): void {
             clearInterval(this.polling)
             clearInterval(this.countdown)
@@ -62,6 +51,7 @@
         private pollData(): void {
             this.polling = setInterval(() => {
                 // tickets.ticketCount(this.users.user)
+
 
                 if (tickets.tickets.length < 12) {
                     tickets.loadTickets()

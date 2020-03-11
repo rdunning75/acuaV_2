@@ -10,7 +10,7 @@ import store from '@/store'
 import { Ticket } from '../models'
 import userModule from './users'
 // import { fetchTickets, removeTicket, strikeTicket, fetchTotal } from '@/services/FakeTicketService'
-import { fetchTickets, updateTicket, strikeTicket, fetchTotal, refreshTicket } from '../api'
+import { fetchTickets, updateTicket, strikeTicket} from '../api'
 import users from './users'
 
 @Module({
@@ -43,11 +43,11 @@ class TicketsModule extends VuexModule {
     return { tickets }
   }
 
-  @MutationAction
+  /* @MutationAction
   public async ticketCount(user: any) {
     const count: number = await fetchTotal(user)
     return { count }
-  }
+  } */
 
   @Action
   public async strikeTicket({ id, ticket}: {id: number, ticket: Ticket}) {

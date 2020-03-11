@@ -108,13 +108,18 @@ export default class TicketCard extends Vue {
     this.tickets.resolve({ id, ticket }).then((res) => {
       tickets.setFalse()
       this.tickets.loadTickets()
+<<<<<<< HEAD
       tickets.ticketCount(this.users.user)
       this.tickets.setLoader()
+=======
+      // tickets.ticketCount(this.users.user)
+      // this.tickets.setLoader()
+>>>>>>> 77cba57a5116117dba9d8ad1f99b10333603b5bf
     })
   }
 
   public next(id: number , ticket: Ticket): void {
-    this.tickets.loadTickets()
+    /* this.tickets.loadTickets()
     if (users.id == null) {
       ticket.user_id = 1
     } else {
@@ -124,8 +129,9 @@ export default class TicketCard extends Vue {
       tickets.setCheck()
       this.tickets.loadTickets()
       this.tickets.setLoader()
-    })
+    }) */
     // this.tickets.loadTickets()
+    tickets.setCheck()
   }
 
   private serviced_timestamp() {

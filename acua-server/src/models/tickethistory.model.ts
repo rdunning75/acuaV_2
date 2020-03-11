@@ -5,7 +5,7 @@ export class Tickethistory extends Entity {
   @property({
     type: 'number',
     id: true,
-    required: true,
+    required: false,
     generated: true,
   })
   tic_id: number;
