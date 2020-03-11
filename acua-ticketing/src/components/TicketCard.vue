@@ -104,13 +104,12 @@ export default class TicketCard extends Vue {
   }
 
   public resolve(id: number, ticket: Ticket): void {
-
     ticket.time_serviced = this.serviced_timestamp()
     this.tickets.resolve({ id, ticket }).then((res) => {
       tickets.setFalse()
       this.tickets.loadTickets()
       tickets.ticketCount(this.users.user)
-      // this.tickets.setLoader()
+      this.tickets.setLoader()
     })
   }
 

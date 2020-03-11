@@ -22,8 +22,8 @@ let UsersRepository = class UsersRepository extends repository_1.DefaultCrudRepo
     }
 };
 UsersRepository = __decorate([
-    __param(0, core_1.inject('datasources.mysql')),
-    __metadata("design:paramtypes", [datasources_1.MysqlDataSource])
+    __param(0, core_1.inject('datasources.localhost')),
+    __metadata("design:paramtypes", [datasources_1.LocalhostDataSource])
 ], UsersRepository);
 exports.UsersRepository = UsersRepository;
 //# sourceMappingURL=users.repository.js.map

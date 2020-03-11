@@ -17,6 +17,7 @@
     "no-consecutive-blank-lines": false,
     "interface-over-type-literal": false,
     "trailing-comma": false,
-    "semicolon": false
+    "semicolon": false,
+    "no-console": false
   }
 }

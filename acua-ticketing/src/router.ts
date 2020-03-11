@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import UserModule from '@/store/modules/users'
 
-Vue.use(Router)
+Vue.use(Router);
 
 const router = new Router({
   mode: 'history',
@@ -34,7 +34,7 @@ const router = new Router({
       redirect: '/login'
     }
   ]
-})
+});
 
 router.beforeEach((to, from, next) => {
   const user = UserModule.user
@@ -48,6 +48,6 @@ router.beforeEach((to, from, next) => {
   } else {
     next()
   }
-})
+});
 
 export default router

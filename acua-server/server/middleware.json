@@ -6,8 +6,8 @@
     "compression": {},
     "cors": {
       "params": {
-        "origin": true,
-        "credentials": true,
+        "origin": false,
+        "credentials": false,
         "maxAge": 86400
       }
     },
@@ -20,7 +20,7 @@
     "helmet#hsts": {
       "params": {
         "maxAge": 0,
-        "includeSubDomains": true
+        "includeSubDomains": false
       }
     },
     "helmet#hidePoweredBy": {},

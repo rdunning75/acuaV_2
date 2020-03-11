@@ -22,8 +22,8 @@ let TickethistoryRepository = class TickethistoryRepository extends repository_1
     }
 };
 TickethistoryRepository = __decorate([
-    __param(0, core_1.inject('datasources.mysql')),
-    __metadata("design:paramtypes", [datasources_1.MysqlDataSource])
+    __param(0, core_1.inject('datasources.localhost')),
+    __metadata("design:paramtypes", [datasources_1.LocalhostDataSource])
 ], TickethistoryRepository);
 exports.TickethistoryRepository = TickethistoryRepository;
 //# sourceMappingURL=tickethistory.repository.js.map

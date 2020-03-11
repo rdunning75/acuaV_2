@@ -1,6 +1,6 @@
 import {DefaultCrudRepository} from '@loopback/repository';
 import {Location, LocationRelations} from '../models';
-import {MysqlDataSource} from '../datasources';
+import {LocalhostDataSource} from '../datasources';
 import {inject} from '@loopback/core';
 
 export class LocationRepository extends DefaultCrudRepository<
@@ -9,7 +9,7 @@ export class LocationRepository extends DefaultCrudRepository<
   LocationRelations
 > {
   constructor(
-    @inject('datasources.mysql') dataSource: MysqlDataSource,
+    @inject('datasources.localhost') dataSource: LocalhostDataSource,
   ) {
     super(Location, dataSource);
   }

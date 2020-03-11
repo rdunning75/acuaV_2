@@ -11,7 +11,7 @@ export interface Ticket {
   // isComplete: boolean,
 
 
-  tic_id: number,
+    tic_id: number,
 	user_id: number,
 	loc_id: number,
 	win_id: number,

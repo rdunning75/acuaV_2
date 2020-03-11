@@ -2,7 +2,7 @@ import axios from 'axios'
 import { Ticket, UserSubmit, User, Faq } from './models'
 
 export const api = axios.create({
-  baseURL: 'https://acuaserver.herokuapp.com/' // points to loopback server wherever hosted
+  baseURL: 'http://localhost:3000/' // points to loopback server wherever hosted
 })
 
 /**
@@ -11,13 +11,7 @@ export const api = axios.create({
 
 export async function fetchTickets(user: any): Promise<Ticket[]> {
   const order: string = 'filter[order]=tic_id ASC'
-  // const where: string = `filter[where][and][0][location]=${user.location}`
-  // + `&filter[where][and][2][isComplete]=false`
-  // const limit: string = 'filter[limit]=12'
-  const where: string = `filter[where][and][0][time_serviced]=not serviced`
-  //  + '&filter[where][and][1][user_id]!=1'
-  // + `&filter[where][and][2][isComplete]=false`
-  // const response = await api.get(`/tickethistories?${order}&${where}&${limit}`)
+  const where: string = `filter[where][and][0][location]=${user.location}`
   const response = await api.get(`/tickethistories?${where}&${order}`)
   // const response = await api.get(`/tickethistories`)
 
@@ -25,18 +19,13 @@ export async function fetchTickets(user: any): Promise<Ticket[]> {
 }
 
 export async function fetchTotal(user: any): Promise<number> {
-  // const where: string = `where[and][0][location]=${user.location}`
-  // + `&where[and][2][isComplete]=false`
-  const where: string = `filter[where][and][0][time_serviced]=not serviced`
-  const response = await api.get(`/tickets/count?${where}`)
-  // const response = await api.get(`/tickethistories/count`)
+
+  const where: string = `filter[where]`
+  const response = await api.get(`/tickethistories/count?${where}`)
   return response.data.count as number
 }
 
 export async function updateTicket(id: number, update: any): Promise<void> {
-  // console.log('TESTTTTTTT')
-  // console.log(id)
-  // console.log(update)
   await api.patch(`tickethistories/${id}`, update)
   // call get
 }

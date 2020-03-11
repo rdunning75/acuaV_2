@@ -7,10 +7,11 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-
 import TicketQueue from '@/components/TicketQueue.vue'
 import tickets from '@/store/modules/tickets'
 import users from '@/store/modules/users'
+
+
 
 @Component({
   components: {
@@ -18,14 +19,21 @@ import users from '@/store/modules/users'
     // TicketCount,
     // TicketCard,
     // TicketLimit
-  }
+  },
 })
+
+
+
+
 export default class Manager extends Vue {
   public timer: number = 0
   private tickets  = tickets
   private users = users
   private polling: number | undefined = undefined
   private countdown: number | undefined = undefined
+
+
+
 
   public get loader(): boolean {
     return tickets.ticketLoader;
@@ -54,3 +62,4 @@ export default class Manager extends Vue {
 }
 }
 </script>
+
