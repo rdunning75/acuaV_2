@@ -20,9 +20,11 @@ let TickethistoryController = class TickethistoryController {
     constructor(tickethistoryRepository) {
         this.tickethistoryRepository = tickethistoryRepository;
     }
+    // Source of ticket creation error
     async create(tickethistory) {
         return this.tickethistoryRepository.create(tickethistory);
     }
+    // Source of ticket creation error
     async count(where) {
         return this.tickethistoryRepository.count(where);
     }

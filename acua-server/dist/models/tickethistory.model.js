@@ -19,7 +19,7 @@ __decorate([
     repository_1.property({
         type: 'number',
         id: true,
-        required: true,
+        required: false,
         generated: true,
     }),
     __metadata("design:type", Number)

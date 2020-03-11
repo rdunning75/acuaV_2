@@ -1,8 +1,9 @@
 {
-    "name": "mysql",
+    "name": "ACUA-LOCAL",
     "connector": "mysql",
-    "host": "acua.mysql.database.azure.com",
-    "user": "acuaAdmin@acua",
-    "password": "Csula1234",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "root",
+    "password": "bueno1000",
     "database": "quickstartdb"
 }
