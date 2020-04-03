@@ -1,4 +1,5 @@
 PODS:
+  - IQKeyboardManager (6.2.1)
   - MaterialComponents/AnimationTiming (84.6.0)
   - MaterialComponents/Ink (84.6.0):
     - MaterialComponents/private/Math
@@ -28,6 +29,7 @@ PODS:
   - Toaster (2.0.4)
 
 DEPENDENCIES:
+  - IQKeyboardManager (~> 6.2.0)
   - MaterialComponents/Tabs (~> 84.4)
   - Socket.IO-Client-Swift (from `https://github.com/triniwiz/socket.io-client-swift.git`)
   - Toast (~> 3.0)
@@ -35,6 +37,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - IQKeyboardManager
     - MaterialComponents
     - MDFInternationalization
     - Starscream
@@ -51,6 +54,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/triniwiz/socket.io-client-swift.git
 
 SPEC CHECKSUMS:
+  IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
   MaterialComponents: 71139af6ca6875fbde8ab8e64a275b7fd6a22d7f
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   Socket.IO-Client-Swift: 554ab1004ba68249d1dd14b10eddb11ea4cb4133
@@ -58,6 +62,6 @@ SPEC CHECKSUMS:
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   Toaster: f13031c636ef065281bc11857be9a16c7659e04f
 
-PODFILE CHECKSUM: 4ca37f863f714c2a374e93263681a99d3c24289d
+PODFILE CHECKSUM: 39074d2dda0792717ec1e4805240f44ba7a699d8
 
 COCOAPODS: 1.7.5

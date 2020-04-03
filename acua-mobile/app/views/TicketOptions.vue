@@ -8,8 +8,6 @@
             StackLayout:
                 allows you o populate the bottom portion of -->
 
-
-
 <template>
     <Page>
         <ActionBar title="Ticket Reason" class="Action_Bar" />
@@ -25,82 +23,132 @@
                     <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/animals.icon.png" 
                      v-else :title="choices[0]" :action="adoption" class="fa homepage-blue Button" textWrap="true"/>
 
-                    <!-- Stray Intake Button -->
-                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/services.icon.png" 
-                     v-if="isStrayIntake" :title="choices[1]" :action="strayIntake" class="fa homepage-blue ButtonSelected" textWrap="true"/>
+                    <!-- Intake Button -->
+                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/boneOutline.png" 
+                     v-if="isIntake" :title="choices[1]" :action="intake" class="fa homepage-blue ButtonSelected" textWrap="true"/>
 
-                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/services.icon.png" 
-                     v-else :title="choices[1]" :action="strayIntake" class="fa homepage-blue Button" textWrap="true"/>
+                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/boneOutline.png" 
+                     v-else :title="choices[1]" :action="intake" class="fa homepage-blue Button" textWrap="true"/>
 
-                    <!-- New Pet License Button -->
+                    <!-- Pet License Button -->
                     <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/license.icon.png" 
-                     v-if="isNewPetLicense" :title="choices[2]" :action="newPetLicense" class="fa homepage-blue ButtonSelected" textWrap="true"/>
+                     v-if="isPetLicense" :title="choices[2]" :action="petLicense" class="fa homepage-blue ButtonSelected" textWrap="true"/>
 
                     <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/license.icon.png" 
-                     v-else :title="choices[2]" :action="newPetLicense" class="fa homepage-blue Button" textWrap="true"/>
-
-                    <!-- Renew Pet License Button -->
-                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/badge1.png" 
-                     v-if="isRenewPetLicense" :title="choices[3]" :action="renewPetLicense" class="fa homepage-blue ButtonSelected" textWrap="true"/>
-                    
-                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/badge1.png" 
-                     v-else :title="choices[3]" :action="renewPetLicense" class="fa homepage-blue Button" textWrap="true"/>
+                     v-else :title="choices[2]" :action="petLicense" class="fa homepage-blue Button" textWrap="true"/>
 
                     <!-- Microchip Button -->
                     <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/doggo.png" 
-                     v-if="isMicrochip" :title="choices[4]" :action="microchip" class="fa homepage-blue ButtonSelected" textWrap="true"/>
+                     v-if="isMicrochip" :title="choices[3]" :action="microchip" class="fa homepage-blue ButtonSelected" textWrap="true"/>
 
                     <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/doggo.png" 
-                     v-else :title="choices[4]" :action="microchip" class="fa homepage-blue Button" textWrap="true"/>
+                     v-else :title="choices[3]" :action="microchip" class="fa homepage-blue Button" textWrap="true"/>
                     
-                    <!-- Return To Owner Button -->
-                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/cat.button.jpg" 
-                     v-if="isReturnToOwner " :title="choices[5]" :action="returnToOwner" class="fa homepage-blue ButtonSelected" textWrap="true"/>
-
-                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/cat.button.jpg" 
-                     v-else :title="choices[5]" :action="returnToOwner" class="fa homepage-blue Button" textWrap="true"/>
-
                     <!-- Service Request Button -->
+                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/services.icon.png" 
+                     v-if="isServiceRequest " :title="choices[4]" :action="serviceRequest" class="fa homepage-blue ButtonSelected" textWrap="true"/>
+
+                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/services.icon.png" 
+                     v-else :title="choices[4]" :action="serviceRequest" class="fa homepage-blue Button" textWrap="true"/>
+
+                    <!-- Show Documentation Button -->
+                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/badge1.png" 
+                     v-if="isShowDocumentation " :title="choices[5]" :action="showDocumentation" class="fa homepage-blue ButtonSelected" textWrap="true"/>
+
+                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/badge1.png" 
+                     v-else :title="choices[5]" :action="showDocumentation" class="fa homepage-blue Button" textWrap="true"/>
+
+                    <!-- Disposal Button -->
                     <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/phoneicon.png" 
-                     v-if="isServiceRequest " :title="choices[6]" :action="serviceRequest" class="fa homepage-blue ButtonSelected" textWrap="true"/>
+                     v-if="isDisposal " :title="choices[6]" :action="disposal" class="fa homepage-blue ButtonSelected" textWrap="true"/>
 
                     <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/phoneicon.png" 
-                     v-else :title="choices[6]" :action="serviceRequest" class="fa homepage-blue Button" textWrap="true"/>
+                     v-else :title="choices[6]" :action="disposal" class="fa homepage-blue Button" textWrap="true"/>
+
+                    <!-- Donate Button -->
+                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/moneyOutline.png" 
+                     v-if="isDonate " :title="choices[7]" :action="donate" class="fa homepage-blue ButtonSelected" textWrap="true"/>
+
+                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/moneyOutline.png" 
+                     v-else :title="choices[7]" :action="donate" class="fa homepage-blue Button" textWrap="true"/>
+                     
+                    <!-- Other Button -->
+                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/achouse.png" 
+                     v-if="isOther " :title="choices[8]" :action="other" class="fa homepage-blue ButtonSelected" textWrap="true"/>
+
+                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/achouse.png" 
+                     v-else :title="choices[8]" :action="other" class="fa homepage-blue Button" textWrap="true"/>
+                     
 
                 </StackLayout>
             </ScrollView>
 
-            <StackLayout orientation="vertical" col="1" v-show="isHome">
-                <Label text="Home Information" class="infoText"/>
-            </StackLayout>
-            <StackLayout orientation="vertical" col="1" v-show="isAdoption">
-                <Label text="Adoption Information" class="infoText"/>
-                <Button text="Next >>" class="button" @tap="createTicket"/>
-            </StackLayout>
-            <StackLayout orientation="vertical" col="1" v-show="isStrayIntake">
-                <Label text="Stray Intake Information" class="infoText"/>
-                <Button text="Next >>" class="button" @tap="createTicket"/>
-            </StackLayout>
-            <StackLayout orientation="vertical" col="1" v-show="isNewPetLicense">
-                <Label text="New Pet License Information" class="infoText"/>
-                <Button text="Next >>" class="button" @tap="createTicket"/>
-            </StackLayout>
-              <StackLayout orientation="vertical" col="1" v-show="isRenewPetLicense">
-                <Label text="Renew Pet License Information" class="infoText"/>
-                <Button text="Next >>" class="button" @tap="createTicket"/>
-            </StackLayout>
-              <StackLayout orientation="vertical" col="1" v-show="isMicrochip">
-                <Label text="Microchip Information" class="infoText"/>
-                <Button text="Next >>" class="button" @tap="createTicket"/>
-            </StackLayout>
-              <StackLayout orientation="vertical" col="1" v-show="isReturnToOwner">
-                <Label text="Return to Owner Information" class="infoText"/>
-                <Button text="Next >>" class="button" @tap="createTicket"/>
-            </StackLayout>
-              <StackLayout orientation="vertical" col="1" v-show="isServiceRequest">
-                <Label text="Service Request Information" class="infoText"/>
-                <Button text="Next >>" class="button" @tap="createTicket"/>
-            </StackLayout>
+
+            <!-- Get Started tab -->
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,2*" rows="auto,auto,auto,auto,auto" v-show="isHome">
+                <Label text="Get Started" class="titleText" col="1" row="1"/>
+                <TextView text="Please select the" class="infoText" col="1" row="2"/> 
+                <TextView text="reason for your visit" class="infoText" col="1" row="3"/>
+                <Image src="~/assets/images/arrowUpLeft.png" col="0" row="1"/>
+                <Image src="~/assets/images/arrowDownLeft.png" col="0" row="3"/>
+            </GridLayout>
+
+            <!--Adoption Info Tab -->
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,8*,*" v-show="isAdoption">
+                <Label text="Adoption Information" row="0" col="1" colSpan="3" class="infoText"/>
+                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" 
+                 class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
+                <Button text="Next >>" class="button" col="1" row="2" colSpan="3" @tap="createTicket('Adoption')"/>
+            </GridLayout>
+            <!--Intake Info Tab -->
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,8*,*" v-show="isIntake">
+                <Label text="Intake Information" row="0" col="1" colSpan="3" class="infoText"/>
+                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" 
+                 class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
+                <Button text="Next >>" class="button" col="1" row="2" colSpan="3" @tap="createTicket('Intake')"/>
+            </GridLayout>
+            <!--Pet License Info Tab -->
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*" v-show="isPetLicense">
+                <Label text="Pet License Information" row="0" col="1" colSpan="3" class="infoText"/>
+                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
+                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Pet License')"/>
+            </GridLayout>
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*" v-show="isMicrochip">
+                <Label text="Microchip Information" row="0" col="1" colSpan="3" class="infoText"/>
+                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
+                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Microchip')"/>
+            </GridLayout>
+            <!--Service Request Info Tab -->
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*" v-show="isServiceRequest">
+                <Label text="Service Request Information" row="0" col="1" colSpan="3" class="infoText"/>
+                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
+                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Service Request')"/>
+            </GridLayout>
+            <!--Documentation Info Tab -->
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*" v-show="isShowDocumentation">
+                <Label text="Show Documentation Information" row="0" col="1" colSpan="3" class="infoText"/>
+                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
+                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Show Documentation')"/>
+            </GridLayout>
+            <!--Disposal Info Tab -->
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*" v-show="isDisposal">
+                <Label text="Disposal Information" row="0" col="1" colSpan="3" class="infoText"/>
+                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
+                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Disposal')"/>
+            </GridLayout>
+            <!--Donate Info Tab -->
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*" v-show="isDonate">
+                <Label text="Donate Information" row="0" col="1" colSpan="3" class="infoText"/>
+                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
+                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Donate')"/>
+            </GridLayout>
+            <!--Other Info Tab -->
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*" v-show="isOther">
+                <Label text="Other Information" row="0" col="1" colSpan="3" class="infoText"/>
+                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
+                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Other')"/>
+            </GridLayout>
+
 
         </GridLayout>
     </Page>
@@ -115,25 +163,28 @@
         data() {
             return {
                 choices: [
-                    'Adoption ',
-                    'Stray Intake',
-                    'New Pet License',
-                    'Renew Pet License',
+                    'Adoption',
+                    'Intake',
+                    'Pet Licenses',
                     'Microchip',
-                    'Return to Owner',
                     'Service Request',
-                    'other'
+                    'Documentation',
+                    'Disposal',
+                    'Donate',
+                    'Other'
                 ],
                 otherText: '',
                 selectedIndex: 0,
                 isHome: true,
                 isAdoption: false,
-                isStrayIntake: false,
-                isNewPetLicense: false,
-                isRenewPetLicense: false,
+                isIntake: false,
+                isPetLicense: false,
                 isMicrochip: false,
-                isReturnToOwner: false,
                 isServiceRequest: false,
+                isShowDocumentation: false,
+                isDisposal: false,
+                isDonate: false,
+                isOther: false,
                 ticketForm: TicketForm,
             }
         },
@@ -141,8 +192,8 @@
             toHome() {
                 this.$navigateTo(this.home)
             },
-            createTicket() {
-                this.$navigateTo(this.ticketForm, {props: {query: this.otherText}})
+            createTicket(reasonForVisit) {
+                this.$navigateTo(this.ticketForm, {props: {reasonForVisit: reasonForVisit}})
             },
             selectedIndexChanged() {
                 if (this.selectedIndex >= 1)
@@ -153,82 +204,138 @@
             home(){
                 this.isHome = true;
                 this.isAdoption = false;
-                this.isStrayIntake = false;
-                this.isNewPetLicense = false;
-                this.isRenewPetLicense = false;
+                this.isIntake = false;
+                this.isPetLicense = false;
                 this.isMicrochip = false;
-                this.isReturnToOwner = false
                 this.isServiceRequest = false;
+                this.isShowDocumentation = false;
+                this.isDisposal = false;
+                this.isDonate = false;
+                this.isOther = false;
             },
             adoption(){
                 this.isHome = false;
                 this.isAdoption = true;
-                this.isStrayIntake = false;
-                this.isNewPetLicense = false;
-                this.isRenewPetLicense = false;
+                this.isIntake = false;
+                this.isPetLicense = false;
                 this.isMicrochip = false;
-                this.isReturnToOwner = false
                 this.isServiceRequest = false;
+                this.isShowDocumentation = false;
+                this.isDisposal = false;
+                this.isDonate = false;
+                this.isOther = false;
             },
-            strayIntake(){
+            intake(){
                 this.isHome = false;
                 this.isAdoption = false;
-                this.isStrayIntake = true;
-                this.isNewPetLicense = false;
-                this.isRenewPetLicense = false;
+                this.isIntake = true;
+                this.isPetLicense = false;
                 this.isMicrochip = false;
-                this.isReturnToOwner = false
                 this.isServiceRequest = false;
+                this.isShowDocumentation = false;
+                this.isDisposal = false;
+                this.isDonate = false;
+                this.isOther = false;
             },
-            newPetLicense() {
+            petLicense() {
                 this.isHome = false;
                 this.isAdoption = false;
-                this.isStrayIntake = false;
-                this.isNewPetLicense = true;
-                this.isRenewPetLicense = false;
+                this.isIntake = false;
+                this.isPetLicense = true;
                 this.isMicrochip = false;
-                this.isReturnToOwner = false
                 this.isServiceRequest = false;
+                this.isShowDocumentation = false;
+                this.isDisposal = false;
+                this.isDonate = false;
+                this.isOther = false;
             },
             renewPetLicense(){
                 this.isHome = false;
                 this.isAdoption = false;
-                this.isStrayIntake = false;
-                this.isNewPetLicense = false;
-                this.isRenewPetLicense = true;
+                this.isIntake = false;
+                this.isPetLicense = false;
                 this.isMicrochip = false;
-                this.isReturnToOwner = false
-                this.isServiceRequest = false;;
+                this.isServiceRequest = false;
+                this.isShowDocumentation = false;
+                this.isDisposal = false;
+                this.isDonate = false;
+                this.isOther = false;
             },
             microchip(){
                 this.isHome = false;
                 this.isAdoption = false;
-                this.isStrayIntake = false;
-                this.isNewPetLicense = false;
-                this.isRenewPetLicense = false;
+                this.isIntake = false;
+                this.isPetLicense = false;
                 this.isMicrochip = true;
-                this.isReturnToOwner = false
                 this.isServiceRequest = false;
-            },
-            returnToOwner(){
-                this.isHome = false;
-                this.isAdoption = false;
-                this.isStrayIntake = false;
-                this.isNewPetLicense = false;
-                this.isRenewPetLicense = false;
-                this.isMicrochip = false;
-                this.isReturnToOwner = true
-                this.isServiceRequest = false;
+                this.isShowDocumentation = false;
+                this.isDisposal = false;
+                this.isDonate = false;
+                this.isOther = false;
             },
             serviceRequest(){
                 this.isHome = false;
                 this.isAdoption = false;
-                this.isStrayIntake = false;
-                this.isNewPetLicense = false;
-                this.isRenewPetLicense = false;
+                this.isIntake = false;
+                this.isPetLicense = false;
                 this.isMicrochip = false;
-                this.isReturnToOwner = false
                 this.isServiceRequest = true;
+                this.isShowDocumentation = false;
+                this.isDisposal = false;
+                this.isDonate = false;
+                this.isOther = false;
+            },
+
+            showDocumentation(){
+                this.isHome = false;
+                this.isAdoption = false;
+                this.isIntake = false;
+                this.isPetLicense = false;
+                this.isMicrochip = false;
+                this.isServiceRequest = false;
+                this.isShowDocumentation = true;
+                this.isDisposal = false;
+                this.isDonate = false;
+                this.isOther = false;
+            },
+
+            disposal(){
+                this.isHome = false;
+                this.isAdoption = false;
+                this.isIntake = false;
+                this.isPetLicense = false;
+                this.isMicrochip = false;
+                this.isServiceRequest = false;
+                this.isShowDocumentation = false;
+                this.isDisposal = true;
+                this.isDonate = false;
+                this.isOther = false;
+            },
+
+            donate(){
+                this.isHome = false;
+                this.isAdoption = false;
+                this.isIntake = false;
+                this.isPetLicense = false;
+                this.isMicrochip = false;
+                this.isServiceRequest = false;
+                this.isShowDocumentation = false;
+                this.isDisposal = false;
+                this.isDonate = true;
+                this.isOther = false;
+            },
+
+            other(){
+                this.isHome = false;
+                this.isAdoption = false;
+                this.isIntake = false;
+                this.isPetLicense = false;
+                this.isMicrochip = false;
+                this.isServiceRequest = false;
+                this.isShowDocumentation = false;
+                this.isDisposal = false;
+                this.isDonate = false;
+                this.isOther = true;
             }
         },
         props: {
@@ -278,7 +385,14 @@
     }
 
     .infoText {
+        background-color: transparent;
         font-size: 40%;
+        text-align: center;
+    }
+    .titleText {
+        background-color: transparent;
+        font-size: 60%;
+        color: white;
         text-align: center;
     }
 

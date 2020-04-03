@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml",
+            "outputFile": "/Users/jtran/Desktop/acuaV_2/acua-mobile/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml",
             "map": [
                 {
                     "source": "/Users/jtran/.gradle/caches/transforms-2/files-2.1/0970a51e53a901a65540a4a66f0dde9f/res/values-af/values-af.xml",

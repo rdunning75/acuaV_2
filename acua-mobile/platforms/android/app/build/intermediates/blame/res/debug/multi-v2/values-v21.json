@@ -1,25 +1,23 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/jtran/Desktop/acuaV_2/acua-mobile/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/src/main/res/values-v21/styles.xml",
+                    "source": "/Users/jtran/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/res/values-v21/colors.xml",
                     "from": {
-                        "startLines": "4,19,10,15",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "87,745,365,585",
-                        "endLines": "7,21,12,17",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "299,885,519,739"
+                        "startLines": "2",
+                        "startColumns": "1",
+                        "startOffsets": "52",
+                        "endColumns": "40",
+                        "endOffsets": "91"
                     },
                     "to": {
-                        "startLines": "9,232,273,276",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "495,17271,19765,19924",
-                        "endLines": "12,234,275,278",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "707,17411,19919,20078"
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "159",
+                        "endColumns": "43",
+                        "endOffsets": "198"
                     }
                 },
                 {
@@ -61,6 +59,42 @@
                     }
                 },
                 {
+                    "source": "/Users/jtran/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/res/values-v21/strings.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,97",
+                        "endColumns": "41,54",
+                        "endOffsets": "92,147"
+                    },
+                    "to": {
+                        "startLines": "7,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "398,440",
+                        "endColumns": "41,54",
+                        "endOffsets": "435,490"
+                    }
+                },
+                {
+                    "source": "/Users/jtran/Desktop/acuaV_2/acua-mobile/platforms/android/app/src/main/res/values-v21/styles.xml",
+                    "from": {
+                        "startLines": "4,19,10,15",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "87,745,365,585",
+                        "endLines": "7,21,12,17",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "299,885,519,739"
+                    },
+                    "to": {
+                        "startLines": "9,232,273,276",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "495,17271,19765,19924",
+                        "endLines": "12,234,275,278",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "707,17411,19919,20078"
+                    }
+                },
+                {
                     "source": "/Users/jtran/.gradle/caches/transforms-2/files-2.1/eb66641f0948ba9cedc3cf0e73bd2bc1/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,10,18,26",
@@ -96,40 +130,6 @@
                         "endLines": "283,286,290,294",
                         "endColumns": "12,12,12,12",
                         "endOffsets": "20488,20651,20945,21240"
-                    }
-                },
-                {
-                    "source": "/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/src/main/res/values-v21/colors.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "1",
-                        "startOffsets": "52",
-                        "endColumns": "40",
-                        "endOffsets": "91"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "159",
-                        "endColumns": "43",
-                        "endOffsets": "198"
-                    }
-                },
-                {
-                    "source": "/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/src/main/res/values-v21/strings.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,97",
-                        "endColumns": "41,54",
-                        "endOffsets": "92,147"
-                    },
-                    "to": {
-                        "startLines": "7,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "398,440",
-                        "endColumns": "41,54",
-                        "endOffsets": "435,490"
                     }
                 }
             ]

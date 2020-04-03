@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iGij8qqDCWRV6jtCqzIL33hl3wY=
+		Ma105WSlVwRv6HV/vxCgw6CTC/8=
 		</data>
 		<key>Modules/Toaster.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Toaster.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EGrKkBINKjGYn88sPT2TLAG0Cu4=
+		Gpk5crOZTQZh6WoPela4pEa5e84=
 		</data>
 		<key>Modules/Toaster.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Toaster.swiftmodule/i386.swiftmodule</key>
 		<data>
-		EGrKkBINKjGYn88sPT2TLAG0Cu4=
+		Gpk5crOZTQZh6WoPela4pEa5e84=
 		</data>
 		<key>Modules/Toaster.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/Toaster.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jcFVAT4aXbpHCaEAIp46FQBe9ls=
+		RDFGZL9UnV6kv50Zb10NUEXW41w=
 		</data>
 		<key>Modules/Toaster.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/Toaster.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		jcFVAT4aXbpHCaEAIp46FQBe9ls=
+		RDFGZL9UnV6kv50Zb10NUEXW41w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,11 +107,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EGrKkBINKjGYn88sPT2TLAG0Cu4=
+			Gpk5crOZTQZh6WoPela4pEa5e84=
 			</data>
 			<key>hash2</key>
 			<data>
-			8RYkpcWbhAQowlG/IYWSX8pEe5KOvCWlm7yy8LX/4AQ=
+			YDYFOztvhXAhB/1r5hAxDtHzBtABaKoS4/Ldhcsiz8I=
 			</data>
 		</dict>
 		<key>Modules/Toaster.swiftmodule/i386.swiftdoc</key>
@@ -129,11 +129,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EGrKkBINKjGYn88sPT2TLAG0Cu4=
+			Gpk5crOZTQZh6WoPela4pEa5e84=
 			</data>
 			<key>hash2</key>
 			<data>
-			8RYkpcWbhAQowlG/IYWSX8pEe5KOvCWlm7yy8LX/4AQ=
+			YDYFOztvhXAhB/1r5hAxDtHzBtABaKoS4/Ldhcsiz8I=
 			</data>
 		</dict>
 		<key>Modules/Toaster.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -151,11 +151,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jcFVAT4aXbpHCaEAIp46FQBe9ls=
+			RDFGZL9UnV6kv50Zb10NUEXW41w=
 			</data>
 			<key>hash2</key>
 			<data>
-			LpXe66NelplNmsJoumWXLD2M4ocOSfmSycSqtzblxjE=
+			kNHyl37EZZ5F977bD6H10pLITEox7L6ngWRmiG8NwzM=
 			</data>
 		</dict>
 		<key>Modules/Toaster.swiftmodule/x86_64.swiftdoc</key>
@@ -173,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jcFVAT4aXbpHCaEAIp46FQBe9ls=
+			RDFGZL9UnV6kv50Zb10NUEXW41w=
 			</data>
 			<key>hash2</key>
 			<data>
-			LpXe66NelplNmsJoumWXLD2M4ocOSfmSycSqtzblxjE=
+			kNHyl37EZZ5F977bD6H10pLITEox7L6ngWRmiG8NwzM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "/Users/jtran/Desktop/acuaV_2/acua-mobile/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "/Users/jtran/.gradle/caches/transforms-2/files-2.1/31ef41a8c56d2c51d17c36c5f782e62f/res/values-watch-v20/values-watch-v20.xml",

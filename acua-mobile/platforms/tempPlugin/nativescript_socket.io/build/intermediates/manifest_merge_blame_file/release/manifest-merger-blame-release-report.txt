@@ -5,10 +5,10 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk android:targetSdkVersion="26" />
-7-->/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/tempPlugin/nativescript_socket.io/src/main/AndroidManifest.xml
+7-->/Users/jtran/Desktop/acuaV_2/acua-mobile/platforms/tempPlugin/nativescript_socket.io/src/main/AndroidManifest.xml
 8
 9    <uses-permission android:name="android.permission.INTERNET" />
-9-->/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/tempPlugin/nativescript_socket.io/src/main/AndroidManifest.xml:3:3-64
-9-->/Users/jtran/Desktop/ACUA/acuaV_2/acua-mobile/platforms/tempPlugin/nativescript_socket.io/src/main/AndroidManifest.xml:3:20-62
+9-->/Users/jtran/Desktop/acuaV_2/acua-mobile/platforms/tempPlugin/nativescript_socket.io/src/main/AndroidManifest.xml:3:3-64
+9-->/Users/jtran/Desktop/acuaV_2/acua-mobile/platforms/tempPlugin/nativescript_socket.io/src/main/AndroidManifest.xml:3:20-62
 10
 11</manifest>
