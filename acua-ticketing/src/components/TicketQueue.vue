@@ -1,32 +1,35 @@
-<template>
-  <v-navigation-drawer
-    permanent 
-    fixed
-    right
-    clipped
-    app
+<template >
+<v-card
+    height="550"
+    width="600"
+    class="mx-auto"
   >
-    <v-list dense>
-      <v-list-tile>
-        <v-list-tile-content>
-          <v-list-tile-title class="title text-xs-center">Window Queue</v-list-tile-title>
+
+  <v-list style="background-color:#117FA7;">
+      <v-list-tile >
+        <v-list-tile-content >
+          <v-list-tile-title class="title text-xs-center" style="color:white;">Window Queue</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
-    <v-list dense v-for="(ticket, i) in queue" :key="i">
 
-        <v-list-tile-content>
-          <v-list-tile-title class ="headline">Ticket #{{ticket.tic_id}}</v-list-tile-title>
-          <v-list-tile-sub-title>Name: {{ticket.first_name}}</v-list-tile-sub-title>
+  <v-navigation-drawer permanent width="600">
+    
+    <v-list  v-for="(ticket, i) in queue" :key="i">
+
+        <v-list-tile-content >
+          <v-list-tile-title class="headline text-xs-center">Ticket #{{ticket.tic_id}}</v-list-tile-title>
+          <v-list-tile-sub-title style="font-size:20px;" class="text-xs-center">Name: {{ticket.first_name}}</v-list-tile-sub-title>
         </v-list-tile-content>
 
     </v-list>
-    <v-list dense v-if="queue.length === 0">
+    <v-list  v-if="queue.length === 0">
       <v-list-tile-content>
         <v-list-tile-title class="text-xs-center">No Tickets</v-list-tile-title>
       </v-list-tile-content>
     </v-list>
   </v-navigation-drawer>
+</v-card>
 </template>
 
 <script lang="ts">

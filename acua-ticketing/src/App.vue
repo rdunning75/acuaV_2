@@ -51,11 +51,11 @@
     })
     export default class App extends Vue {
         public on: any;
-        private socket = io('http://localhost:3000');
+        private socket = io.connect('http://localhost:3000');
         private users = users;
 
-        public thing() : void {
-            this.socket.emit('message',"HELLO WORLD");
+        public thing(): void {
+            this.socket.emit('message', 'HELLO WORLD');
             console.log('conntected')
         }
 
@@ -92,4 +92,5 @@
         }
 
     }
+    console.log(io.connect('http://localhost:3000'))
 </script>

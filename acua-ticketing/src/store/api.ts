@@ -36,7 +36,7 @@ export async function fetchTotal(user: any): Promise<number> {
   const response = await api.get(`/tickets/count?${where}`)
   // const response = await api.get(`/tickethistories/count`)
 */
-   return response.data.count as number
+  return response.data.count as number
 }
 
 export async function updateTicket(id: number, update: any): Promise<void> {

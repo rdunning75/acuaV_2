@@ -1,5 +1,5 @@
-<template>
-  <div>
+<template >
+  <div >
       <v-container grid-list-xl>
         <v-layout row wrap>
           <v-flex d-flex xs6 offset-xs2>
@@ -8,7 +8,7 @@
         </v-layout>
       </v-container>
 
-    <TicketQueue/>
+    <TicketQueue />
   </div>
 </template>
 
@@ -30,7 +30,6 @@ export default class Manager extends Vue {
   private users = users
   private polling: number | undefined = undefined
   private countdown: number | undefined = undefined
->>>>>>> 77cba57a5116117dba9d8ad1f99b10333603b5bf
 
         public get loader(): boolean {
             return tickets.ticketLoader;
@@ -38,7 +37,7 @@ export default class Manager extends Vue {
 
         public mounted(): void {
             tickets.loadTickets()
-            tickets.ticketCount(this.users.user)
+            // tickets.ticketCount(this.users.user)
             this.pollData()
         }
 
