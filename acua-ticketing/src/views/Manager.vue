@@ -1,5 +1,5 @@
-<template>
-  <div>
+<template >
+  <div >
       <v-container grid-list-xl>
         <v-layout row wrap>
           <v-flex d-flex xs6 offset-xs2>
@@ -8,7 +8,7 @@
         </v-layout>
       </v-container>
 
-    <TicketQueue/>
+    <TicketQueue />
   </div>
 </template>
 
@@ -37,6 +37,7 @@ export default class Manager extends Vue {
 
         public mounted(): void {
             tickets.loadTickets()
+            // tickets.ticketCount(this.users.user)
             this.pollData()
         }
 

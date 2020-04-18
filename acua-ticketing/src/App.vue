@@ -50,8 +50,14 @@
     @Component({})
     export default class App extends Vue {
         public on: any;
+
+        private socket = io.connect('http://localhost:3000');
         private users = users;
 
+        public thing(): void {
+            this.socket.emit('message', 'HELLO WORLD');
+            console.log('conntected')
+        }
 
 
         private get user(): User | null {
@@ -88,4 +94,5 @@
         }
 
     }
+    console.log(io.connect('http://localhost:3000'))
 </script>

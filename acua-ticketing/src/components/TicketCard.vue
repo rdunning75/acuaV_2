@@ -109,7 +109,7 @@ export default class TicketCard extends Vue {
       tickets.setFalse()
       this.tickets.loadTickets()
       // tickets.ticketCount(this.users.user)
-      this.tickets.setLoader()
+      // this.tickets.setLoader()
 
     })
   }

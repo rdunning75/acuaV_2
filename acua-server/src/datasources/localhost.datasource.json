@@ -1,9 +1,9 @@
 {
-  "name": "localhost",
-  "connector": "mysql",
+  "name": "ACUA-LOCAL",
+  "connector" : "mysql",
   "host": "127.0.0.1",
   "port": 3306,
   "user": "root",
-  "password": "Imanoobf0rlif3",
+  "password": "bueno1000",
   "database": "quickstartdb"
 }

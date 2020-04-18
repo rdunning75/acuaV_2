@@ -25,9 +25,18 @@ export async function fetchTickets(user: any): Promise<Ticket[]> {
 }
 
 export async function fetchTotal(user: any): Promise<number> {
-    const where: string = `filter[where]`
-    const response = await api.get(`/tickethistories/count?${where}`)
-    return response.data.count as number
+
+
+  const where: string = `filter[where]`
+  const response = await api.get(`/tickethistories/count?${where}`)
+/* export async function fetchTotal(user: any): Promise<number> {
+  // const where: string = `where[and][0][location]=${user.location}`
+  // + `&where[and][2][isComplete]=false`
+  const where: string = `filter[where][time_serviced]=not serviced`
+  const response = await api.get(`/tickets/count?${where}`)
+  // const response = await api.get(`/tickethistories/count`)
+*/
+  return response.data.count as number
 }
 
 export async function updateTicket(id: number, update: any): Promise<void> {
