@@ -6,9 +6,9 @@
     "compression": {},
     "cors": {
       "params": {
-        "origin": false,
-        "credentials": false,
-        "maxAge": 86400
+        "origin": ["http://localhost:8080","localhost:8080","localhost:8080/","http://localhost:8080/"],
+        "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+        "optionsSuccessStatus": 202,
       }
     },
     "helmet#xssFilter": {},
@@ -40,7 +40,11 @@
       ]
     }
   },
-  "files": {},
+  "files": {
+    "loopback#static": {
+      "params": "$!../client"
+    }
+  },
   "final": {
     "loopback#urlNotFound": {}
   },

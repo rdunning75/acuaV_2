@@ -1,16 +1,18 @@
 import Vue from 'vue'
 import './plugins/vuetify'
+import './pubsub'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import VueSocketio from 'vue-socket.io-extended'
 import io from 'socket.io-client'
+import VueSocketIOExt from 'vue-socket.io-extended';
 
-// Vue.use(VueSocketio, io('http://localhost:3000/'));
-// Vue.config.productionTip = false;
+// export const socket = io('http://localhost:3000');
+// Vue.use(VueSocketIOExt, socket);
 
 new Vue({
-  router,
-  store,
-  render: (h) => h(App)
+    router,
+    store,
+    render: (h) => h(App)
 }).$mount('#app');
+

@@ -17,6 +17,9 @@
       "extended": true,
       "limit": "100kb"
     },
-    "cors": true
+    "cors": {
+      "origin": true,
+      "credentials": true
+    }
   }
 }

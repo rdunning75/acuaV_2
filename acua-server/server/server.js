@@ -7,30 +7,12 @@
 
 const loopback = require('loopback');
 const boot = require('loopback-boot');
-
 const app = module.exports = loopback();
+
 
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
-boot(app, __dirname, function (err) {
-    if (err) throw err;
-
-    if (require.main === module) {
-        app.io = require('socket.io')(app.start());
-        app.io.origins('origins','http://localhost:3000');
-
-        app.io.on('connection', function (socket) {
-            console.log('a user connected');
-            socket.on('disconnect', function () {
-                console.log('user disconnected');
-            });
-            socket.on('message',function(message) {
-                console.log(message)
-
-            });
-        });
-    }
-});
+boot(app, __dirname);
 
 app.start = function () {
     // start the web server
@@ -42,5 +24,24 @@ app.start = function () {
             const explorerPath = app.get('loopback-component-explorer').mountPath;
             console.log('Browse your REST API at %s%s', baseUrl, explorerPath);
         }
+
+
     });
+
+    if (require.main === module) {
+        const server = app.listen(8080);
+        app.io = require('socket.io')(app.start());
+        app.io.on('connect', function (socket) {
+            console.log('a user connected');
+
+            socket.on('message', function (message) {
+                console.log('message:' + message)
+                app.io.emit('message', message)
+            });
+
+            socket.on('disconnect', function () {
+                console.log('user disconnected');
+            });
+        });
+    }
 };
