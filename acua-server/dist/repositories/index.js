@@ -6,4 +6,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./location.repository"));
 __export(require("./users.repository"));
 __export(require("./tickethistory.repository"));
+__export(require("./qticket.repository"));
 //# sourceMappingURL=index.js.map

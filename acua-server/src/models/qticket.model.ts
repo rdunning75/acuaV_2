@@ -1,13 +1,14 @@
 import {Entity, model, property} from '@loopback/repository';
 
-@model({settings: {strict: false}})
+@model({settings: {}})
 export class Qticket extends Entity {
   @property({
     type: 'number',
     id: true,
+    required: false,
     generated: true,
   })
-  tic_id?: number;
+  tic_id: number;
 
   @property({
     type: 'number',
@@ -33,15 +34,19 @@ export class Qticket extends Entity {
 
   @property({
     type: 'string',
+  })
+  time_serviced?: string;
+
+  @property({
+    type: 'string',
     required: true,
   })
   first_name: string;
 
   @property({
     type: 'string',
-    required: true,
   })
-  last_name: string;
+  last_name?: string;
 
   @property({
     type: 'string',
@@ -61,11 +66,10 @@ export class Qticket extends Entity {
   })
   reason_of_visit: string;
 
-  // Define well-known properties here
-
-  // Indexer property to allow additional data
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  // [prop: string]: any;
+  @property({
+    type: 'string',
+  })
+  user_note?: string;
 
   constructor(data?: Partial<Qticket>) {
     super(data);

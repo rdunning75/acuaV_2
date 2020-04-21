@@ -1,167 +1,169 @@
 import {
-  Count,
-  CountSchema,
-  Filter,
-  repository,
-  Where,
+    Count,
+    CountSchema,
+    Filter,
+    repository,
+    Where,
 } from '@loopback/repository';
 import {
-  post,
-  param,
-  get,
-  getFilterSchemaFor,
-  getModelSchemaRef,
-  getWhereSchemaFor,
-  patch,
-  put,
-  del,
-  requestBody,
+    post,
+    param,
+    get,
+    getFilterSchemaFor,
+    getModelSchemaRef,
+    getWhereSchemaFor,
+    patch,
+    put,
+    del,
+    requestBody,
 } from '@loopback/rest';
 
-import { Tickethistory } from '../models';
-import { TickethistoryRepository } from '../repositories';
+import {Tickethistory} from '../models';
+import {TickethistoryRepository} from '../repositories';
 
 export class TickethistoryController {
-  constructor(
-    @repository(TickethistoryRepository)
-    public tickethistoryRepository: TickethistoryRepository,
-  ) { }
+    constructor(
+        @repository(TickethistoryRepository)
+        public tickethistoryRepository: TickethistoryRepository,
+    ) {
+    }
 
-  // Source of ticket creation error
-  @post('/tickethistories', {
-    responses: {
-      '200': {
-        description: 'Tickethistory model instance',
-        content: { 'application/json': { schema: getModelSchemaRef(Tickethistory) } },
-      },
-    },
-  })
-  async create(
-    @requestBody({
-      content: {
-        'application/json': {
-          schema: getModelSchemaRef(Tickethistory, {
-            title: 'NewTickethistory',
-            exclude: ['tic_id'],
-          }),
+    // Source of ticket creation error
+    @post('/tickethistories', {
+        responses: {
+            '200': {
+                description: 'Tickethistory model instance',
+                content: {'application/json': {schema: getModelSchemaRef(Tickethistory)}},
+            },
         },
-      },
     })
-    tickethistory: Omit<Tickethistory, 'tic_id'>,
-  ): Promise<Tickethistory> {
-    return this.tickethistoryRepository.create(tickethistory);
-  }
-  // Source of ticket creation error
+    async create(
+        @requestBody({
+            content: {
+                'application/json': {
+                    schema: getModelSchemaRef(Tickethistory, {
+                        title: 'NewTickethistory',
+                        exclude: ['tic_id'],
+                    }),
+                },
+            },
+        })
+            tickethistory: Omit<Tickethistory, 'tic_id'>,
+    ): Promise<Tickethistory> {
+        return this.tickethistoryRepository.create(tickethistory);
+    }
 
-  @get('/tickethistories/count', {
-    responses: {
-      '200': {
-        description: 'Tickethistory model count',
-        content: { 'application/json': { schema: CountSchema } },
-      },
-    },
-  })
-  async count(
-    @param.query.object('where', getWhereSchemaFor(Tickethistory)) where?: Where<Tickethistory>,
-  ): Promise<Count> {
-    return this.tickethistoryRepository.count(where);
-  }
+    // Source of ticket creation error
 
-  @get('/tickethistories', {
-    responses: {
-      '200': {
-        description: 'Array of Tickethistory model instances',
-        content: {
-          'application/json': {
-            schema: { type: 'array', items: getModelSchemaRef(Tickethistory) },
-          },
+    @get('/tickethistories/count', {
+        responses: {
+            '200': {
+                description: 'Tickethistory model count',
+                content: {'application/json': {schema: CountSchema}},
+            },
         },
-      },
-    },
-  })
-  async find(
-    @param.query.object('filter', getFilterSchemaFor(Tickethistory)) filter?: Filter<Tickethistory>,
-  ): Promise<Tickethistory[]> {
-    return this.tickethistoryRepository.find(filter);
-  }
-
-  @patch('/tickethistories', {
-    responses: {
-      '200': {
-        description: 'Tickethistory PATCH success count',
-        content: { 'application/json': { schema: CountSchema } },
-      },
-    },
-  })
-  async updateAll(
-    @requestBody({
-      content: {
-        'application/json': {
-          schema: getModelSchemaRef(Tickethistory, { partial: true }),
-        },
-      },
     })
-    tickethistory: Tickethistory,
-    @param.query.object('where', getWhereSchemaFor(Tickethistory)) where?: Where<Tickethistory>,
-  ): Promise<Count> {
-    return this.tickethistoryRepository.updateAll(tickethistory, where);
-  }
+    async count(
+        @param.query.object('where', getWhereSchemaFor(Tickethistory)) where?: Where<Tickethistory>,
+    ): Promise<Count> {
+        return this.tickethistoryRepository.count(where);
+    }
 
-  @get('/tickethistories/{id}', {
-    responses: {
-      '200': {
-        description: 'Tickethistory model instance',
-        content: { 'application/json': { schema: getModelSchemaRef(Tickethistory) } },
-      },
-    },
-  })
-  async findById(@param.path.number('id') id: number): Promise<Tickethistory> {
-    return this.tickethistoryRepository.findById(id);
-  }
-
-  @patch('/tickethistories/{id}', {
-    responses: {
-      '204': {
-        description: 'Tickethistory PATCH success',
-      },
-    },
-  })
-  async updateById(
-    @param.path.number('id') id: number,
-    @requestBody({
-      content: {
-        'application/json': {
-          schema: getModelSchemaRef(Tickethistory, { partial: true }),
+    @get('/tickethistories', {
+        responses: {
+            '200': {
+                description: 'Array of Tickethistory model instances',
+                content: {
+                    'application/json': {
+                        schema: {type: 'array', items: getModelSchemaRef(Tickethistory)},
+                    },
+                },
+            },
         },
-      },
     })
-    tickethistory: Tickethistory,
-  ): Promise<void> {
-    await this.tickethistoryRepository.updateById(id, tickethistory);
-  }
+    async find(
+        @param.query.object('filter', getFilterSchemaFor(Tickethistory)) filter?: Filter<Tickethistory>,
+    ): Promise<Tickethistory[]> {
+        return this.tickethistoryRepository.find(filter);
+    }
 
-  @put('/tickethistories/{id}', {
-    responses: {
-      '204': {
-        description: 'Tickethistory PUT success',
-      },
-    },
-  })
-  async replaceById(
-    @param.path.number('id') id: number,
-    @requestBody() tickethistory: Tickethistory,
-  ): Promise<void> {
-    await this.tickethistoryRepository.replaceById(id, tickethistory);
-  }
+    @patch('/tickethistories', {
+        responses: {
+            '200': {
+                description: 'Tickethistory PATCH success count',
+                content: {'application/json': {schema: CountSchema}},
+            },
+        },
+    })
+    async updateAll(
+        @requestBody({
+            content: {
+                'application/json': {
+                    schema: getModelSchemaRef(Tickethistory, {partial: true}),
+                },
+            },
+        })
+            tickethistory: Tickethistory,
+        @param.query.object('where', getWhereSchemaFor(Tickethistory)) where?: Where<Tickethistory>,
+    ): Promise<Count> {
+        return this.tickethistoryRepository.updateAll(tickethistory, where);
+    }
 
-  @del('/tickethistories/{id}', {
-    responses: {
-      '204': {
-        description: 'Tickethistory DELETE success',
-      },
-    },
-  })
-  async deleteById(@param.path.number('id') id: number): Promise<void> {
-    await this.tickethistoryRepository.deleteById(id);
-  }
+    @get('/tickethistories/{id}', {
+        responses: {
+            '200': {
+                description: 'Tickethistory model instance',
+                content: {'application/json': {schema: getModelSchemaRef(Tickethistory)}},
+            },
+        },
+    })
+    async findById(@param.path.number('id') id: number): Promise<Tickethistory> {
+        return this.tickethistoryRepository.findById(id);
+    }
+
+    @patch('/tickethistories/{id}', {
+        responses: {
+            '204': {
+                description: 'Tickethistory PATCH success',
+            },
+        },
+    })
+    async updateById(
+        @param.path.number('id') id: number,
+        @requestBody({
+            content: {
+                'application/json': {
+                    schema: getModelSchemaRef(Tickethistory, {partial: true}),
+                },
+            },
+        })
+            tickethistory: Tickethistory,
+    ): Promise<void> {
+        await this.tickethistoryRepository.updateById(id, tickethistory);
+    }
+
+    @put('/tickethistories/{id}', {
+        responses: {
+            '204': {
+                description: 'Tickethistory PUT success',
+            },
+        },
+    })
+    async replaceById(
+        @param.path.number('id') id: number,
+        @requestBody() tickethistory: Tickethistory,
+    ): Promise<void> {
+        await this.tickethistoryRepository.replaceById(id, tickethistory);
+    }
+
+    @del('/tickethistories/{id}', {
+        responses: {
+            '204': {
+                description: 'Tickethistory DELETE success',
+            },
+        },
+    })
+    async deleteById(@param.path.number('id') id: number): Promise<void> {
+        await this.tickethistoryRepository.deleteById(id);
+    }
 }
