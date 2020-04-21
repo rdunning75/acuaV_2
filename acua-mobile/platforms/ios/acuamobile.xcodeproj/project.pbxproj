@@ -227,6 +227,7 @@
 				TargetAttributes = {
 					858B83EF18CA22B800AB12DE = {
 						DevelopmentTeam = 9M8AHNHQ3M;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -468,6 +469,7 @@
 			baseConfigurationReference = CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9M8AHNHQ3M;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -513,6 +515,7 @@
 			baseConfigurationReference = CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9M8AHNHQ3M;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

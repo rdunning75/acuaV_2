@@ -85,7 +85,6 @@ export default {
         phone: this.phone1 + this.phone2 + this.phone3,
         email: this.email,
         reasonForVisit: this.reasonForVisit
-
       })
     },
     nextField(input){

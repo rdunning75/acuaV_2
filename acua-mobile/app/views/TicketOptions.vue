@@ -51,12 +51,12 @@
                     <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/services.icon.png" 
                      v-else :title="choices[4]" :action="serviceRequest" class="fa homepage-blue Button" textWrap="true"/>
 
-                    <!-- Show Documentation Button -->
-                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/badge1.png" 
-                     v-if="isShowDocumentation " :title="choices[5]" :action="showDocumentation" class="fa homepage-blue ButtonSelected" textWrap="true"/>
+                    <!-- Medical Button -->
+                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/medical1.png" 
+                     v-if="isMedical " :title="choices[5]" :action="medical" class="fa homepage-blue ButtonSelected" textWrap="true"/>
 
-                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/badge1.png" 
-                     v-else :title="choices[5]" :action="showDocumentation" class="fa homepage-blue Button" textWrap="true"/>
+                    <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/medical1.png" 
+                     v-else :title="choices[5]" :action="medical" class="fa homepage-blue Button" textWrap="true"/>
 
                     <!-- Disposal Button -->
                     <CategoryButton verticalAlignment="center"  margin="5" src="~/assets/images/phoneicon.png" 
@@ -86,69 +86,92 @@
 
             <!-- Get Started tab -->
             <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,2*" rows="auto,auto,auto,auto,auto" v-show="isHome">
-                <Label text="Get Started" class="titleText" col="1" row="1"/>
-                <TextView text="Please select the" class="infoText" col="1" row="2"/> 
+                <Label text="Get Started" class="titleText1" col="1" row="0" rowSpan="2"/>
+                <TextView text="  Please select the" class="infoText" col="1" row="2"/> 
                 <TextView text="reason for your visit" class="infoText" col="1" row="3"/>
                 <Image src="~/assets/images/arrowUpLeft.png" col="0" row="1"/>
                 <Image src="~/assets/images/arrowDownLeft.png" col="0" row="3"/>
             </GridLayout>
 
             <!--Adoption Info Tab -->
-            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,8*,*" v-show="isAdoption">
-                <Label text="Adoption Information" row="0" col="1" colSpan="3" class="infoText"/>
-                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" 
-                 class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
-                <Button text="Next >>" class="button" col="1" row="2" colSpan="3" @tap="createTicket('Adoption')"/>
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,7*,*" v-show="isAdoption">
+                <Label text="Adoption" row="0" col="1" colSpan="3" rowSpan="2" class="titleText"/>
+                <TextView editable="false" :text="'Continue if you wish to:'" class="infoText" col="1" colSpan="3" row="2"/>
+                <TextView editable="false" :text="'- sign up to adopt an animal'" class="infoText" col="1" colSpan="4" row="3"/>
+                <TextView editable="false" :text="'- intrested in adopting an animal'" class="infoText" col="1" colSpan="4" row="4"/>
+                <TextView editable="false" :text="'- return recently adopted animal'" class="infoText" col="1" colSpan="4" row="5"/>
+                <Image src="~/assets/images/group-of-pets.png" col="1" row="6" colSpan="3"/>
+                <Button text="Next >>" class="button" col="1" row="7" colSpan="3" @tap="createTicket('Adoption')"/>
             </GridLayout>
             <!--Intake Info Tab -->
-            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,8*,*" v-show="isIntake">
-                <Label text="Intake Information" row="0" col="1" colSpan="3" class="infoText"/>
-                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" 
-                 class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
-                <Button text="Next >>" class="button" col="1" row="2" colSpan="3" @tap="createTicket('Intake')"/>
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,6*" v-show="isIntake">
+                <Label text="Intake" row="0" col="1" colSpan="3" rowSpan="2" class="titleText"/>
+                <TextView editable="false" :text="'Continue if you are visiting for:'" class="infoText" col="1" colSpan="4" row="2" rowSpan="2"/>
+                <TextView editable="false" :text="'- Stray Intake'" class="infoText" col="1" colSpan="4" row="3"/>
+                <TextView editable="false" :text="'- Owner Surrender Intake'" class="infoText" col="1" colSpan="4" row="4"/>
+                <TextView editable="false" :text="''" class="infoText" col="1" colSpan="4" row="5"/> 
+                <Button text="Next >>" class="button" col="1" row="7" colSpan="3" @tap="createTicket('Intake')"/>
             </GridLayout>
             <!--Pet License Info Tab -->
-            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*" v-show="isPetLicense">
-                <Label text="Pet License Information" row="0" col="1" colSpan="3" class="infoText"/>
-                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
-                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Pet License')"/>
+             <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,6*" v-show="isPetLicense">
+                <Label text="Pet License" row="0" col="1" colSpan="3" rowSpan="2" class="titleText"/>
+                <TextView editable="false" :text="'Continue if you wish to:'" class="infoText" col="1" colSpan="4" row="2"/>
+                <TextView editable="false" :text="'- Purchase Licenses'" class="infoText" col="1" colSpan="4" row="3"/>
+                <TextView editable="false" :text="'- Renew License'" class="infoText" col="1" colSpan="4" row="4"/>
+                <TextView editable="false" :text="'- Replace License'" class="infoText" col="1" colSpan="4" row="5"/> 
+                <Button text="Next >>" class="button" col="1" row="7" colSpan="3" @tap="createTicket('Pet License')"/>
             </GridLayout>
-            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*" v-show="isMicrochip">
-                <Label text="Microchip Information" row="0" col="1" colSpan="3" class="infoText"/>
-                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
-                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Microchip')"/>
+            <!--Microchip Info Tab -->
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,6*" v-show="isMicrochip">
+                <Label text="Microchip" row="0" col="1" colSpan="3" rowSpan="2" class="titleText"/>
+                <TextView editable="false" :text="'Continue if you wish to:'" class="infoText" col="1" colSpan="4" row="2"/>
+                <TextView editable="false" :text="'- microchip your animal.'" class="infoText" col="1" colSpan="4" row="3"/>
+                <TextView editable="false" :text="'- obtain more information'" class="infoText" col="1" colSpan="4" row="4"/>
+                <Button text="Next >>" class="button" col="1" row="7" colSpan="3" @tap="createTicket('Microchip')"/>
             </GridLayout>
             <!--Service Request Info Tab -->
-            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*" v-show="isServiceRequest">
-                <Label text="Service Request Information" row="0" col="1" colSpan="3" class="infoText"/>
-                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
-                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Service Request')"/>
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*,4*" v-show="isServiceRequest">
+                <Label text="Service Request" row="0" col="1" colSpan="3" rowSpan="2" class="titleText"/>
+                <TextView editable="false" :text="'Continue if you wish to request'" class="infoText" col="1" colSpan="5" row="2" rowSpan="2"/>
+                <TextView editable="false" :text="'service for non-emergency'" class="infoText" col="1" colSpan="4" row="3" rowSpan="2"/>
+                <TextView editable="false" :text="'situations such as:'" class="infoText" col="1" colSpan="4" row="4" rowSpan="2"/>
+                <TextView editable="false" :text="'- Stray Animal'" class="infoText" col="1" colSpan="4" row="5"/>
+                <TextView editable="false" :text="'- Dog Bit (non-emergency)'" class="infoText" col="1" colSpan="4" row="6"/>
+                <TextView editable="false" :text="'- Dead Animal Pickup'" class="infoText" col="1" colSpan="4" row="7"/> 
+                <Button text="Next >>" class="button" col="1" row="9" colSpan="3" @tap="createTicket('Service Request')"/>
             </GridLayout>
-            <!--Documentation Info Tab -->
-            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*" v-show="isShowDocumentation">
-                <Label text="Show Documentation Information" row="0" col="1" colSpan="3" class="infoText"/>
-                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
-                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Show Documentation')"/>
+            <!--Medical Info Tab -->
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,6*,*" v-show="isMedical">
+                <Label text="Medical" row="0" col="1" colSpan="3" rowSpan="2" class="titleText"/>
+                <TextView editable="false" :text="'Continue if your visit is regarding:'" class="infoText" col="1" colSpan="5" row="2" rowSpan="2"/>
+                <TextView editable="false" :text="'- Spay & Neuter'" class="infoText" col="1" colSpan="4" row="3" rowSpan="2"/>
+                <TextView editable="false" :text="'- Vaccinations'" class="infoText" col="1" colSpan="4" row="4" rowSpan="2"/>
+                <TextView editable="false" :text="'- Show Proof of Rabies'" class="infoText" col="1" colSpan="4" row="5"/>
+                <Image src="~/assets/images/petvaccination.png" col="1" row="6" colSpan="3" rowSpan = "2"/>
+                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Medica;')"/>
             </GridLayout>
             <!--Disposal Info Tab -->
-            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*" v-show="isDisposal">
-                <Label text="Disposal Information" row="0" col="1" colSpan="3" class="infoText"/>
-                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
-                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Disposal')"/>
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,6*,*" v-show="isDisposal">
+                <Label text="Disposal" row="0" col="1" colSpan="3" rowSpan="2" class="titleText"/>
+                <TextView editable="false" :text="'Continue if you wish to:'" class="infoText" col="1" colSpan="5" row="2" rowSpan="2"/>
+                <TextView editable="false" :text="'- make a disposal request'" class="infoText" col="1" colSpan="4" row="3" rowSpan="2"/>
+                <Button text="Next >>" class="button" col="1" row="6" colSpan="3" @tap="createTicket('Disposal')"/>
             </GridLayout>
             <!--Donate Info Tab -->
-            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*" v-show="isDonate">
-                <Label text="Donate Information" row="0" col="1" colSpan="3" class="infoText"/>
-                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
-                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Donate')"/>
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,6*" v-show="isDonate">
+                <Label text="Donate" row="0" col="1" colSpan="3" rowSpan="2" class="titleText"/>
+                <TextView editable="false" :text="'Continue if you wish to:'" class="infoText" col="1" colSpan="5" row="2" rowSpan="2"/>
+                <TextView editable="false" :text="'- make a donation to the Animal'" class="infoText" col="1" colSpan="4" row="3" rowSpan="2"/>
+                <TextView editable="false" :text="'   Care and Control Center'" class="infoText" col="1" colSpan="4" row="4"/>
+                <Button text="Next >>" class="button" col="1" row="7" colSpan="3" @tap="createTicket('Donate')"/>
             </GridLayout>
             <!--Other Info Tab -->
-            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*" v-show="isOther">
-                <Label text="Other Information" row="0" col="1" colSpan="3" class="infoText"/>
-                <TextView editable="false" :text="'Continue if you \n have any of these \n -first \n -second \n -third'" class="infoText" col="1" colSpan="3" row="1" rowSpan="6"/>
-                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Other')"/>
+            <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*,6*" v-show="isOther">
+                <Label text="Other" row="0" col="1" colSpan="3" rowSpan="2" class="titleText"/>
+                <TextView editable="false" :text="'Continue if you are:'" class="infoText" col="1" colSpan="5" row="2" rowSpan="2"/>
+                <TextView editable="false" :text="'- here for any other reason'" class="infoText" col="1" colSpan="4" row="3" rowSpan="2"/>
+                <Button text="Next >>" class="button" col="1" row="7" colSpan="3" @tap="createTicket('Donate')"/>
             </GridLayout>
-
 
         </GridLayout>
     </Page>
@@ -168,7 +191,7 @@
                     'Pet Licenses',
                     'Microchip',
                     'Service Request',
-                    'Documentation',
+                    'Medical',
                     'Disposal',
                     'Donate',
                     'Other'
@@ -181,7 +204,7 @@
                 isPetLicense: false,
                 isMicrochip: false,
                 isServiceRequest: false,
-                isShowDocumentation: false,
+                isMedical: false,
                 isDisposal: false,
                 isDonate: false,
                 isOther: false,
@@ -208,7 +231,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
@@ -220,7 +243,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
@@ -232,7 +255,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
@@ -244,7 +267,7 @@
                 this.isPetLicense = true;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
@@ -256,7 +279,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
@@ -268,7 +291,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = true;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
@@ -280,20 +303,20 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = true;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
             },
 
-            showDocumentation(){
+            medical(){
                 this.isHome = false;
                 this.isAdoption = false;
                 this.isIntake = false;
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = true;
+                this.isMedical = true;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
@@ -306,7 +329,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = true;
                 this.isDonate = false;
                 this.isOther = false;
@@ -319,7 +342,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = true;
                 this.isOther = false;
@@ -332,7 +355,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = true;
@@ -358,8 +381,9 @@
     } 
 
     .button {
-        background-color: black;
+        background-color: #3f4041;
         border-radius: 25;
+        color: white;
         font-size: 40%;
         font-weight: bold;
         padding-top: 7em;
@@ -384,16 +408,35 @@
         letter-spacing: 0;
     }
 
+    .infoTextH {
+        background-color: transparent;
+        font-size: 45%;
+        text-align: left;
+        color: black;
+    }
+
     .infoText {
         background-color: transparent;
         font-size: 40%;
-        text-align: center;
+        text-align: left;
+        color: white;
+        font-display: block;
     }
+
     .titleText {
-        background-color: transparent;
+        background: transparent;
         font-size: 60%;
         color: white;
         text-align: center;
+        padding-top: 10%;
+    }
+
+    .titleText1 {
+        background: transparent;
+        font-size: 60%;
+        color: white;
+        text-align: left;
+        padding-top: 10%;
     }
 
 </style>

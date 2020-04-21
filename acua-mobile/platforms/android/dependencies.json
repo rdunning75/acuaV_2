@@ -16,6 +16,10 @@
         "directory": "../../node_modules/nativescript-geolocation"
     },
     {
+        "name": "nativescript-iqkeyboardmanager",
+        "directory": "../../node_modules/nativescript-iqkeyboardmanager"
+    },
+    {
         "name": "nativescript-phone",
         "directory": "../../node_modules/nativescript-phone"
     },
