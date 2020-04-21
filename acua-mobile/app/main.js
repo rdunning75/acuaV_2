@@ -3,9 +3,13 @@ import store from './store'
 import Home from './views/Home.vue'
 import VueDevtools from 'nativescript-vue-devtools'
 import RadListView from 'nativescript-ui-listview/vue'
+import VueTelInput from 'vue-tel-input'
 
 Vue.use(RadListView)
 Vue.registerElement('BarcodeScanner', () => require('nativescript-barcodescanner').BarcodeScannerView)
+Vue.registerElement("PreviousNextView", () => require("nativescript-iqkeyboardmanager"). PreviousNextView)
+
+Vue.use(VueTelInput)
 
 //fonticon plugin
 import { TNSFontIcon, fonticon } from 'nativescript-fonticon';

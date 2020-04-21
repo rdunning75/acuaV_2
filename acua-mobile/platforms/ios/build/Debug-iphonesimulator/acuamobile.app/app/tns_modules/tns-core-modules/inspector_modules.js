@@ -4,7 +4,7 @@ require("./../../runtime.js");require("./../../vendor.js");module.exports =
 /***/ "./package.json":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"android\":{\"v8Flags\":\"--expose_gc\",\"markingMode\":\"none\"},\"main\":\"main\",\"name\":\"acua\",\"version\":\"1.0.0\"}");
+module.exports = JSON.parse("{\"android\":{\"v8Flags\":\"--expose_gc\"},\"main\":\"main\",\"name\":\"acua\",\"version\":\"1.0.0\"}");
 
 /***/ })
 

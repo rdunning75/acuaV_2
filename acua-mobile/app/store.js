@@ -16,7 +16,7 @@ export default new Vuex.Store({
     faqs: [],
     userAnimal: new Animal(),
     userFaq: {},
-    location: 'Downey',
+    location: 1,
     userTicket: new Ticket(),
     approvedTicket: undefined
   },
@@ -58,8 +58,8 @@ export default new Vuex.Store({
   },
   // asynchronous operations (Such as API calls)
   actions: {
-    checkTicket ({ commit }, ticketId) {
-      TicketService.checkTicket(ticketId)
+    checkTicket ({ commit }, tic_id) {
+      TicketService.checkTicket(tic_id)
         .then(res => {
           commit('SET_TICKET', res)
         })
