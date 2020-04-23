@@ -115,7 +115,7 @@ export default class TicketCard extends Vue {
   }
 
   public next(id: number , ticket: Ticket): void {
-    /* this.tickets.loadTickets()
+    this.tickets.loadTickets()
     if (users.id == null) {
       ticket.user_id = 1
     } else {
@@ -125,7 +125,7 @@ export default class TicketCard extends Vue {
       tickets.setCheck()
       this.tickets.loadTickets()
       this.tickets.setLoader()
-    }) */
+    })
     // this.tickets.loadTickets()
     tickets.setCheck()
   }
