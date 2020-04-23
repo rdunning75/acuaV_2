@@ -9,11 +9,11 @@
 
           <Label text="First name:" class="text"/>
           <TextField ref="first_Name" v-model="first_Name" class="input" maxLength="20" 
-            returnKeyType="next" @returnPress="nextField('firstName')"/>
+            returnKeyType="next" @returnPress="nextField('first_Name')"/>
 
            <Label text="Last name:" class="text"/>
           <TextField ref="last_Name" v-model="last_Name" class="input" maxLength="20" 
-            returnKeyType="next" @returnPress="nextField('lastName')"/>
+            returnKeyType="next" @returnPress="nextField('last_Name')"/>
 
           <Label text="Phone number:" class="text"/>
           <GridLayout columns="*,2*,*,2*,*,3*">

@@ -8,15 +8,6 @@
             StackLayout:
                 allows you o populate the bottom portion of -->
 
-<!-- Page Controlls the Main view of ticket selction. Changeing templet will change the text under the options in the
-      scroll bar.
-            List Picker:
-                creates the text wheel, which is populated by the object returned by the script
-            Label:
-                just a way to make plain text on app.
-            StackLayout:
-                allows you o populate the bottom portion of -->
-
 <template>
     <Page>
         <ActionBar title="Ticket Reason" class="Action_Bar" />
@@ -200,7 +191,7 @@
                     'Pet Licenses',
                     'Microchip',
                     'Service Request',
-                    'Documentation',
+                    'Medical',
                     'Disposal',
                     'Donate',
                     'Other'
@@ -213,7 +204,7 @@
                 isPetLicense: false,
                 isMicrochip: false,
                 isServiceRequest: false,
-                isShowDocumentation: false,
+                isMedical: false,
                 isDisposal: false,
                 isDonate: false,
                 isOther: false,
@@ -240,7 +231,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
@@ -252,7 +243,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
@@ -264,7 +255,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
@@ -276,7 +267,7 @@
                 this.isPetLicense = true;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
@@ -288,7 +279,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
@@ -300,7 +291,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = true;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
@@ -312,20 +303,20 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = true;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
             },
 
-            showDocumentation(){
+            medical(){
                 this.isHome = false;
                 this.isAdoption = false;
                 this.isIntake = false;
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = true;
+                this.isMedical = true;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = false;
@@ -338,7 +329,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = true;
                 this.isDonate = false;
                 this.isOther = false;
@@ -351,7 +342,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = true;
                 this.isOther = false;
@@ -364,7 +355,7 @@
                 this.isPetLicense = false;
                 this.isMicrochip = false;
                 this.isServiceRequest = false;
-                this.isShowDocumentation = false;
+                this.isMedical = false;
                 this.isDisposal = false;
                 this.isDonate = false;
                 this.isOther = true;
@@ -379,7 +370,7 @@
     }
 </script>
 
-<style scoped>
+<style scoped>``
 
     .Action_Bar {
         background-color: #3f4041;
@@ -390,8 +381,9 @@
     } 
 
     .button {
-        background-color: black;
+        background-color: #3f4041;
         border-radius: 25;
+        color: white;
         font-size: 40%;
         font-weight: bold;
         padding-top: 7em;
@@ -416,16 +408,35 @@
         letter-spacing: 0;
     }
 
+    .infoTextH {
+        background-color: transparent;
+        font-size: 45%;
+        text-align: left;
+        color: black;
+    }
+
     .infoText {
         background-color: transparent;
         font-size: 40%;
-        text-align: center;
+        text-align: left;
+        color: white;
+        font-display: block;
     }
+
     .titleText {
-        background-color: transparent;
+        background: transparent;
         font-size: 60%;
         color: white;
         text-align: center;
+        padding-top: 10%;
+    }
+
+    .titleText1 {
+        background: transparent;
+        font-size: 60%;
+        color: white;
+        text-align: left;
+        padding-top: 10%;
     }
 
 </style>

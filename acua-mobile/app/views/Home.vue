@@ -8,14 +8,15 @@
 
     <StackLayout backgroundColor="#b21a82">
 
-      <GridLayout class="layout cover" columns="*,*,*,*,*" rows="*,*,*,*,*,*">
-        <Image row="1" col="0" rowSpan="5" colSpan="2" src="~/assets/images/background-yellow-dog.png"></Image>
-        <Image row="0" col="2" colSpan="3" rowSpan="1" src="~/assets/images/Final Logo White.png"></Image>
+      <GridLayout class="layout cover" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*">
+        <Image row="1" col="0" rowSpan="7" colSpan="2" src="~/assets/images/background-yellow-dog.png"></Image>
+        <Image row="0" col="2" colSpan="3" rowSpan="2" src="~/assets/images/Final Logo White.png"></Image>
         <Label row="2" col="2" colSpan="3" text="Welcome to the Animal Care and Control Center" class="textTitle"/>
         <Label row="3" col="2" colSpan="3" text="Kennel visits do not need a ticket and are free to visit." class="text"/>
         <Label row="4" col="2" colSpan="3" text="Otherwise, Click Below to Create a ticket" class="text"/>
+
         
-        <CategoryButton verticalAlignment="center"  margin="5" row="4" col="2" colSpan="3" rowSpan="2" src="~/assets/images/hoursicon.png" 
+        <CategoryButton verticalAlignment="center"  margin="5" row="6" col="2" colSpan="3" rowSpan="2" src="~/assets/images/hoursicon.png" 
         :icon="'fa-map-marker' | fonticon" :title="titles[4]" :action="toQRScanner" class="fa homepage-blue HomeButton" textWrap="true"/>
        
         <!--Adoption -->
@@ -213,6 +214,14 @@ export default {
 }
 
 .text {
+  color: white;
+  font-size: 20%;
+  font-weight: bold;
+  padding-top: 7em;
+  letter-spacing: 0;
+  text-align: center;
+}
+.textTitle {
   color: white;
   font-size: 30%;
   font-weight: bold;
