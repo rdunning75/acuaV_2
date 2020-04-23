@@ -1,14 +1,15 @@
 import {DefaultCrudRepository} from '@loopback/repository';
-import {Tickethistory, TickethistoryRelations} from '../models';
-import {LocalhostDataSource} from '../datasources';
+import {Tickethistory} from '../models';
+import {MysqlDataSource} from '../datasources';
 import {inject} from '@loopback/core';
 
-export class TickethistoryRepository extends DefaultCrudRepository<Tickethistory,
-    typeof Tickethistory.prototype.tic_id,
-    TickethistoryRelations> {
-    constructor(
-        @inject('datasources.localhost') dataSource: LocalhostDataSource,
-    ) {
-        super(Tickethistory, dataSource);
-    }
+export class TickethistoryRepository extends DefaultCrudRepository<
+  Tickethistory,
+  typeof Tickethistory.prototype.tic_id
+> {
+  constructor(
+    @inject('datasources.mysql') dataSource: MysqlDataSource,
+  ) {
+    super(Tickethistory, dataSource);
+  }
 }

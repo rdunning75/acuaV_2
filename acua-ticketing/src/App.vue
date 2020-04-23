@@ -46,12 +46,47 @@
     import {User} from '@/store/models'
     import users from '@/store/modules/users'
 
+    @Component
+    export default class App extends Vue {
+    public on: any
+    private users = users
 
-    @Component({})
+    private get user(): User | null {
+        return this.users.currUser
+    }
+
+    public get username(): string | null {
+        return this.users.username === null ? null : this.users.username
+    }
+
+    public logout(): void {
+        this.users.logoutUser({user: this.user})
+        this.users.logout()
+        this.$router.push('/login')
+    }
+
+    public created() {
+        window.addEventListener('beforeunload', this.handler)
+    }
+
+    private handler(event: any) {
+        if (this.user !== null) {
+        this.users.logoutUser({user: this.user})
+        }
+    }
+
+    public get dynamicColor() {
+        return '#117FA7'
+    }
+
+    }
+    </script>
+
+
+    /* @Component({})
     export default class App extends Vue {
         public on: any;
-
-        private socket = io.connect('http://localhost:3000');
+        private socket = io.connect('https://acua-team.herokuapp.com/');
         private users = users;
 
         public thing(): void {
@@ -94,5 +129,5 @@
         }
 
     }
-    console.log(io.connect('http://localhost:3000'))
-</script>
+    console.log(io.connect('https://acua-team.herokuapp.com/'))
+</script>*/

@@ -72,7 +72,6 @@ __decorate([
 __decorate([
     repository_1.property({
         type: 'string',
-        required: true,
     }),
     __metadata("design:type", String)
 ], Qticket.prototype, "email", void 0);

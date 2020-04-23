@@ -4,7 +4,6 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 // export * from './mongo.datasource';
-// export * from './mysql.datasource';
+__export(require("./mysql.datasource"));
 // export * from './microsql.datasource';
-__export(require("./localhost.datasource"));
 //# sourceMappingURL=index.js.map

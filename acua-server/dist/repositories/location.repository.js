@@ -22,8 +22,8 @@ let LocationRepository = class LocationRepository extends repository_1.DefaultCr
     }
 };
 LocationRepository = __decorate([
-    __param(0, core_1.inject('datasources.localhost')),
-    __metadata("design:paramtypes", [datasources_1.LocalhostDataSource])
+    __param(0, core_1.inject('datasources.mysql')),
+    __metadata("design:paramtypes", [datasources_1.MysqlDataSource])
 ], LocationRepository);
 exports.LocationRepository = LocationRepository;
 //# sourceMappingURL=location.repository.js.map

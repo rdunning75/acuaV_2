@@ -1,6 +1,6 @@
 import { LifeCycleObserver, ValueOrPromise } from '@loopback/core';
 import { juggler } from '@loopback/repository';
-export declare class LocalhostDataSource extends juggler.DataSource implements LifeCycleObserver {
+export declare class MysqlDataSource extends juggler.DataSource implements LifeCycleObserver {
     static dataSourceName: string;
     constructor(dsConfig?: object);
     /**

@@ -1,6 +1,6 @@
 import { Entity } from '@loopback/repository';
 export declare class Tickethistory extends Entity {
-    tic_id: number;
+    tic_id?: number;
     user_id?: number;
     loc_id: number;
     win_id?: number;
@@ -12,6 +12,7 @@ export declare class Tickethistory extends Entity {
     phone: string;
     reason_of_visit: string;
     user_note?: string;
+    [prop: string]: any;
     constructor(data?: Partial<Tickethistory>);
 }
 export interface TickethistoryRelations {

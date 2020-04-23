@@ -6,9 +6,9 @@
     "compression": {},
     "cors": {
       "params": {
-        "origin": ["http://localhost:8080","localhost:8080","localhost:8080/","http://localhost:8080/"],
-        "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
-        "optionsSuccessStatus": 202,
+        "origin": true,
+        "credentials": true,
+        "maxAge": 86400
       }
     },
     "helmet#xssFilter": {},
@@ -20,7 +20,7 @@
     "helmet#hsts": {
       "params": {
         "maxAge": 0,
-        "includeSubDomains": false
+        "includeSubDomains": true
       }
     },
     "helmet#hidePoweredBy": {},
@@ -40,11 +40,7 @@
       ]
     }
   },
-  "files": {
-    "loopback#static": {
-      "params": "$!../client"
-    }
-  },
+  "files": {},
   "final": {
     "loopback#urlNotFound": {}
   },

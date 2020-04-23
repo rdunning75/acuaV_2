@@ -14,8 +14,8 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@loopback/core");
 const repository_1 = require("@loopback/repository");
-const config = require("./localhost.datasource.json");
-let LocalhostDataSource = class LocalhostDataSource extends repository_1.juggler.DataSource {
+const config = require("./mysql.datasource.json");
+let MysqlDataSource = class MysqlDataSource extends repository_1.juggler.DataSource {
     constructor(dsConfig = config) {
         super(dsConfig);
     }
@@ -33,11 +33,11 @@ let LocalhostDataSource = class LocalhostDataSource extends repository_1.juggler
         return super.disconnect();
     }
 };
-LocalhostDataSource.dataSourceName = 'localhost';
-LocalhostDataSource = __decorate([
+MysqlDataSource.dataSourceName = 'mysql';
+MysqlDataSource = __decorate([
     core_1.lifeCycleObserver('datasource'),
-    __param(0, core_1.inject('datasources.config.localhost', { optional: true })),
+    __param(0, core_1.inject('datasources.config.mysql', { optional: true })),
     __metadata("design:paramtypes", [Object])
-], LocalhostDataSource);
-exports.LocalhostDataSource = LocalhostDataSource;
-//# sourceMappingURL=localhost.datasource.js.map
+], MysqlDataSource);
+exports.MysqlDataSource = MysqlDataSource;
+//# sourceMappingURL=mysql.datasource.js.map

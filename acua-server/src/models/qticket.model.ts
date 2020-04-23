@@ -50,7 +50,6 @@ export class Qticket extends Entity {
 
   @property({
     type: 'string',
-    required: true,
   })
   email: string;
 

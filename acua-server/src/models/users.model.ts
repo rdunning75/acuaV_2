@@ -5,12 +5,10 @@ export class Users extends Entity {
   @property({
     type: 'number',
     id: true,
-
     required: false,
     generated: true,
   })
   id: number;
-
 
   @property({
     type: 'string',

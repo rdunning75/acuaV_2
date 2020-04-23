@@ -1,14 +1,14 @@
 import { Entity, model, property } from '@loopback/repository';
 
-@model({ settings: {} })
+@model()
 export class Tickethistory extends Entity {
   @property({
     type: 'number',
     id: true,
-    required: false,
+    // required: false,
     generated: true,
   })
-  tic_id: number;
+  tic_id?: number;
 
   @property({
     type: 'number',
@@ -28,7 +28,7 @@ export class Tickethistory extends Entity {
 
   @property({
     type: 'string',
-    required: true,
+    // required: true,
   })
   time_created: string;
 
@@ -39,7 +39,7 @@ export class Tickethistory extends Entity {
 
   @property({
     type: 'string',
-    required: true,
+    // required: true,
   })
   first_name: string;
 
@@ -50,19 +50,19 @@ export class Tickethistory extends Entity {
 
   @property({
     type: 'string',
-    required: true,
+    // required: true,
   })
   email: string;
 
   @property({
     type: 'string',
-    required: true,
+    // required: true,
   })
   phone: string;
 
   @property({
     type: 'string',
-    required: true,
+    // required: true,
   })
   reason_of_visit: string;
 
@@ -71,6 +71,8 @@ export class Tickethistory extends Entity {
   })
   user_note?: string;
 
+
+  [prop: string]: any;
 
   constructor(data?: Partial<Tickethistory>) {
     super(data);

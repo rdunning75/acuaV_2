@@ -23,7 +23,7 @@ let QticketRepository = class QticketRepository extends repository_1.DefaultCrud
 };
 QticketRepository = __decorate([
     __param(0, core_1.inject('datasources.localhost')),
-    __metadata("design:paramtypes", [datasources_1.LocalhostDataSource])
+    __metadata("design:paramtypes", [datasources_1.MysqlDataSource])
 ], QticketRepository);
 exports.QticketRepository = QticketRepository;
 //# sourceMappingURL=qticket.repository.js.map

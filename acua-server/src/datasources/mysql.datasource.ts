@@ -5,15 +5,15 @@ import {
   ValueOrPromise,
 } from '@loopback/core';
 import {juggler} from '@loopback/repository';
-import * as config from './localhost.datasource.json';
+import * as config from './mysql.datasource.json';
 
 @lifeCycleObserver('datasource')
-export class LocalhostDataSource extends juggler.DataSource
+export class MysqlDataSource extends juggler.DataSource
   implements LifeCycleObserver {
-  static dataSourceName = 'localhost';
+  static dataSourceName = 'mysql';
 
   constructor(
-    @inject('datasources.config.localhost', {optional: true})
+    @inject('datasources.config.mysql', {optional: true})
     dsConfig: object = config,
   ) {
     super(dsConfig);
