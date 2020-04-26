@@ -1,51 +1,23 @@
 <template>
   <Page >
     <ActionBar ios.position="left" class="Action_Bar">
-      <Label text="Welcome to Downey" fontSize="20" verticalAlignment="center"/>
-      <!-- <ActionItem @tap="toFaq" ios.systemIcon="12" ios.position="right" android.systemIcon="ic_menu_search" android.position="actionBar" />
-      -->
+      <Label text="Welcome" fontSize="20" verticalAlignment="center"/>
+      <NavigationButton visibility="collapsed"></NavigationButton>
     </ActionBar>
 
     <StackLayout backgroundColor="#b21a82">
 
       <GridLayout class="layout cover" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,*">
         <Image row="1" col="0" rowSpan="7" colSpan="2" src="~/assets/images/background-yellow-dog.png"></Image>
-        <Image row="0" col="2" colSpan="3" rowSpan="2" src="~/assets/images/Final Logo White.png"></Image>
-        <Label row="2" col="2" colSpan="3" text="Welcome to the Animal Care and Control Center" class="textTitle"/>
-        <Label row="3" col="2" colSpan="3" text="Kennel visits do not need a ticket and are free to visit." class="text"/>
-        <Label row="4" col="2" colSpan="3" text="Otherwise, Click Below to Create a ticket" class="text"/>
+        <Image row="0" col="2" colSpan="3" rowSpan="3" src="~/assets/images/Final Logo White.png"></Image>
+        <Label row="3" col="2" colSpan="3" text="Welcome!" class="textTitle1"/>
+        <Label row="4" col="2" colSpan="3" rowSpan="2" text="No wait for kennel visits. Go on in!" class="text"/>
+        <Label row="5" col="2" colSpan="3" text="Otherwise, Click Below to Create a ticket" class="text"/>
 
         
         <CategoryButton verticalAlignment="center"  margin="5" row="6" col="2" colSpan="3" rowSpan="2" src="~/assets/images/hoursicon.png" 
         :icon="'fa-map-marker' | fonticon" :title="titles[4]" :action="toQRScanner" class="fa homepage-blue HomeButton" textWrap="true"/>
        
-        <!--Adoption -->
-
-        <!--
-        <CategoryButton verticalAlignment="center" margin="5" row="0" col="0" src="~/assets/images/animals.icon.png" :icon="''"
-        :title="titles[0]" :action="toAdoption" class="homepage-blue HomeButton" textWrap="true"/>
-        -->
-
-        <!--Service Request -->
-        <!--
-        <CategoryButton verticalAlignment="center"  margin="5" row="1" col="0" src="~/assets/images/services.icon.png" :icon="''"
-        :title="titles[2]" :action="toServiceRequest" class="homepage-blue HomeButton" textWrap="true"/>
-        -->
-
-        <!--FAQ -->
-        <!--
-        <CategoryButton verticalAlignment="center"  margin="5" row="0" col="1" src="~/assets/images/noise.icon.png" :icon="''"
-        :title="titles[3]" :action="toFaq" class="homepage-blue HomeButton" textWrap="true"/>
-        -->
-
-        <!--Ticket -->
-
-        <!--Find a Location -->
-        <!--
-        <CategoryButton verticalAlignment="center" margin="5" row="1" col="1" src="~/assets/images/locationicon.png" :icon="''"
-        :title="titles[5]" :action="toLocationList" class="homepage-blue HomeButton" textWrap="true"/>
-        -->
-
       </GridLayout>
 
     </StackLayout>
@@ -77,9 +49,7 @@ export default {
         "Find Our Location"
       ],
       textWrap: false,
-      //search: "this will change as you type",
       results: [],
-      // polling: undefined,
       faq: Faq,
       location: Location,
       qrScanner: QRScanner,
@@ -170,18 +140,12 @@ export default {
 }
 
 .S_Button {
-  /* text="right"; 
-        horizontalAlignment="right";
-        width="33%" 
-        height="70" 
-        /*backgroundColor="#1c6b48"/>*/
   background-image: url("~/assets/images/NativeScript-Vue.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-  .cover {
-    /*background: #009fca*/
+.cover {
     background: linear-gradient(45deg, #3f4041, #3e88d1)
 }
 
@@ -223,7 +187,16 @@ export default {
 }
 .textTitle {
   color: white;
-  font-size: 30%;
+  font-size: 80%;
+  font-weight: bold;
+  padding-top: 7em;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.textTitle1 {
+  color: white;
+  font-size: 100%;
   font-weight: bold;
   padding-top: 7em;
   letter-spacing: 0;

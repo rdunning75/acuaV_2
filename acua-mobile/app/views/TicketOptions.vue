@@ -1,13 +1,3 @@
-
-<!-- Page Controlls the Main view of ticket selction. Changeing templet will change the text under the options in the
-      scroll bar.
-            List Picker:
-                creates the text wheel, which is populated by the object returned by the script
-            Label:
-                just a way to make plain text on app.
-            StackLayout:
-                allows you o populate the bottom portion of -->
-
 <template>
     <Page>
         <ActionBar title="Ticket Reason" class="Action_Bar" />
@@ -148,7 +138,7 @@
                 <TextView editable="false" :text="'- Vaccinations'" class="infoText" col="1" colSpan="4" row="4" rowSpan="2"/>
                 <TextView editable="false" :text="'- Show Proof of Rabies'" class="infoText" col="1" colSpan="4" row="5"/>
                 <Image src="~/assets/images/petvaccination.png" col="1" row="6" colSpan="3" rowSpan = "2"/>
-                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Medica;')"/>
+                <Button text="Next >>" class="button" col="1" row="8" colSpan="3" @tap="createTicket('Medical')"/>
             </GridLayout>
             <!--Disposal Info Tab -->
             <GridLayout orientation="vertical" col="1" rowSpan="2" columns="*,*,*,*,*" rows="*,*,*,*,*,*,*,6*,*" v-show="isDisposal">
@@ -370,7 +360,7 @@
     }
 </script>
 
-<style scoped>``
+<style scoped>
 
     .Action_Bar {
         background-color: #3f4041;
@@ -438,5 +428,6 @@
         text-align: left;
         padding-top: 10%;
     }
+
 
 </style>

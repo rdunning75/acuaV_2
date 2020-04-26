@@ -31,10 +31,6 @@
           <Label text="Email:"  class="text"/>
           <TextField ref="email" v-model="email" keyboardType="email" class="emailInput" 
             returnKeyType="done" @returnPress="submitTicket"/>
-
-          <!-- <Label text="What are you here for?" class="text"/>
-          <TextField v-model="query" class="input"/>
-          -->
           <Label text="Reason For Visit:"  class="text"/>
           <Label class="autoInput">{{reasonForVisit}}</Label>
           <Label text=" "  class="text"/>
@@ -60,13 +56,10 @@ export default {
       phone1: "",
       phone2: "",
       phone3: "",
-      // name: '',
       email:"",
       home: Home,
       test1: 'test',
-      //query: String,
       limit: 0,
-      // iqKeyboard: IQKeyboardManager,
     }
   },
   methods: {
@@ -75,11 +68,6 @@ export default {
     submitTicket () {
       this.$navigateTo(this.home)
       this.addTicket({
-        //name: this.name,
-        //phone: this.phone,
-        //query: this.query,
-        //location: this.location
-        //
         user_id: 1,
         win_id: 0,
         time_created: new Date(),
@@ -92,8 +80,6 @@ export default {
         loc_id: this.location,
         
       })
-      // console.log("hi")
-      // this.$navigateTo(this.home)
     },
     nextField(input){
       if(input == "first_Name"){
@@ -119,17 +105,14 @@ export default {
   },
   watch: {
     approvedTicket(newVal) {
-     // if (this.limit < 1) {
+      alert({
+        title: "Ticket Submitted",
+        message: "Hello " + newVal.first_name + ", you're ticket # is " + newVal.tic_id,
+        okButtonText: "OK"
+      })
 
-          alert({
-            title: "Ticket Submitted",
-            message: "Hello " + newVal.first_name + ", you're ticket # is " + newVal.tic_id,
-            okButtonText: "OK"
-          })
-
-        }
-        //this.limit++
-      }
+    }
+  }
   
 }
 </script>
