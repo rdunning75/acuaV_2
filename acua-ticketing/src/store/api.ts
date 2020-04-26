@@ -22,8 +22,9 @@ export async function fetchTickets(user: any): Promise<Ticket[]> {
     // const where: string = `filter[where][and][0][location]=${user.location}`
     // + `&filter[where][and][2][isComplete]=false`
     // const limit: string = 'filter[limit]=12'
-    const where: string = `filter[where][time_serviced]=not serviced`
-    //  + '&filter[where][and][1][user_id]!=1'
+    const where: string = `filter[where][and][0][time_serviced]=not serviced`
+    + `&filter[where][and][1][user_id]=1`
+    // + `&filter[where][and][2][user_id]=${}`
     // + `&filter[where][and][2][isComplete]=false`
     // const response = await api.get(`/tickethistories?${order}&${where}&${limit}`)
     const response = await api.get(`/tickethistories?${where}&${order}`)
@@ -31,19 +32,34 @@ export async function fetchTickets(user: any): Promise<Ticket[]> {
     return response.data as Ticket[]
   }
 
+
+export async function fetchTicketsWindow(user: any): Promise<Ticket[]> {
+    // const order: string = 'filter[order]=tic_id ASC'
+    // const where: string = `filter[where][and][0][location]=${user.location}`
+    // + `&filter[where][and][2][isComplete]=false`
+    // const limit: string = 'filter[limit]=12'
+    const where: string = `filter[where][and][0][time_serviced]=not serviced`
+    + `&filter[where][and][1][user_id] = ${user.id}`
+    //  + '&filter[where][and][1][user_id]!=1'
+    // + `&filter[where][and][2][isComplete]=false`
+    // const response = await api.get(`/tickethistories?${order}&${where}&${limit}`)
+    const response = await api.get(`qtickets?${where}`)
+    // const response = await api.get(`/tickethistories`)
+    return response.data as Ticket[]
+}
+
 export async function fetchTotal(user: any): Promise<number> {
-
-
   const where: string = `filter[where]`
   const response = await api.get(`/tickethistories/count?${where}`)
-/* export async function fetchTotal(user: any): Promise<number> {
-  // const where: string = `where[and][0][location]=${user.location}`
-  // + `&where[and][2][isComplete]=false`
-  const where: string = `filter[where][time_serviced]=not serviced`
-  const response = await api.get(`/tickets/count?${where}`)
-  // const response = await api.get(`/tickethistories/count`)
-*/
   return response.data.count as number
+}
+
+export async function placeTicket(ticket: Ticket) {
+    await api.post(`qtickets/`, ticket)
+}
+
+export async function delTicket(id: number) {
+    await api.delete(`qtickets/${id}`)
 }
 
 export async function updateTicket(id: number, update: any): Promise<void> {

@@ -4,7 +4,7 @@
 <v-card min-width="630">
   <v-card-text>
       <v-list-tile-action>
-      <v-btn flat color="primary" class="headline" @click="next(ticket.user_id , ticket)">Next</v-btn>
+      <v-btn flat color="primary" class="headline" @click="next(ticketAll, ticketAll.user_id)">Next</v-btn>
       </v-list-tile-action>
     </v-card-text>
     <v-card min-height="317" min-width="630" align-center hover v-if="check === true">
@@ -50,31 +50,35 @@
 import { Component, Vue } from 'vue-property-decorator'
 import { Ticket } from '@/store/models'
 import tickets from '@/store/modules/tickets'
+import ticketsUsers from '@/store/modules/qtickets'
 import users from '@/store/modules/users'
 
 @Component
 export default class TicketCard extends Vue {
   public active: boolean = false
   private tickets = tickets // ticket state manager
+  private ticketsUsers = ticketsUsers
   private users = users
   private strikes = 0
 
 
   public get check(): boolean {
+    // this.refreshLoader()
     return this.tickets.check
   }
 
-  public get queue(): Ticket[] {
-    return this.tickets.tickets
+  public get ticket(): Ticket {
+    this.refreshLoader()
+    return this.ticketsUsers.firstTicket
   }
 
-  public get ticket(): Ticket {
+  public get ticketAll(): Ticket {
+    this.refreshLoader()
     return this.tickets.firstTicket
   }
 
   public strikeUser(id: number, ticket: Ticket): void {
     this.tickets.setLoader()
-
     // if(false) is temporary so it doesnt bug out when 'looking' for the strikes in the db. Since the strikes field
     // doesnt exist in the new schema, i made it so it always goes with the else statment only
     // if (resulting in Strike = Resolve) for now
@@ -94,7 +98,6 @@ export default class TicketCard extends Vue {
       // ticket.isComplete = true
       // ticket.time_serviced = "hi"
       // Move down the queue LOC
-
       this.tickets.resolve({ id, ticket }).then((res) => {
         this.tickets.loadTickets()
         // tickets.ticketCount(this.users.user)
@@ -104,30 +107,38 @@ export default class TicketCard extends Vue {
   }
 
   public resolve(id: number, ticket: Ticket): void {
+    this.refreshLoader()
     ticket.time_serviced = this.serviced_timestamp()
-    this.tickets.resolve({ id, ticket }).then((res) => {
-      tickets.setFalse()
-      this.tickets.loadTickets()
-      // tickets.ticketCount(this.users.user)
-      // this.tickets.setLoader()
-
-    })
+    // this.ticketsUsers.delete({id}).then((res) => {
+      this.tickets.resolve({ id, ticket }).then((res) => {
+        tickets.setFalse()
+        this.refreshLoader()
+      })
+    // })
   }
 
-  public next(id: number , ticket: Ticket): void {
-    this.tickets.loadTickets()
+  public next(ticket: Ticket, id: number): void {
+    this.refreshLoader()
     if (users.id == null) {
       ticket.user_id = 1
     } else {
       ticket.user_id = users.id
     }
     this.tickets.refresh({id, ticket }).then((res) => {
-      tickets.setCheck()
-      this.tickets.loadTickets()
-      this.tickets.setLoader()
-    })
-    // this.tickets.loadTickets()
-    tickets.setCheck()
+      this.ticketsUsers.queueUp({ticket}).then((res2) => {
+        this.tickets.delete({id})
+        this.refreshLoader()
+        tickets.setCheck()
+        })
+      })
+    // this.ticketsUsers.loadTickets()
+    // tickets.setCheck()
+  }
+
+  private refreshLoader() {
+    tickets.setLoader()
+    tickets.loadTickets()
+    ticketsUsers.loadTickets()
   }
 
   private serviced_timestamp() {

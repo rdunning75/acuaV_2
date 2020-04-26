@@ -10,7 +10,7 @@ import store from '@/store'
 import { Ticket } from '../models'
 import userModule from './users'
 // import { fetchTickets, removeTicket, strikeTicket, fetchTotal } from '@/services/FakeTicketService'
-import { fetchTickets, updateTicket, strikeTicket} from '../api'
+import { fetchTickets, updateTicket, strikeTicket, fetchTicketsWindow, placeTicket} from '../api'
 import users from './users'
 
 @Module({
@@ -21,6 +21,7 @@ import users from './users'
 })
 class TicketsModule extends VuexModule {
   public tickets: Ticket[] = []
+  // public ticketsUsers: Ticket[] = []
   public count: number = 0
 
   public ticketLoader: boolean = false
@@ -42,12 +43,6 @@ class TicketsModule extends VuexModule {
     const tickets: Ticket[] = await fetchTickets(userModule.user)
     return { tickets }
   }
-
-  /* @MutationAction
-  public async ticketCount(user: any) {
-    const count: number = await fetchTotal(user)
-    return { count }
-  } */
 
   @Action
   public async strikeTicket({ id, ticket}: {id: number, ticket: Ticket}) {
@@ -71,8 +66,17 @@ class TicketsModule extends VuexModule {
   public async refresh({ id, ticket}: {id: number, ticket: Ticket}) {
     // By uncommenting this, you will see the results in the browser console.
     // You will also get lint errors which can be ignored if you comment out console.log(id, ticket) again
-    // console.log(id, ticket)
+    console.log(id, ticket)
     await updateTicket(id, ticket)
+    // this.check = true
+  }
+
+  @Action
+  public async queueUp({ticket}: {ticket: Ticket}) {
+    // By uncommenting this, you will see the results in the browser console.
+    // You will also get lint errors which can be ignored if you comment out console.log(id, ticket) again
+    // console.log(ticket)
+    await placeTicket(ticket)
     // this.check = true
   }
 

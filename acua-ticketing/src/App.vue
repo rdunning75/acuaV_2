@@ -47,8 +47,40 @@
     import users from '@/store/modules/users'
     import io from 'socket.io-client'
 
+    @Component
+    export default class App extends Vue {
+    public on: any
+    private users = users
 
-    @Component({})
+    private get user(): User | null {
+        return this.users.currUser
+    }
+
+    public get username(): string | null {
+        return this.users.username === null ? null : this.users.username
+    }
+
+    public logout(): void {
+        this.users.logoutUser({user: this.user})
+        this.users.logout()
+        this.$router.push('/login')
+    }
+
+    public created() {
+        window.addEventListener('beforeunload', this.handler)
+    }
+
+    private handler(event: any) {
+        if (this.user !== null) {
+        this.users.logoutUser({user: this.user})
+        }
+    }
+
+    }
+    </script>
+
+
+    /*@Component({})
     export default class App extends Vue {
         public on: any;
         private socket = io.connect('https://acua-team.herokuapp.com/');
@@ -95,4 +127,4 @@
 
     }
     console.log(io.connect('https://acua-team.herokuapp.com/'))
-</script>
+</script>*/

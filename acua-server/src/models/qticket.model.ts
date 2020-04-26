@@ -5,8 +5,8 @@ export class Qticket extends Entity {
   @property({
     type: 'number',
     id: true,
-    required: false,
-    generated: true,
+    //required: false,
+    //generated: true,
   })
   tic_id: number;
 

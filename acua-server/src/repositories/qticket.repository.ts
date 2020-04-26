@@ -7,7 +7,7 @@ export class QticketRepository extends DefaultCrudRepository<Qticket,
     typeof Qticket.prototype.tic_id,
     QticketRelations> {
     constructor(
-        @inject('datasources.localhost') dataSource: MysqlDataSource,
+        @inject('datasources.mysql') dataSource: MysqlDataSource,
     ) {
         super(Qticket, dataSource);
     }

@@ -35,19 +35,7 @@ export class QticketController {
             },
         },
     })
-    async create(
-        @requestBody({
-            content: {
-                'application/json': {
-                    schema: getModelSchemaRef(Qticket, {
-                        title: 'NewQticket',
-                        exclude: ['tic_id'],
-                    }),
-                },
-            },
-        })
-            qticket: Omit<Qticket, 'tic_id'>,
-    ): Promise<Qticket> {
+    async create(@requestBody() qticket: Qticket): Promise<Qticket> {
         return this.qticketRepository.create(qticket);
     }
 
