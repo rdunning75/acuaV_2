@@ -10,7 +10,7 @@ import store from '@/store'
 import { Ticket } from '../models'
 import userModule from './users'
 // import { fetchTickets, removeTicket, strikeTicket, fetchTotal } from '@/services/FakeTicketService'
-import {updateTicket, strikeTicket, fetchTicketsWindow, placeTicket, delTicket } from '../api'
+import {updateTicket, strikeTicket, fetchTicketsWindow, placeTicket, delTicket, fetchTicketsQueue } from '../api'
 import users from './users'
 
 @Module({
@@ -19,8 +19,8 @@ import users from './users'
     store,
     dynamic: true
 })
-class TicketsModule extends VuexModule {
-    public tickets: Ticket[] = []
+class QTicketsModule extends VuexModule {
+    public qtickets: Ticket[] = []
     public count: number = 0
 
     public ticketLoader: boolean = false
@@ -39,8 +39,14 @@ class TicketsModule extends VuexModule {
 
     @MutationAction
     public async loadTickets() {
-        const tickets: Ticket[] = await fetchTicketsWindow(userModule.user)
-        return { tickets }
+        const qtickets: Ticket[] = await fetchTicketsWindow(userModule.user)
+        return { qtickets }
+    }
+
+    @MutationAction
+    public async loadTicketsQueue() {
+        const qtickets: Ticket[] = await fetchTicketsQueue(userModule.user)
+        return { qtickets }
     }
 
 
@@ -105,13 +111,13 @@ class TicketsModule extends VuexModule {
     }*/
 
     public get firstTicket(): Ticket {
-        return this.tickets[0]
+        return this.qtickets[0]
     }
 
 
     public setFirstTicket() {
-        this.tickets[0].user_id = 0
+        this.qtickets[0].user_id = 0
     }
 }
 
-export default getModule(TicketsModule)
+export default getModule(QTicketsModule)

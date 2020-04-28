@@ -33,6 +33,21 @@ export async function fetchTickets(user: any): Promise<Ticket[]> {
   }
 
 
+export async function fetchTicketsQueue(user: any): Promise<Ticket[]> {
+    // const order: string = 'filter[order]=tic_id ASC'
+    // const where: string = `filter[where][and][0][location]=${user.location}`
+    // + `&filter[where][and][2][isComplete]=false`
+    // const limit: string = 'filter[limit]=12'
+    const where: string = `filter[where][time_serviced]=not serviced`
+    //  + '&filter[where][and][1][user_id]!=1'
+    // + `&filter[where][and][2][isComplete]=false`
+    // const response = await api.get(`/tickethistories?${order}&${where}&${limit}`)
+    const response = await api.get(`qtickets?${where}`)
+    // const response = await api.get(`/tickethistories`)
+    return response.data as Ticket[]
+}
+
+
 export async function fetchTicketsWindow(user: any): Promise<Ticket[]> {
     // const order: string = 'filter[order]=tic_id ASC'
     // const where: string = `filter[where][and][0][location]=${user.location}`

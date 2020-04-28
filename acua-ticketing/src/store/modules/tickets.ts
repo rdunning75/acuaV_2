@@ -10,7 +10,7 @@ import store from '@/store'
 import { Ticket } from '../models'
 import userModule from './users'
 // import { fetchTickets, removeTicket, strikeTicket, fetchTotal } from '@/services/FakeTicketService'
-import { fetchTickets, updateTicket, strikeTicket, fetchTicketsWindow, placeTicket} from '../api'
+import { fetchTickets, updateTicket, strikeTicket, fetchTicketsWindow, placeTicket, delTicket} from '../api'
 import users from './users'
 
 @Module({
@@ -78,6 +78,15 @@ class TicketsModule extends VuexModule {
     // console.log(ticket)
     await placeTicket(ticket)
     // this.check = true
+  }
+
+  @Action
+  public async delete({id}: {id: number}) {
+      // By uncommenting this, you will see the results in the browser console.
+      // You will also get lint errors which can be ignored if you comment out console.log(id, ticket) again
+      // console.log(ticket)
+      await delTicket(id)
+      // this.check = true
   }
 
   @Mutation

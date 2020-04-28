@@ -4,7 +4,7 @@
 <v-card min-width="630">
   <v-card-text>
       <v-list-tile-action>
-      <v-btn flat color="primary" class="headline" @click="next(ticketAll, ticketAll.user_id)">Next</v-btn>
+      <v-btn flat color="primary" class="headline" @click="next(ticketAll, ticketAll.tic_id)">Next</v-btn>
       </v-list-tile-action>
     </v-card-text>
     <v-card min-height="317" min-width="630" align-center hover v-if="check === true">
@@ -34,11 +34,6 @@
       </v-card-text>
       <v-divider/>
       <v-card-actions>
-        <v-btn flat color="error" @click="strikeUser(ticket.tic_id, ticket)">
-          <span v-if="ticket.strikes < 2">Strike</span>
-          <span v-else>Strike Out</span>
-        </v-btn>
-        <v-spacer/>
         <v-btn flat color="primary" @click="resolve(ticket.tic_id, ticket)">resolve</v-btn>
       </v-card-actions>
     </v-card>
@@ -50,14 +45,14 @@
 import { Component, Vue } from 'vue-property-decorator'
 import { Ticket } from '@/store/models'
 import tickets from '@/store/modules/tickets'
-import ticketsUsers from '@/store/modules/qtickets'
+import qtickets from '@/store/modules/qtickets'
 import users from '@/store/modules/users'
 
 @Component
 export default class TicketCard extends Vue {
   public active: boolean = false
   private tickets = tickets // ticket state manager
-  private ticketsUsers = ticketsUsers
+  private qtickets = qtickets
   private users = users
   private strikes = 0
 
@@ -69,7 +64,7 @@ export default class TicketCard extends Vue {
 
   public get ticket(): Ticket {
     this.refreshLoader()
-    return this.ticketsUsers.firstTicket
+    return this.qtickets.firstTicket
   }
 
   public get ticketAll(): Ticket {
@@ -109,12 +104,12 @@ export default class TicketCard extends Vue {
   public resolve(id: number, ticket: Ticket): void {
     this.refreshLoader()
     ticket.time_serviced = this.serviced_timestamp()
-    // this.ticketsUsers.delete({id}).then((res) => {
-      this.tickets.resolve({ id, ticket }).then((res) => {
+    this.qtickets.delete({id}).then((res) => {
+    this.tickets.resolve({ id, ticket }).then((res2) => {
         tickets.setFalse()
         this.refreshLoader()
       })
-    // })
+    })
   }
 
   public next(ticket: Ticket, id: number): void {
@@ -125,20 +120,20 @@ export default class TicketCard extends Vue {
       ticket.user_id = users.id
     }
     this.tickets.refresh({id, ticket }).then((res) => {
-      this.ticketsUsers.queueUp({ticket}).then((res2) => {
-        this.tickets.delete({id})
+      this.qtickets.queueUp({ticket}).then((res2) => {
+      // this.tickets.delete({id})
         this.refreshLoader()
         tickets.setCheck()
         })
       })
     // this.ticketsUsers.loadTickets()
-    // tickets.setCheck()
+    tickets.setCheck()
   }
 
   private refreshLoader() {
     tickets.setLoader()
-    tickets.loadTickets()
-    ticketsUsers.loadTickets()
+    this.tickets.loadTickets()
+    this.qtickets.loadTickets()
   }
 
   private serviced_timestamp() {

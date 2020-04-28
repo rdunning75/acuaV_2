@@ -7,19 +7,22 @@
           </v-flex>
         </v-layout>
       </v-container>
+
+    <TicketQueue />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import TicketCard from '@/components/TicketCard.vue'
-// import TicketQueue from '@/components/TicketQueue.vue'
+import TicketQueue from '@/components/TicketQueue.vue'
 import tickets from '@/store/modules/tickets'
 import users from '@/store/modules/users'
 
 @Component({
   components: {
-    TicketCard
+    TicketCard,
+    TicketQueue
   }
 })
 export default class Manager extends Vue {

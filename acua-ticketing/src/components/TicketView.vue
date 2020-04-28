@@ -1,25 +1,26 @@
-<template>
-  <v-navigation-drawer
-    permanent width="600"
-    fixed
-    right
-    clipped
-    app 
+<template >
+<v-card
+    height="350"
+    width="600"
+    class="mx-auto"
   >
-    <v-list dense>
-      <v-list-tile>
+
+  <v-list style="background-color:#117FA7;">
+      <v-list-tile >
         <v-list-tile-content >
-          <v-list-tile-title class="title text-xs-center" style="color:white;">Window Queue</v-list-tile-title>
+          <v-list-tile-title class="title text-xs-center" style="color:white;">Window Caller</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
 
+  <v-navigation-drawer permanent width="600">
     
     <v-list  v-for="(ticket, i) in queue" :key="i">
 
         <v-list-tile-content >
           <v-list-tile-title class="headline text-xs-center">Ticket #{{ticket.tic_id}}</v-list-tile-title>
           <v-list-tile-sub-title style="font-size:20px;" class="text-xs-center">Name: {{ticket.first_name}}</v-list-tile-sub-title>
+          <v-list-tile-sub-title style="font-size:20px;" class="text-xs-center">Go To Window: {{ticket.user_id}}</v-list-tile-sub-title>
         </v-list-tile-content>
 
     </v-list>
@@ -29,17 +30,18 @@
       </v-list-tile-content>
     </v-list>
   </v-navigation-drawer>
+</v-card>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import { Ticket, User } from '@/store/models'
-import tickets from '@/store/modules/tickets'
+import qtickets from '@/store/modules/qtickets'
 import users from '@/store/modules/users'
 import socket from 'socket.io-client'
 @Component
-export default class TicketQueue extends Vue {
-  private tickets = tickets // ticket state manager
+export default class TicketView extends Vue {
+  private qtickets = qtickets // ticket state manager
   private users = users
 
   public pincServer() {
@@ -47,16 +49,16 @@ export default class TicketQueue extends Vue {
   }
 
   public get queue(): Ticket[] {
-    return this.tickets.tickets
+    return this.qtickets.qtickets
   }
 
   public get ticket(): Ticket {
-    return this.tickets.firstTicket
+    return this.qtickets.firstTicket
   }
 
   public get remaining(): number {
 
-    return this.tickets.count
+    return this.qtickets.count
   }
 
   // test - error Property 'first_name' does not exist on type 'UsersModule'.
