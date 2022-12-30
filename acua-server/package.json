@@ -61,7 +61,7 @@
     "loopback-connector-mysql": "^5.4.2"
   },
   "devDependencies": {
-    "@loopback/build": "^1.4.1",
+    "@loopback/build": "^9.0.6",
     "@loopback/testlab": "^1.10.2",
     "@loopback/tslint-config": "^2.0.4",
     "@types/cron": "^1.7.0",
